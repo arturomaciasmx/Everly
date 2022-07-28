@@ -1,0 +1,165 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "header-home": {
+      "type": "home-header",
+      "settings": {
+        "header-text": "The clean, waste-free way to get your candle fix (minus the guilt).",
+        "background": "linear-gradient(180deg, rgba(177, 181, 204, 1), rgba(187, 223, 191, 1) 80%)",
+        "cta_text": "SHOP NOW",
+        "cta_bg_color": "#6e6d99",
+        "cta_text_color": "#ffffff"
+      }
+    },
+    "165895990452ce5d7a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nWe care about our planet and because of that 1% of our profit goes to make it a better place.\n<\/div>",
+        "background-color": "light",
+        "light-text": true,
+        "container-width": 5,
+        "spacing-above": false,
+        "spacing-below": false
+      }
+    },
+    "1658960150590e58fe": {
+      "type": "image-with-text",
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 1,
+        "spacing-above": false,
+        "spacing-below": true,
+        "image-height": 0,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "bottom",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "overline": "",
+        "title": "Candle. Refill. Repeat.",
+        "description": "<p>Our <strong>clean candle<\/strong> kits make it easy to refill any empty vessel at home. So you can choose refills &gt; landfills, leaving <strong>our world a little cleaner.<\/strong><\/p>",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "16589609255b7f16c4": {
+      "type": "featured-products",
+      "settings": {
+        "product-list": [
+          "peppermint-cocoa-shavings-candle-8-oz",
+          "rawcinnamon",
+          "holiday-edition-roaster-chestnuts-rum"
+        ],
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "display-type": "grid",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2",
+        "heading": "SAVE on Bundles",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "16589636434ae4b335": {
+      "type": "text-columns",
+      "blocks": {
+        "16589636435a99abdd-0": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "title": "NON-TOXIC OILS",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "16589636435a99abdd-1": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "title": "COMPOSTABLE PACKAGING",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "16589636435a99abdd-2": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "title": "PHITHALATE + PARABEN FREE",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        },
+        "16589636435a99abdd-3": {
+          "type": "image",
+          "settings": {
+            "show-image": true,
+            "title": "CARBON NEUTRAL",
+            "description": "",
+            "link-url": "",
+            "link-text": ""
+          }
+        }
+      },
+      "block_order": [
+        "16589636435a99abdd-0",
+        "16589636435a99abdd-1",
+        "16589636435a99abdd-2",
+        "16589636435a99abdd-3"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "block-spacing": true,
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": false,
+        "width": 4,
+        "image-width": 0,
+        "mobile-width": "2",
+        "text-alignment": "center",
+        "heading": "Why you'll love us?",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "165897291324a4fce9": {
+      "type": "custom-cta",
+      "settings": {
+        "cta_text": "LEARN MORE",
+        "section_background_color": "#f2f5f5",
+        "cta_background_color": "#6e6d97",
+        "margin_top": 40,
+        "margin_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header-home",
+    "165895990452ce5d7a",
+    "1658960150590e58fe",
+    "16589609255b7f16c4",
+    "16589636434ae4b335",
+    "165897291324a4fce9"
+  ]
+}

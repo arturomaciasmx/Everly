@@ -1,0 +1,87 @@
+{%- liquid
+  assign cta_text = section.settings.cta_text
+  assign cta_link = section.settings.cta_link
+  assign cta_background_color = section.settings.cta_background_color
+  assign section_background_color = section.settings.section_background_color
+  assign margin_top = section.settings.margin_top
+  assign margin_bottom = section.settings.margin_bottom
+-%}
+<style>
+#custom-cta {
+    text-align: center;
+    background: {{ section_background_color }}!important;
+}
+ #custom-cta a {
+    background: {{ cta_background_color }}!important;
+    display: inline-block;
+    margin-top: {{ margin_top }}px;
+    margin-bottom: {{ margin_bottom }}px;
+    padding: 20px 60px;
+    border-radius: 50px;
+    color: #ffffff!important;
+    font-weight: bold;
+    font-size: 16px;
+}    
+</style>
+
+<div id="custom-cta">
+    <a class="custom-cta-button" href="{{ cta_link }}">{{ cta_text }}</a>
+</div>
+  
+{% schema %}
+{
+  "name": "Custom CTA",
+  "settings": [
+    {
+      "id": "cta_text",
+      "label": "Text",
+      "type": "text",
+      "default": "LEARN MORE"
+    },
+    {
+      "id": "cta_link",
+      "label": "URL",
+      "type": "text",
+      "default": "#"
+    },
+    {
+      "id": "section_background_color",
+      "label": "Background",
+      "type": "color",
+      "default": "#ffffff"
+    },
+    {
+      "id": "cta_background_color",
+      "label": "Background",
+      "type": "color",
+      "default": "#6e6d97"
+    },
+    {
+      "type": "range",
+      "id": "margin_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin top",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Margin bottom",
+      "default": 20
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom CTA"
+    }
+  ]
+}
+{% endschema %}
+  

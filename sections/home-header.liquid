@@ -1,0 +1,72 @@
+{%-liquid
+    assign background = section.settings.background
+    assign header_text = section.settings.header-text
+    assign cta_text = section.settings.cta_text
+    assign cta_text_color = section.settings.cta_text_color
+    assign cta_bg_color = section.settings.cta_bg_color
+-%}
+
+<style>
+.home-header {
+    padding: 150px 0;
+    background: {{ background }};
+}
+.home-header .container {
+    max-width: 1200px;
+    margin: auto;
+    color: #FFFFFF;
+}
+.home-header p {
+    margin: 30px 0;
+} 
+.home-header .cta-button {
+    background: {{ cta_bg_color }}!important;
+    color: {{ cta_text_color }};
+}   
+</style>
+
+<div class="container">
+    <h1>
+        Say <span style="color:#000000;">Hello</span><br/> to your candle habit,<br/> <span style="color:#6e6d99;">reimagined.</span>
+    </h1>
+    <p>{{ header_text }}</p>
+    <a href="#" class="cta-button">{{ cta_text }}</a>
+</div>
+
+{% schema %}
+    {
+        "name": "Header Home",
+        "class": "home-header",
+        "settings": [
+            {
+                "type": "text",
+                "id": "header-text",
+                "label": "Text"
+            },
+            {
+                "type": "color_background",
+                "id": "background",
+                "label": "Background",
+                "default": "linear-gradient(#ffffff, #000000)"
+            },
+            {
+                "type": "text",
+                "id": "cta_text",
+                "label": "CTA text",
+                "default": "LEARN MORE"
+            },
+            {
+                "type": "color",
+                "id": "cta_bg_color",
+                "label": "CTA background",
+                "default": "#6e6d99"
+            },
+            {
+                "type": "color",
+                "id": "cta_text_color",
+                "label": "CTA text color",
+                "default": "#fff"
+            }
+        ]
+    }
+{% endschema %}

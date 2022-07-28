@@ -1,0 +1,271 @@
+<style>
+.header--root {
+  border: none;
+}
+.coming-soon--container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  height: calc(100vh - 153px);
+  min-height: 670px;
+}
+.coming-soon--content,
+.coming-soon--image {
+  width: 50%;
+  padding: 0 20px;
+}
+.coming-soon--image img {
+  position: absolute;
+  bottom: 0;
+  max-width: 550px;
+  width: 100%;
+}
+.coming-soon--image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.coming-soon--content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.coming-soon--title {
+  font-family: Megante;
+  text-transform: initial;
+  font-size: 72px;
+  line-height: 68px;
+  color: #badfbe;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.coming-soon--subscribe .horizontal-form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.coming-soon--subscribe #Email {
+  font-family: Metropolis-Regular;
+  font-weight: 400;
+  width: 70%;
+  border: none;
+  border-bottom: 2px solid;
+  font-size: 20px;
+  outline: none;
+  border-radius: 0;
+}
+.coming-soon--subscribe #Email::placeholder {
+  color: #000000;
+}
+.coming-soon--footer {
+  margin-top: 60px;
+}
+.coming-soon--footer .social-media-container .blog-button {
+  display:none;
+}
+.coming-soon--footer .social-media {
+  margin-top: 20px;
+}
+.coming-soon--footer .icon {
+  margin-right: 20px;
+}
+.coming-soon--footer .icon .hover {
+  display: none;
+}
+.coming-soon--footer .icon:hover .hover {
+  display: initial;
+}
+.coming-soon--footer .icon:hover .idle {
+  display: none;
+}
+.grecaptcha-badge { visibility: hidden; }
+.btn {
+  font-family: Metropolis-Regular!important;
+}
+.header--menu-icon {
+  display: none;
+}
+@media only screen and (max-width: 1080px) {
+  .coming-soon--container {
+    min-height: 780px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .coming-soon--title {
+    font-size: 60px;
+    line-height: 56px;
+  }
+  .coming-soon--title span {
+    font-size: 25px;
+  }
+  .coming-soon--container {
+    flex-direction: column;
+    height: auto;
+  }
+  .coming-soon--content {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+  .coming-soon--image {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+  }
+  .coming-soon--image img {
+    position: relative;
+    width: 100%;
+  }
+  .coming-soon--subscribe {
+    width: 100%;
+  }
+  .coming-soon--subscribe p {
+    font-size: 16px;
+  }
+  .coming-soon--subscribe .horizontal-form #Email {
+    font-size: 18px;
+    width: 100%;
+    max-width: 60%;
+  }
+  .coming-soon--subscribe .horizontal-form .btn {
+    width: 35%;
+  }
+  .coming-soon--footer p {
+    font-size: 12px!important;
+    width: 80%!important;
+    line-height: 15px!important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coming-soon--title {
+    font-size: 50px;
+    line-height: 46px;
+  }
+  .coming-soon--title span {
+    font-size: 20px;
+  }
+  .coming-soon--container {
+    flex-direction: column;
+    height: auto;
+  }
+  .coming-soon--content {
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+  }
+  .coming-soon--image {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+  }
+  .coming-soon--image img {
+    position: relative;
+    width: 100%;
+  }
+  .coming-soon--subscribe {
+    width: 100%;
+  }
+  .coming-soon--subscribe p {
+    font-size: 12px;
+  }
+  .coming-soon--subscribe .horizontal-form #Email {
+    font-size: 15px;
+    width: 100%;
+    max-width: 60%;
+  }
+  .coming-soon--subscribe .horizontal-form .btn {
+    width: 35%;
+  }
+  .coming-soon--footer p {
+    font-size: 9px!important;
+    width: 80%!important;
+    line-height: 11px!important;
+  }
+  .coming-soon--footer .social-media-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .coming-soon--footer .social-media-container .blog-button {
+    display:block;
+  }
+  .header--menu-icon,
+  .header--cart-button {
+    display: none;
+  }
+}
+
+</style>
+
+<div class="coming-soon--container">
+  <div class="coming-soon--content">
+
+    <h1 class="coming-soon--title">
+      <span style="color: #000000; font-family: Megante; font-size: 45px; line-height: 41px;">I'm a</span></br>
+      clean</br> 
+      waste-free</br>
+      sustainable</br>
+      <span style="color: #000000; font-family: Megante; font-size: 45px; float: right; line-height: 41px;">CANDLE</span>
+    </h1>
+
+    
+    <div class="coming-soon--subscribe">
+      <p>Be the first to know and get <span style="font-family: 'Metropolis-Black';">PRE-LAUNCH ACCESS.</span></p>
+      {% form 'customer' %}
+        {{ form.errors | default_errors }}
+        {% if form.posted_successfully? %}
+          <p class="note form-success" style="font-family: 'Metropolis-Black';">Thanks for subscribing!</p>
+        {% else %}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <div class="horizontal-form">
+            <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="Enter your email" name="contact[email]" id="Email" class="input-group-field" autocorrect="off" autocapitalize="off">
+            <input type="submit" class="btn" name="subscribe" id="subscribe" value="SUBSCRIBE">
+          </div>
+        {% endif %}
+      {% endform %}
+    </div>
+
+    
+    <div class="coming-soon--footer">
+      <p style="font-size: 13px; line-height: 15px; font-family: Metropolis-Black; width: 70%;">MADE WITH LOVE IN CANADA / LATINX & WOMAN-OWNED/
+      1% OF SALES DONATED TO ENVIRONMENTAL CAUSES/
+      COMPOSTABLE PACKAGING</p>
+      <div class="social-media-container">
+        <div class="social-media">
+          <a target="_blank" class="icon tiktok" href="https://vm.tiktok.com/ZMNey6wjV/">
+            <img src="{{'tiktok-icon-social.png' | asset_img_url }}" class="idle">
+            <img src="{{'tiktok-icon-social-hover.png' | asset_img_url }}" class="hover">
+          </a>
+          <a target="_blank" href="https://instagram.com/tryeverly?igshid=YmMyMTA2M2Y=" class="icon instagram">
+            <img src="{{'instagram-icon-social.png' | asset_img_url }}" class="idle">
+            <img src="{{'instagram-icon-social-hover.png' | asset_img_url }}" class="hover">
+          </a>
+        </div>
+          <a href="https://tryeverly.com/blogs/news" class="icon blog-button">
+            <img src="{{ 'blog-icon.png' | asset_img_url }}" style="margin-right: 5px;" class="idle"/> 
+            <img src="{{ 'blog-icon-hover.png' | asset_img_url }}" style="margin-right: 5px;" class="hover"/> 
+            <span style="font-family: Metropolis-Black;">BLOG</span>
+          </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="coming-soon--image">
+    <img src="{{ 'everly-bag-packaging-1200px.png' | asset_img_url: 'master' }}" />
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Coming Soon",
+    "presets": [
+      {
+        "name": "Coming Soon"
+      }
+    ]
+  }
+{% endschema %}

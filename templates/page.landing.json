@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "16566411610519c464": {
+      "type": "comingsoon",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16566411610519c464"
+  ]
+}
