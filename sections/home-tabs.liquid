@@ -1,0 +1,154 @@
+<style>
+  .home-tabs {
+    text-align: center;
+    padding-top: 50px;
+    background: rgb(242,242,247);
+    background: linear-gradient(0deg, rgba(241,242,246,1) 0%, rgba(242,245,245,1) 100%);
+  }
+  .home-tabs h2 {
+    color: #6e6d99;
+    margin-bottom: 20px;
+  }
+  .home-tabs .container > p {
+    color: #6e6d99;
+  }
+  #tabs-container {
+    margin-top: 30px;
+  }
+  #tabs-container .tabs-menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  #tabs-container .tabs-menu ul li {
+    padding: 15px 50px;
+    border: 1px solid #666;
+    border-radius: 60px;
+  }
+  /* tabs colors */
+  #tabs-container .tabs-menu .spiritual {
+    /* background: #6e6d97; */
+    border-color: #badebe;
+    color: #badebe;
+  }
+  #tabs-container .tabs-menu .romantic {
+    /* background: #6e6d97; */
+    border-color: #d2d1e3;
+    color: #d2d1e3;
+  }
+  #tabs-container .tabs-menu .sexy {
+    /* background: #6e6d97; */
+    border-color: #ddcfca;
+    color: #ddcfca;
+  }
+  #tabs-container .tabs-menu .adventure {
+    /* background: #6e6d97; */
+    border-color: #d8d9c4;
+    color: #d8d9c4;
+  }
+
+
+  .tabs-info-container div {
+    width: 50%;
+  }
+  .tabs-info-container .tab-info {
+    justify-content: space-around;
+    width: 100%;
+    display: none;
+    padding: 50px;
+  }
+  .tabs-info-container .tab-info.active {
+    display: flex;
+  }
+  .tabs-info-container .tab-text {
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+  }
+  .tabs-info-container .tab-text a {
+    background: #6e6d97;
+    padding: 15px 40px;
+    margin-top: 30px;
+  }
+</style>
+
+<div class="container">
+  <h2>What's your mode</h2>
+  <p>Let us help pick the scent that fits you.</p>
+  <div id="tabs-container">
+    <div class="tabs-menu">
+      <ul>
+        <li class="tab spiritual active" data-id="spiritual">SPIRITUAL</li>
+        <li class="tab romantic" data-id="romantic">ROMANTIC</li>
+        <li class="tab sexy" data-id="sexy">SEXY</li>
+        <li class="tab adventure" data-id="adventure">ADVENTURE</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tabs-info-container">
+    <div id="spiritual" class="tab-info active">
+      <div class="tab-image"></div>
+      <div class="tab-text">
+        <h3>spiritual</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.
+        </p>
+        <a class="cta-button" href="#">SHOP NOW</a>
+      </div>
+    </div>
+    <div id="romantic" class="tab-info">
+      <div class="tab-image"></div>
+      <div class="tab-text">
+        <h3>romantic</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.
+        </p>
+        <a class="cta-button" href="#">SHOP NOW</a>
+      </div>
+    </div>
+    <div id="sexy" class="tab-info">
+      <div class="tab-image"></div>
+      <div class="tab-text">
+        <h3>sexy</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.
+        </p>
+        <a class="cta-button" href="#">SHOP NOW</a>
+      </div>
+    </div>
+    <div id="adventure" class="tab-info">
+      <div class="tab-image"></div>
+      <div class="tab-text">
+        <h3>adventure</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.
+        </p>
+        <a class="cta-button" href="#">SHOP NOW</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $(".tab").on("click", function() {
+      console.log(this);
+      tabId = $(this).data("id");
+      $(".tab, .tab-info").removeClass("active");
+      $(this).addClass("active");
+      $("#"+tabId).addClass("active");
+    })
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Home Tabs",
+  "class": "home-tabs",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Home Tabs"  
+    }
+  ]
+}
+{% endschema %}

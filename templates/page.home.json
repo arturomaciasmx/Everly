@@ -146,10 +146,16 @@
       "type": "custom-cta",
       "settings": {
         "cta_text": "LEARN MORE",
+        "cta_link": "#",
         "section_background_color": "#f2f5f5",
         "cta_background_color": "#6e6d97",
         "margin_top": 40,
         "margin_bottom": 20
+      }
+    },
+    "1659021079d8b6ff21": {
+      "type": "home-tabs",
+      "settings": {
       }
     }
   },
@@ -160,6 +166,7 @@
     "1658960150590e58fe",
     "16589609255b7f16c4",
     "16589636434ae4b335",
-    "165897291324a4fce9"
+    "165897291324a4fce9",
+    "1659021079d8b6ff21"
   ]
 }
