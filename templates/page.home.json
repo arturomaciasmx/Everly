@@ -16,6 +16,7 @@
       "settings": {
         "header-text": "The clean, waste-free way to get your candle fix (minus the guilt).",
         "background": "linear-gradient(180deg, rgba(177, 181, 204, 1), rgba(187, 223, 191, 1) 80%)",
+        "image": "shopify:\/\/shop_images\/header_img.png",
         "cta_text": "SHOP NOW",
         "cta_bg_color": "#6e6d99",
         "cta_text_color": "#ffffff"
@@ -37,17 +38,18 @@
       "settings": {
         "text-color": "auto",
         "background-color": "none",
-        "container-width": 1,
+        "container-width": 3,
         "spacing-above": false,
         "spacing-below": true,
         "image-height": 0,
-        "darken-image": true,
+        "darken-image": false,
         "parallax-enabled": false,
         "text-position": "bottom",
-        "text-width": "medium",
+        "text-width": "large",
         "overlap": false,
         "box-around-text": false,
         "mobile-overlay": true,
+        "image": "shopify:\/\/shop_images\/Recurso_6512.png",
         "overline": "",
         "title": "Candle. Refill. Repeat.",
         "description": "<p>Our <strong>clean candle<\/strong> kits make it easy to refill any empty vessel at home. So you can choose refills &gt; landfills, leaving <strong>our world a little cleaner.<\/strong><\/p>",
@@ -157,6 +159,53 @@
       "type": "home-tabs",
       "settings": {
       }
+    },
+    "1659033403f7621f4e": {
+      "type": "image-with-text",
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 1,
+        "spacing-above": true,
+        "spacing-below": true,
+        "image-height": 0,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "bottom",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "overline": "Overline text",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+        "link-url": "",
+        "link-text": "test"
+      }
+    },
+    "1659033635221b20b2": {
+      "type": "image-with-text",
+      "settings": {
+        "text-color": "auto",
+        "background-color": "light",
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "image-height": 0,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "right",
+        "text-width": "large",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "image": "shopify:\/\/shop_images\/logo-Everly-04.png",
+        "overline": "Overline text",
+        "title": "Image with text",
+        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
+        "link-url": "",
+        "link-text": "test"
+      }
     }
   },
   "order": [
@@ -167,6 +216,8 @@
     "16589609255b7f16c4",
     "16589636434ae4b335",
     "165897291324a4fce9",
-    "1659021079d8b6ff21"
+    "1659021079d8b6ff21",
+    "1659033403f7621f4e",
+    "1659033635221b20b2"
   ]
 }

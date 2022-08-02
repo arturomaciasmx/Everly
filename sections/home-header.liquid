@@ -1,6 +1,7 @@
 {%-liquid
     assign background = section.settings.background
     assign header_text = section.settings.header-text
+    assign header_image = section.settings.image
     assign cta_text = section.settings.cta_text
     assign cta_text_color = section.settings.cta_text_color
     assign cta_bg_color = section.settings.cta_bg_color
@@ -8,11 +9,15 @@
 
 <style>
 .home-header {
-    padding: 150px 0;
+    height: 650px;
     background: {{ background }};
 }
 .home-header .container {
     color: #FFFFFF;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 .home-header p {
     margin: 30px 0;
@@ -20,15 +25,30 @@
 .home-header .cta-button {
     background: {{ cta_bg_color }}!important;
     color: {{ cta_text_color }};
+}
+.home-header .header_image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 50%;
 }   
 </style>
 
 <div class="container">
-    <h1>
-        Say <span style="color:#000000;">Hello</span><br/> to your candle habit,<br/> <span style="color:#6e6d99;">reimagined.</span>
-    </h1>
-    <p>{{ header_text }}</p>
-    <a href="#" class="cta-button">{{ cta_text }}</a>
+    <div>
+        <h1>
+            Say 
+            <span style="color:#6e6d99;">Hello
+                <img src="{{ 'hand_emoji.png' | asset_url }}" style="vertical-align: baseline; position: relative;bottom: -5px;" height="65">
+            </span>
+            <br/> to your candle habit,<br/> <span style="color:#6e6d99;">reimagined.</span>
+        </h1>
+        <p>{{ header_text }}</p>
+        <a href="#" class="cta-button">{{ cta_text }}</a>
+    </div>
+    <div class="header_image">
+        <img src="{{ header_image | img_url: 'master' }}">
+    </div>
 </div>
 
 {% schema %}
@@ -46,6 +66,11 @@
                 "id": "background",
                 "label": "Background",
                 "default": "linear-gradient(#ffffff, #000000)"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Header Image"
             },
             {
                 "type": "text",
