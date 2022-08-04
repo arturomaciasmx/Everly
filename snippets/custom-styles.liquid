@@ -19,12 +19,12 @@
   /* Add your theme customizations below */
 {% endcomment %}
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Metropolis-Bold"
+  font-family: "Metropolis-Bold"!important;
 }
 p {
   font-family: "Metropolis-Regular";
   font-size: 18px!important;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   line-height: 28px;
 }
 a, a:link, a:visited {
@@ -32,6 +32,9 @@ a, a:link, a:visited {
 }
 h1 {
   font-size: 50px!important;
+}
+h2 {
+  font-size: 40px!important;
 }
 h3 {
   font-size: 19px!important;
@@ -41,17 +44,18 @@ h3 {
   margin: auto;
 }
 .cta-button {
-  padding: 18px 50px;
+  padding: 14px 50px;
   border-radius: 60px;
   color: #FFFFFF!important;
   font-size: 16px;
   display: inline-block;
   background-color: none!important;
+  font-weight: bold;
 }
 
 .featured-content--title,
 .featured-grid--heading {
-  font-size: 35px!important;
+  font-size: 40px!important;
 }
 
 .featured-content--root[data-text-width=large] .featured-content--text {

@@ -1,0 +1,129 @@
+{%-liquid
+    assign title = section.settings.title
+    assign title_color = section.settings.title_color
+    assign space-top = section.settings.space-top
+    assign space-bottom = section.settings.space-bottom
+    assign background = section.settings.background 
+-%}
+
+<style>
+#shopify-section-{{ section.id }} {
+    background: {{ background }};
+    padding-top: {{ space-top }}px;
+    padding-bottom: {{ space-bottom }}px;
+}
+.custom-cols .container {
+    max-width: 1200px;
+    margin: auto;
+}
+.custom-cols h2 {
+    text-align: center;
+    color: {{ title_color }}
+}
+.custom-cols .row-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+#shopify-section-{{ section.id }} .row-grid .__column{
+    width: calc(100% / {{ section.blocks.size }});
+    padding: 0 10px;
+}
+.custom-cols .__column p {
+    margin-top: 20px;
+}
+</style>
+
+<div class="container">
+    <h2>{{ title }}</h2>
+    <div class="row-grid">
+        {%- for block in section.blocks -%}
+            <div class="__column">
+                <img src="{{ block.settings.image | img_url }}" height="{{ block.settings.image_size }}">
+                <p>{{ block.settings.title }}</p>
+                <p>{{ block.settings.text }}</p>
+            </div>
+        {%- endfor -%}
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Custom Columns With Image",
+        "class": "custom-cols",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "color",
+                "id": "title_color",
+                "label": "Title Color",
+                "default": "#6e6d97"
+            },
+            {
+                "type": "range",
+                "id": "space-top",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px",
+                "label": "Space Top",
+                "default": 50
+            },
+            {
+                "type": "range",
+                "id": "space-bottom",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "px",
+                "label": "Space Bottom",
+                "default": 50
+            },
+            {
+                "type": "color",
+                "id": "background",
+                "label": "Background",
+                "default": "#F2F5F5"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "image",
+                "name": "Column",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title"
+                    },
+                    {
+                        "type": "textarea",
+                        "id": "text",
+                        "label": "Text"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
+                    },
+                    {
+                        "type": "number",
+                        "id": "image_size",
+                        "label": "Image Size",
+                        "default": 80
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "Custom Columns With Image"
+            }
+        ]
+    }
+{% endschema %}

@@ -77,71 +77,68 @@
         "link-text": ""
       }
     },
-    "16589636434ae4b335": {
-      "type": "text-columns",
+    "1659473617ac28edb6": {
+      "type": "custom-columns-with-images",
       "blocks": {
-        "16589636435a99abdd-0": {
+        "f6345bcd-bff2-4866-a9ce-3521d23f4340": {
           "type": "image",
           "settings": {
-            "show-image": true,
             "title": "NON-TOXIC OILS",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
+            "text": "",
+            "image": "shopify:\/\/shop_images\/Recurso_11512.png",
+            "image_size": 80
           }
         },
-        "16589636435a99abdd-1": {
+        "59c448b4-fb5b-4987-b666-5ecf98575911": {
           "type": "image",
           "settings": {
-            "show-image": true,
-            "title": "COMPOSTABLE PACKAGING",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
+            "title": "COMPOSTABLE<br>PACKAGING*",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/compostable-packaging.png",
+            "image_size": 80
           }
         },
-        "16589636435a99abdd-2": {
+        "bda9b681-d3e0-49c3-994d-612d28d9ed87": {
           "type": "image",
           "settings": {
-            "show-image": true,
-            "title": "PHITHALATE + PARABEN FREE",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
+            "title": "PHTHALATE +<br> PARABEN",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/phtalate.png",
+            "image_size": 80
           }
         },
-        "16589636435a99abdd-3": {
+        "747fda81-0370-4eb9-a3df-45f52d3a460e": {
           "type": "image",
           "settings": {
-            "show-image": true,
             "title": "CARBON NEUTRAL",
-            "description": "",
-            "link-url": "",
-            "link-text": ""
+            "text": "",
+            "image": "shopify:\/\/shop_images\/coconut-wax.png",
+            "image_size": 80
+          }
+        },
+        "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4": {
+          "type": "image",
+          "settings": {
+            "title": "COCONUT WAX",
+            "text": "",
+            "image": "shopify:\/\/shop_images\/carbon-neutral.png",
+            "image_size": 80
           }
         }
       },
       "block_order": [
-        "16589636435a99abdd-0",
-        "16589636435a99abdd-1",
-        "16589636435a99abdd-2",
-        "16589636435a99abdd-3"
+        "f6345bcd-bff2-4866-a9ce-3521d23f4340",
+        "59c448b4-fb5b-4987-b666-5ecf98575911",
+        "bda9b681-d3e0-49c3-994d-612d28d9ed87",
+        "747fda81-0370-4eb9-a3df-45f52d3a460e",
+        "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4"
       ],
       "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "block-spacing": true,
-        "container-width": 4,
-        "spacing-above": false,
-        "spacing-below": false,
-        "width": 4,
-        "image-width": 0,
-        "mobile-width": "2",
-        "text-alignment": "center",
-        "heading": "Why you'll love us?",
-        "subtitle": "",
-        "link-url": "",
-        "link-text": ""
+        "title": "Why you’ll love us?",
+        "title_color": "#6e6d97",
+        "space-top": 50,
+        "space-bottom": 50,
+        "background": "#f2f5f5"
       }
     },
     "165897291324a4fce9": {
@@ -155,56 +152,143 @@
         "margin_bottom": 20
       }
     },
+    "165949968326b2066d": {
+      "type": "custom-divider",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "height": 80,
+        "background": "#f2f5f5",
+        "space-top": 0,
+        "space-bottom": 0
+      }
+    },
     "1659021079d8b6ff21": {
       "type": "home-tabs",
       "settings": {
       }
     },
-    "1659033403f7621f4e": {
-      "type": "image-with-text",
+    "16595449695027c523": {
+      "type": "custom-image-with-text",
       "settings": {
-        "text-color": "auto",
-        "background-color": "none",
-        "container-width": 1,
-        "spacing-above": true,
-        "spacing-below": true,
-        "image-height": 0,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "bottom",
-        "text-width": "medium",
-        "overlap": false,
-        "box-around-text": false,
-        "mobile-overlay": true,
-        "overline": "Overline text",
-        "title": "Image with text",
-        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
-        "link-url": "",
-        "link-text": "test"
+        "heading": "Sustainability at Everly",
+        "text": "60 Tons of household waste is produced every second– contributing to massive C02 emissions, ocean pollution, and bursting landfills. \nWe want to be part of the solution, starting with candles.",
+        "image": "shopify:\/\/shop_images\/Recurso_6512.png",
+        "image-size": 80,
+        "space-top": 50,
+        "space-bottom": 50,
+        "cta-text": "LEARN MORE",
+        "cta-background": "#6e6d97"
       }
     },
-    "1659033635221b20b2": {
-      "type": "image-with-text",
+    "16595592167283bc70": {
+      "type": "custom-2-columns-text",
       "settings": {
-        "text-color": "auto",
-        "background-color": "light",
-        "container-width": 3,
+        "content-text": "",
+        "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "heading": "Candle. Refill. Repeat.",
+        "text": "<p>1 Microwave the bag for 2 minutes.\n<\/p>\n<p>2 Pour liquid wax into your favorite vessel.\n<\/p>\n<p>3 Let it set and enjoy. <\/p>",
+        "text-align": "left",
+        "cta-text": "LEARN MORE",
+        "cta-background": "#6e6d97",
+        "background": "#f2f5f5",
+        "reverse": false
+      }
+    },
+    "1659562437e51df8bf": {
+      "type": "custom-divider",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "height": 80,
+        "background": "#f2f5f5",
+        "space-top": 0,
+        "space-bottom": 0
+      }
+    },
+    "1659562483f6113690": {
+      "type": "custom-2-columns-text",
+      "settings": {
+        "content-text": "",
+        "content-image": "shopify:\/\/shop_images\/Recurso_11512.jpg",
+        "heading": "Our Vessel",
+        "text": "Don't have a vessel lying around at home? Our Eternal Vessel is the perfect companion to get started on your Everly journey.",
+        "text-align": "center",
+        "cta-text": "LEARN MORE",
+        "cta-background": "#6e6d97",
+        "background": "linear-gradient(0deg, rgba(243, 249, 243, 1) 75%, rgba(242, 245, 245, 1) 94%)",
+        "reverse": true
+      }
+    },
+    "165956671632b09cb0": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "What people are saying",
+        "text": "",
+        "image": "shopify:\/\/shop_images\/Recurso_12512.jpg",
+        "image-size": 80,
+        "space-top": 50,
+        "space-bottom": 0,
+        "cta-text": "",
+        "cta-background": "#6e6d97"
+      }
+    },
+    "16595669505e4d8ad9": {
+      "type": "custom-columns-with-images",
+      "blocks": {
+        "836e2b4c-4560-4b4c-8e92-9dc643f08459": {
+          "type": "image",
+          "settings": {
+            "title": "So so so easy!",
+            "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        },
+        "8b9e5d30-8f47-4303-bb95-4aa0a67a1114": {
+          "type": "image",
+          "settings": {
+            "title": "Love this idea!",
+            "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        },
+        "499bb925-fa60-4405-a307-b6e2274c816d": {
+          "type": "image",
+          "settings": {
+            "title": "It smells AMAZING!",
+            "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        }
+      },
+      "block_order": [
+        "836e2b4c-4560-4b4c-8e92-9dc643f08459",
+        "8b9e5d30-8f47-4303-bb95-4aa0a67a1114",
+        "499bb925-fa60-4405-a307-b6e2274c816d"
+      ],
+      "settings": {
+        "title": "",
+        "title_color": "#6e6d97",
+        "space-top": 0,
+        "space-bottom": 50,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "16595717273374a996": {
+      "type": "featured-blog",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
         "spacing-above": true,
         "spacing-below": true,
-        "image-height": 0,
-        "darken-image": true,
-        "parallax-enabled": false,
-        "text-position": "right",
-        "text-width": "large",
-        "overlap": false,
-        "box-around-text": false,
-        "mobile-overlay": true,
-        "image": "shopify:\/\/shop_images\/logo-Everly-04.png",
-        "overline": "Overline text",
-        "title": "Image with text",
-        "description": "<p>Combine imagery with text to create stand-out campaign sections, eye-catching promotions, information blocks and more.<\/p>",
-        "link-url": "",
-        "link-text": "test"
+        "blog-heading": "Journal",
+        "blog": "news",
+        "tag-select": "pinned",
+        "show-date": true,
+        "show-excerpt": false,
+        "view-more-text": ""
       }
     }
   },
@@ -214,10 +298,16 @@
     "165895990452ce5d7a",
     "1658960150590e58fe",
     "16589609255b7f16c4",
-    "16589636434ae4b335",
+    "1659473617ac28edb6",
     "165897291324a4fce9",
+    "165949968326b2066d",
     "1659021079d8b6ff21",
-    "1659033403f7621f4e",
-    "1659033635221b20b2"
+    "16595449695027c523",
+    "16595592167283bc70",
+    "1659562437e51df8bf",
+    "1659562483f6113690",
+    "165956671632b09cb0",
+    "16595669505e4d8ad9",
+    "16595717273374a996"
   ]
 }

@@ -51,13 +51,19 @@
     width: 50%;
   }
   .tabs-info-container .tab-info {
-    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
     width: 100%;
     display: none;
-    padding: 50px;
+    padding: 80px ;
   }
   .tabs-info-container .tab-info.active {
     display: flex;
+  }
+  .tabs-info-container .tab-image {
+    position: absolute;
+    left: 20%;
   }
   .tabs-info-container .tab-text {
     text-align: center;
@@ -86,7 +92,9 @@
   </div>
   <div class="tabs-info-container">
     <div id="spiritual" class="tab-info active">
-      <div class="tab-image"></div>
+      <div class="tab-image">
+        <img src="{{ 'spiritual_image.png' | asset_url }}">
+      </div>
       <div class="tab-text">
         <h3>spiritual</h3>
         <p>

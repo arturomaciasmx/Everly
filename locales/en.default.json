@@ -13,7 +13,7 @@
       "comment": "Comment",
       "comments": "Comments",
       "no_comments": "Be the first to comment.",
-      "continue_reading": "Continue reading",
+      "continue_reading": "Read More",
       "tagged_in": "Tagged in",
       "featured": "Featured",
       "back_to_blog": "Back to blog",
@@ -366,7 +366,7 @@
       "item_title": "Blog post",
       "date": "2 hours ago",
       "excerpt": "This is where the article excerpt will display.",
-      "continue_reading": "Continue reading"
+      "continue_reading": "Read More"
     },
     "map": {
       "open_in_maps": "Open in maps"

@@ -1,0 +1,115 @@
+{%-liquid
+    assign image = section.settings.image
+    assign image-size = section.settings.image-size
+    assign heading = section.settings.heading
+    assign text = section.settings.text
+    assign space-top = section.settings.space-top
+    assign space-bottom = section.settings.space-bottom
+    assign cta-text = section.settings.cta-text
+    assign cta-background = section.settings.cta-background
+-%}
+
+<style>
+.custom-image-with-text {
+    text-align: center;
+}
+.custom-image-with-text .container {
+    max-width: 1200px;
+    margin: auto;
+}
+.custom-image-with-text img {
+    margin-bottom: 30px;
+}
+.custom-image-with-text h2 {
+    margin-bottom: 20px;
+    color: {{ cta-background }};
+}
+.custom-image-with-text p {
+    margin: auto;
+    max-width: 750px;
+    margin-bottom: 30px;
+    color: {{ cta-background }};
+}
+
+#shopify-section-{{ section.id }} {
+    padding-top: {{ space-top }}px;
+    padding-bottom: {{ space-bottom }}px;
+}
+#shopify-section-{{ section.id }} img {
+    width: {{ image-size }}px;
+}
+#shopify-section-{{ section.id }} a {
+    background: {{ cta-background }};
+}
+</style>
+
+<div class="container">
+    {%- if image -%}
+        <img src="{{ image | img_url: 'master' }}"/>
+    {%- endif -%}
+    <h2>{{ heading }}</h2>
+    <p>{{ text }}</p>
+    {% if cta-text != "" %}
+        <a class="cta-button">{{ cta-text }}</a>
+    {% endif %}
+</div>
+{% schema %}
+    {
+        "name": "Custom Image With Text",
+        "class": "custom-image-with-text",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Heading"
+            },
+            {
+                "type": "textarea",
+                "id": "text",
+                "label": "Text",
+                "default": "Text Content For Section"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "number",
+                "id": "image-size",
+                "label": "Image Size",
+                "default": 80
+            },
+            {
+                "type": "number",
+                "id": "space-top",
+                "label": "Image Size",
+                "default": 50
+            },
+            {
+                "type": "number",
+                "id": "space-bottom",
+                "label": "Space Bottom",
+                "default": 50
+            },
+            {
+                "type": "text",
+                "id": "cta-text",
+                "label": "CTA Text",
+                "default": "LEARN MORE"
+            },
+            {
+                "type": "color",
+                "id": "cta-background",
+                "label": "CTA Background",
+                "default": "#6e6d97"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Custom Image With Text"
+            }
+        ]
+    }
+{% endschema %}

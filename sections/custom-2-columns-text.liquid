@@ -1,0 +1,157 @@
+{%-liquid
+    assign heading = section.settings.heading
+    assign text = section.settings.text
+    assign text-align = section.settings.text-align
+    assign cta-text = section.settings.cta-text
+    assign cta-background = section.settings.cta-background
+    assign background = section.settings.background
+    assign content-text = section.settings.content-text
+    assign content-image = section.settings.content-image
+    assign reverse = section.settings.reverse
+-%}
+
+<style>
+    .custom-2-columns .container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .custom-2-columns .container > div {
+        width: 50%;
+        padding: 0 20px;
+    }
+    #shopify-section-{{ section.id }} {
+        background: {{ background }};
+        padding: 50px 0;
+    }
+    #shopify-section-{{ section.id }} .container {
+        {% if reverse %}
+            flex-direction: row-reverse;
+        {% endif %}
+    }
+    #shopify-section-{{ section.id }} .text-column {
+        color: {{ cta-background }}
+    }
+    #shopify-section-{{ section.id }} h2 {
+        text-align: {{ text-align }};
+        margin-bottom: 50px;
+    }
+    #shopify-section-{{ section.id }} .text {
+        text-align: {{ text-align }};
+        margin-bottom: 80px;
+    }
+    #shopify-section-{{ section.id }} .cta-button {
+        background: {{ cta-background }};
+    }
+    #shopify-section-{{ section.id }} .cta {
+        text-align: center;
+    }
+</style>
+
+<div class="container">
+    <div class="content-column">
+        <div class="content-text">
+            {{ content-text }}
+            <img src="{{ content-image | img_url: 'master' }}" />
+        </div>
+    </div>
+    <div class="text-column">
+        <h2>{{ heading }}</h2>
+        <div class="text">
+            {{ text }}
+        </div>
+        <div class="cta">
+            <a class="cta-button">{{ cta-text }}</a>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+    {
+        "name": "Custom 2 Columns",
+        "class": "custom-2-columns",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Left Column Settings"
+            },
+            {
+                "type": "html",
+                "id": "content-text",
+                "label": "Text",
+                "default": "<p>Text Content</p>"
+            },
+            {
+                "type": "image_picker",
+                "id": "content-image",
+                "label": "Image"
+            },
+            {
+                "type": "header",
+                "content": "Right Column Settings"
+            },
+            {
+                "type": "text",
+                "id": "heading",
+                "label": "Heading",
+                "default": "Heading"
+            },
+            {
+                "type": "html",
+                "id": "text",
+                "label": "Text",
+                "default": "<p>Text Content</p>"
+            },
+            {
+                "type": "select",
+                "id": "text-align",
+                "label": "Text Align",
+                "options": [
+                    {
+                        "value": "left",
+                        "label": "Left"
+                    },
+                    {
+                        "value": "center",
+                        "label": "Center"
+                    },
+                    {
+                        "value": "right",
+                        "label": "Right"
+                    }
+                ],
+                "default": "left" 
+            },
+            {
+                "type": "text",
+                "id": "cta-text",
+                "label": "CTA Text",
+                "default": "LEARN MORE"
+            },
+            {
+                "type": "color",
+                "id": "cta-background",
+                "label": "CTA Background",
+                "default": "#6e6d97"
+            },
+            {
+                "type": "color_background",
+                "id": "background",
+                "label": "Background Color",
+                "default": "linear-gradient(#ffffff, #000000)"
+            },
+            {
+                "type": "checkbox",
+                "id": "reverse",
+                "label": "Reverse Columns",
+                "default": false
+            }
+        ],
+        "presets": [
+            {
+                "name": "Custom 2 Columns Text"
+            }
+        ]
+    }
+{% endschema %}
