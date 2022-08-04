@@ -7,6 +7,7 @@
     assign space-bottom = section.settings.space-bottom
     assign cta-text = section.settings.cta-text
     assign cta-background = section.settings.cta-background
+    assign background = section.settings.background
 -%}
 
 <style>
@@ -34,6 +35,7 @@
 #shopify-section-{{ section.id }} {
     padding-top: {{ space-top }}px;
     padding-bottom: {{ space-bottom }}px;
+    background: {{ background }};
 }
 #shopify-section-{{ section.id }} img {
     width: {{ image-size }}px;
@@ -104,6 +106,12 @@
                 "id": "cta-background",
                 "label": "CTA Background",
                 "default": "#6e6d97"
+            },
+            {
+                "type": "color",
+                "id": "background",
+                "label": "Background",
+                "default": "#FFFFFF"
             }
         ],
         "presets": [

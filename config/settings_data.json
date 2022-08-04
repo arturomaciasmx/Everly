@@ -9,7 +9,7 @@
     "bg-color--button": "#212121",
     "bg-color--header": "#ffffff",
     "color--header": "#111111",
-    "bg-color--footer": "#badfbe",
+    "bg-color--footer": "#f3f9f3",
     "color--footer": "#212121",
     "typography--heading": "lato_n7",
     "typography--heading--uppercase": false,

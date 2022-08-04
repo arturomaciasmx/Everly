@@ -22,12 +22,6 @@
         </a>
       {% endif %}
 
-      <h3 class="article--item--heading" data-item="block-heading">
-        <a href="{{ featured_article.url }}">
-          {{ featured_article.title }}
-        </a>
-      </h3>
-
       {% if show_date or show_author %}
         <div class="article--item-info">
           {% if show_date %}
@@ -53,6 +47,12 @@
         </div>
       {% endif %}
 
+      <h3 class="article--item--heading" data-item="block-heading">
+        <a href="{{ featured_article.url }}">
+          {{ featured_article.title }}
+        </a>
+      </h3>
+
       {% if show_excerpt %}
         <div class="article--item--excerpt" data-item="paragraph">
           {% if featured_article.excerpt == blank %}
@@ -64,7 +64,7 @@
       {% endif %}
 
       <div class="article--item--read-more" data-item="block-link">
-        <a href="{{ featured_article.url }}">{{ article_continue_reading_t }}</a>
+        <a href="{{ featured_article.url }}" class="cta-button">{{ article_continue_reading_t }}</a>
       </div>
 
     {% when 'placeholder' %}

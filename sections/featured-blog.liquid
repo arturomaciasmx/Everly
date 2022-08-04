@@ -18,7 +18,7 @@
     assign button_type = 'inverted-secondary-button'
   endif
 
-  assign columns = 3
+  assign columns = 2
   if blog.articles.size == 1 or blog.articles.size == 2
     assign columns = blog.articles.size
   endif
@@ -79,13 +79,13 @@
           endfor
 
           if tag_found == false
-            for article in blog.articles limit: 3
+            for article in blog.articles limit: 2
               render "article--item", featured_article: article, show_date: show_date, show_excerpt: show_excerpt, type: 'full_article'
             endfor
           endif
 
         else
-          for i in (1..3)
+          for i in (1..2)
             render "article--item", show_date: show_date, show_excerpt: show_excerpt, type: 'placeholder'
           endfor
 
