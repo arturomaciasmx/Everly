@@ -33,28 +33,18 @@
         "spacing-below": false
       }
     },
-    "1658960150590e58fe": {
-      "type": "image-with-text",
+    "1660248612d42c6963": {
+      "type": "custom-image-with-text",
       "settings": {
-        "text-color": "auto",
-        "background-color": "none",
-        "container-width": 3,
-        "spacing-above": false,
-        "spacing-below": true,
-        "image-height": 0,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "bottom",
-        "text-width": "large",
-        "overlap": false,
-        "box-around-text": false,
-        "mobile-overlay": true,
+        "heading": "Candle. Refill. Repeat.",
+        "text": "Our <b style=\"text-decoration: underline\">clean candle<\/b> kits make it easy to refill any empty vessel at home. So you can choose refills > landfills, leaving <b style=\"text-decoration: underline\">our world a little cleaner<b><\/b>.<\/b>",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
-        "overline": "",
-        "title": "Candle. Refill. Repeat.",
-        "description": "<p>Our <strong>clean candle<\/strong> kits make it easy to refill any empty vessel at home. So you can choose refills &gt; landfills, leaving <strong>our world a little cleaner.<\/strong><\/p>",
-        "link-url": "",
-        "link-text": ""
+        "image-size": 80,
+        "space-top": 50,
+        "space-bottom": 50,
+        "cta-text": "LEARN MORE",
+        "cta-background": "#6e6d97",
+        "background": "#f3f9f3"
       }
     },
     "16589609255b7f16c4": {
@@ -71,7 +61,7 @@
         "spacing-below": true,
         "display-type": "grid",
         "products-per-row--desktop": "3",
-        "products-per-row--mobile": "2",
+        "products-per-row--mobile": "1",
         "heading": "SAVE on Bundles",
         "link-url": "",
         "link-text": ""
@@ -178,7 +168,7 @@
         "space-bottom": 50,
         "cta-text": "LEARN MORE",
         "cta-background": "#6e6d97",
-        "background": "#FFFFFF"
+        "background": "#ffffff"
       }
     },
     "16595592167283bc70": {
@@ -230,7 +220,7 @@
         "space-bottom": 0,
         "cta-text": "",
         "cta-background": "#6e6d97",
-        "background": "#FFFFFF"
+        "background": "#ffffff"
       }
     },
     "16595669505e4d8ad9": {
@@ -346,7 +336,7 @@
     "main",
     "header-home",
     "165895990452ce5d7a",
-    "1658960150590e58fe",
+    "1660248612d42c6963",
     "16589609255b7f16c4",
     "1659473617ac28edb6",
     "165897291324a4fce9",
