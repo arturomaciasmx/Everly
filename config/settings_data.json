@@ -443,8 +443,8 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo.png",
           "logo-position": "center",
-          "logo-height": 70,
-          "menu": "",
+          "logo-height": 50,
+          "menu": "main-menu",
           "fix-enabled": false,
           "fixed-logo-height": 35,
           "account-icon": "text",

@@ -1,12 +1,364 @@
 {
   "sections": {
-    "1656641244ad2ad946": {
-      "type": "comingsoon",
+    "main": {
+      "type": "page",
       "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "header-home": {
+      "type": "home-header",
+      "settings": {
+        "header-text": "The clean, waste-free way to get your candle fix (minus the guilt).",
+        "background": "linear-gradient(180deg, rgba(177, 181, 204, 1), rgba(187, 223, 191, 1) 80%)",
+        "image": "shopify:\/\/shop_images\/header_img.png",
+        "cta_text": "SHOP NOW",
+        "cta_bg_color": "#6e6d99",
+        "cta_text_color": "#ffffff"
+      }
+    },
+    "165895990452ce5d7a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nWe care about our planet and because of that 1% of our profit goes to make it a better place.\n<\/div>",
+        "background-color": "light",
+        "light-text": true,
+        "container-width": 5,
+        "spacing-above": false,
+        "spacing-below": false
+      }
+    },
+    "1660248612d42c6963": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "Candle. Refill. Repeat.",
+        "text": "Our <b style=\"text-decoration: underline\">clean candle<\/b> kits make it easy to refill any empty vessel at home. So you can choose refills > landfills, leaving <b style=\"text-decoration: underline\">our world a little cleaner<b><\/b>.<\/b>",
+        "image": "shopify:\/\/shop_images\/Recurso_6512.png",
+        "image-size": 80,
+        "space-top": 50,
+        "space-bottom": 50,
+        "cta-text": "",
+        "cta-background": "#6e6d97",
+        "background": "#f3f9f3"
+      }
+    },
+    "16589609255b7f16c4": {
+      "type": "featured-products",
+      "settings": {
+        "product-list": [
+          "peppermint-cocoa-shavings-candle-8-oz",
+          "rawcinnamon",
+          "holiday-edition-roaster-chestnuts-rum"
+        ],
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": false,
+        "spacing-below": true,
+        "display-type": "grid",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "heading": "SAVE on Bundles",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "1659473617ac28edb6": {
+      "type": "custom-columns-with-images",
+      "blocks": {
+        "f6345bcd-bff2-4866-a9ce-3521d23f4340": {
+          "type": "image",
+          "settings": {
+            "title": "NON-TOXIC OILS",
+            "text": "",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/Recurso_11512.png",
+            "image_size": 80
+          }
+        },
+        "59c448b4-fb5b-4987-b666-5ecf98575911": {
+          "type": "image",
+          "settings": {
+            "title": "COMPOSTABLE<br>PACKAGING*",
+            "text": "",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/compostable-packaging.png",
+            "image_size": 80
+          }
+        },
+        "bda9b681-d3e0-49c3-994d-612d28d9ed87": {
+          "type": "image",
+          "settings": {
+            "title": "PHTHALATE +<br> PARABEN",
+            "text": "",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/phtalate.png",
+            "image_size": 80
+          }
+        },
+        "747fda81-0370-4eb9-a3df-45f52d3a460e": {
+          "type": "image",
+          "settings": {
+            "title": "CARBON NEUTRAL",
+            "text": "",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/coconut-wax.png",
+            "image_size": 80
+          }
+        },
+        "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4": {
+          "type": "image",
+          "settings": {
+            "title": "COCONUT WAX",
+            "text": "",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/carbon-neutral.png",
+            "image_size": 80
+          }
+        }
+      },
+      "block_order": [
+        "f6345bcd-bff2-4866-a9ce-3521d23f4340",
+        "59c448b4-fb5b-4987-b666-5ecf98575911",
+        "bda9b681-d3e0-49c3-994d-612d28d9ed87",
+        "747fda81-0370-4eb9-a3df-45f52d3a460e",
+        "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4"
+      ],
+      "settings": {
+        "title": "Why you’ll love us?",
+        "title_color": "#6e6d97",
+        "space-top": 50,
+        "space-bottom": 50,
+        "background": "#f2f5f5"
+      }
+    },
+    "165897291324a4fce9": {
+      "type": "custom-cta",
+      "settings": {
+        "cta_text": "LEARN MORE",
+        "cta_link": "#",
+        "section_background_color": "#f2f5f5",
+        "cta_background_color": "#6e6d97",
+        "margin_top": 0,
+        "margin_bottom": 50
+      }
+    },
+    "165949968326b2066d": {
+      "type": "custom-divider",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "height": 80,
+        "background": "#f2f5f5",
+        "space-top": 0,
+        "space-bottom": 0
+      }
+    },
+    "1659021079d8b6ff21": {
+      "type": "home-tabs",
+      "settings": {
+      }
+    },
+    "16595449695027c523": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "Sustainability at Everly",
+        "text": "60 Tons of household waste is produced every second– contributing to massive C02 emissions, ocean pollution, and bursting landfills. \nWe want to be part of the solution, starting with candles.",
+        "image": "shopify:\/\/shop_images\/Recurso_6512.png",
+        "image-size": 80,
+        "space-top": 50,
+        "space-bottom": 50,
+        "cta-text": "LEARN MORE",
+        "cta-background": "#6e6d97",
+        "background": "#ffffff"
+      }
+    },
+    "16595592167283bc70": {
+      "type": "custom-2-columns-text",
+      "settings": {
+        "content-text": "",
+        "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "heading": "Candle. Refill. Repeat.",
+        "text": "<p>1 Microwave the bag for 2 minutes.\n<\/p>\n<p>2 Pour liquid wax into your favorite vessel.\n<\/p>\n<p>3 Let it set and enjoy. <\/p>",
+        "text-align": "left",
+        "cta-text": "LEARN MORE",
+        "cta-background": "#6e6d97",
+        "background": "#f2f5f5",
+        "reverse": false
+      }
+    },
+    "1659562437e51df8bf": {
+      "type": "custom-divider",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "height": 80,
+        "background": "#f2f5f5",
+        "space-top": 0,
+        "space-bottom": 0
+      }
+    },
+    "1659562483f6113690": {
+      "type": "custom-2-columns-text",
+      "settings": {
+        "content-text": "",
+        "content-image": "shopify:\/\/shop_images\/Recurso_11512.jpg",
+        "heading": "Our Vessel",
+        "text": "Don't have a vessel lying around at home? Our Eternal Vessel is the perfect companion to get started on your Everly journey.",
+        "text-align": "center",
+        "cta-text": "LEARN MORE",
+        "cta-background": "#6e6d97",
+        "background": "linear-gradient(0deg, rgba(243, 249, 243, 1) 75%, rgba(242, 245, 245, 1) 94%)",
+        "reverse": true
+      }
+    },
+    "165956671632b09cb0": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "What people are saying",
+        "text": "",
+        "image": "shopify:\/\/shop_images\/Recurso_12512.jpg",
+        "image-size": 80,
+        "space-top": 50,
+        "space-bottom": 0,
+        "cta-text": "",
+        "cta-background": "#6e6d97",
+        "background": "#ffffff"
+      }
+    },
+    "16595669505e4d8ad9": {
+      "type": "custom-columns-with-images",
+      "blocks": {
+        "836e2b4c-4560-4b4c-8e92-9dc643f08459": {
+          "type": "image",
+          "settings": {
+            "title": "<b>So so so easy!<\/b>",
+            "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        },
+        "8b9e5d30-8f47-4303-bb95-4aa0a67a1114": {
+          "type": "image",
+          "settings": {
+            "title": "<b>Love this idea!<\/b>",
+            "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        },
+        "499bb925-fa60-4405-a307-b6e2274c816d": {
+          "type": "image",
+          "settings": {
+            "title": "<b>It smells AMAZING!<\/b>",
+            "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        }
+      },
+      "block_order": [
+        "836e2b4c-4560-4b4c-8e92-9dc643f08459",
+        "8b9e5d30-8f47-4303-bb95-4aa0a67a1114",
+        "499bb925-fa60-4405-a307-b6e2274c816d"
+      ],
+      "settings": {
+        "title": "",
+        "title_color": "#6e6d97",
+        "space-top": 0,
+        "space-bottom": 50,
+        "background": "rgba(0,0,0,0)"
+      }
+    },
+    "16595717273374a996": {
+      "type": "featured-blog",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "blog-heading": "Journal",
+        "blog": "news",
+        "tag-select": "pinned",
+        "show-date": true,
+        "show-excerpt": false,
+        "view-more-text": ""
+      }
+    },
+    "1659634224a6c5ec65": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "Join our mailing list",
+        "text": "Be the first to receive updates on new arrivals, special offers and tips.",
+        "image-size": 80,
+        "space-top": 50,
+        "space-bottom": 50,
+        "cta-text": "",
+        "cta-background": "#6e6d97",
+        "background": "#f3f9f3"
+      }
+    },
+    "16596356155b9514ab": {
+      "type": "image-with-text",
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false,
+        "image-height": 0,
+        "darken-image": false,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "image": "shopify:\/\/shop_images\/Recurso_17512.png",
+        "overline": "",
+        "title": "",
+        "description": "",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "16596359491ba7d9af": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nWe care about our planet and because of that 1% of our profit goes to make it a better place.\n<\/div>",
+        "background-color": "light",
+        "light-text": true,
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": false
       }
     }
   },
   "order": [
-    "1656641244ad2ad946"
+    "main",
+    "header-home",
+    "165895990452ce5d7a",
+    "1660248612d42c6963",
+    "16589609255b7f16c4",
+    "1659473617ac28edb6",
+    "165897291324a4fce9",
+    "165949968326b2066d",
+    "1659021079d8b6ff21",
+    "16595449695027c523",
+    "16595592167283bc70",
+    "1659562437e51df8bf",
+    "1659562483f6113690",
+    "165956671632b09cb0",
+    "16595669505e4d8ad9",
+    "16595717273374a996",
+    "1659634224a6c5ec65",
+    "16596356155b9514ab",
+    "16596359491ba7d9af"
   ]
 }

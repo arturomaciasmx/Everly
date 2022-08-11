@@ -42,7 +42,7 @@
         "image-size": 80,
         "space-top": 50,
         "space-bottom": 50,
-        "cta-text": "LEARN MORE",
+        "cta-text": "",
         "cta-background": "#6e6d97",
         "background": "#f3f9f3"
       }
@@ -75,6 +75,7 @@
           "settings": {
             "title": "NON-TOXIC OILS",
             "text": "",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
             "image_size": 80
           }
@@ -84,6 +85,7 @@
           "settings": {
             "title": "COMPOSTABLE<br>PACKAGING*",
             "text": "",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
             "image_size": 80
           }
@@ -93,6 +95,7 @@
           "settings": {
             "title": "PHTHALATE +<br> PARABEN",
             "text": "",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/phtalate.png",
             "image_size": 80
           }
@@ -102,6 +105,7 @@
           "settings": {
             "title": "CARBON NEUTRAL",
             "text": "",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
             "image_size": 80
           }
@@ -111,6 +115,7 @@
           "settings": {
             "title": "COCONUT WAX",
             "text": "",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
             "image_size": 80
           }
@@ -138,8 +143,8 @@
         "cta_link": "#",
         "section_background_color": "#f2f5f5",
         "cta_background_color": "#6e6d97",
-        "margin_top": 40,
-        "margin_bottom": 20
+        "margin_top": 0,
+        "margin_bottom": 50
       }
     },
     "165949968326b2066d": {
@@ -231,6 +236,7 @@
           "settings": {
             "title": "<b>So so so easy!<\/b>",
             "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
+            "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
           }
@@ -240,6 +246,7 @@
           "settings": {
             "title": "<b>Love this idea!<\/b>",
             "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
+            "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
           }
@@ -249,6 +256,7 @@
           "settings": {
             "title": "<b>It smells AMAZING!<\/b>",
             "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
+            "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
           }
