@@ -41,8 +41,8 @@
         {%- for block in section.blocks -%}
             <div class="__column">
                 <img src="{{ block.settings.image | img_url }}" height="{{ block.settings.image_size }}">
-                <p>{{ block.settings.title }}</p>
-                <p>{{ block.settings.text }}</p>
+                <p style="color: {{ block.settings.content_color }}">{{ block.settings.title }}</p>
+                <p style="color: {{ block.settings.content_color }}">{{ block.settings.text }}</p>
             </div>
         {%- endfor -%}
     </div>
@@ -105,6 +105,12 @@
                         "type": "textarea",
                         "id": "text",
                         "label": "Text"
+                    },
+                    {
+                        "type": "color",
+                        "id": "content_color",
+                        "label": "Content Color",
+                        "default": "#6e6d97"
                     },
                     {
                         "type": "image_picker",

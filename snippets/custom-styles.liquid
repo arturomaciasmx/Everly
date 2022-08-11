@@ -109,15 +109,55 @@ shopify-section-template--15867074379939__1658954607d06b1872 {
 }
 
 @media screen and (max-width: 768px) {
+  h2 {font-size: 28px!important;}
   .home-header {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
+    height: auto!important;
     padding-top: 50px;
   }
+  .home-header .container {
+    flex-direction: column!important;
+    text-align: center;
+  }
   .home-header .header_image {
-    max-width: 90%;
-    position: relative;
-    margin-top: 50px;
+    max-width: 90%!important;
+    position: relative!important;
+    margin-top: 50px!important;
+  }
+  .custom-divider .divider {
+    background-size: cover!important;
+  }
+  .custom-cols .row-grid {
+    flex-wrap: wrap!important;
+  }
+  .custom-cols .row-grid .__column{
+    width: 100%!important;
+  }
+  .custom-2-columns .container {
+    flex-direction: column!important;
+  }
+  .custom-2-columns .container > div {
+    width: 100%!important;
+    padding: 15px 10px!important;
+  }
+  #tabs-container .tabs-menu ul {
+    flex-wrap: wrap!important;
+    gap: 20px!important;
+  }
+  #tabs-container .tabs-menu ul li {
+    padding: 10px 20px!important;
+    width: 46%!important;
+  }
+  .tabs-info-container .tab-info.active {
+    flex-direction: column!important;
+  }
+  .tabs-info-container .tab-image {
+    position: relative!important;
+    padding: 30px 0;
+  }
+  .tabs-info-container .tab-info {
+    padding: 0!important;
+  }
+  .tabs-info-container .tab-info > div {
+    width: 100%!important;
   }
 }
