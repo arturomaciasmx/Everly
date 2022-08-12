@@ -25,7 +25,7 @@
     "165895990452ce5d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nWe care about our planet and because of that 1% of our profit goes to make it a better place.\n<\/div>",
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n<\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 5,
