@@ -64,7 +64,8 @@
         "products-per-row--mobile": "1",
         "heading": "SAVE on Bundles",
         "link-url": "",
-        "link-text": ""
+        "link-text": "",
+        "custom-class": "home-bundles"
       }
     },
     "1659473617ac28edb6": {

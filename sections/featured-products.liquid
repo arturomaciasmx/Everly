@@ -22,6 +22,7 @@
   assign spacing_above = section.settings.spacing-above
   assign spacing_below = section.settings.spacing-below
   assign unique_handle = 'featured-products--' | append: section.id
+  assign custom_class = section.settings.custom-class
 
   assign onboarding = false
   if product_list == blank
@@ -30,7 +31,7 @@
 -%}
 
 <featured-collection-root
-  class="featured-collection--root"
+  class="featured-collection--root {{ custom_class }}"
   data-section-id="{{ section.id }}"
   data-background-color="{{ bg_color }}"
   data-container="section"
@@ -212,6 +213,11 @@
       "type": "text",
       "id": "link-text",
       "label": "Link text"
+    },
+    {
+      "type": "text",
+      "id": "custom-class",
+      "label": "section-class"
     }
   ],
   "presets": [
