@@ -31,11 +31,49 @@
     bottom: 0;
     right: 0;
     max-width: 50%;
+}
+@media screen and (max-width: 1200px) {
+    .home-header {
+        padding: 0 50px;
+        height: 500px;
+    }
+    .header_title {
+        max-width: 60%;
+    }
+    .header_image {
+        max-width: 40%!important;
+    }
 }   
+@media screen and (max-width: 768px) {
+    .home-header {
+        height: auto!important;
+        padding: 50px 0 0 0;
+    }
+    .home-header .container {
+        flex-direction: column!important;
+        text-align: center;
+    }
+    .header_title {
+        max-width: 90%!important;
+    }
+    .header_image {
+        max-width: 90%!important;
+        position: relative!important;
+        margin-top: 50px!important;
+    }
+}
+@media screen and (max-width: 480px) {
+    .home-header {
+        padding: 50px 0 0 0!important;
+    }
+    .header_title {
+        max-width: 98%!important;
+    }
+}
 </style>
 
 <div class="container">
-    <div>
+    <div class="header_title">
         <h1>
             Say 
             <span style="color:#6e6d99;">Hello
