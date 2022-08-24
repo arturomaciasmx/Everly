@@ -25,7 +25,7 @@
     "165895990452ce5d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n<\/div>",
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\"><p>\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 5,
@@ -77,9 +77,9 @@
           "settings": {
             "title": "NON-TOXIC OILS",
             "text": "",
-            "content_color": "#6e6d97",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 80
+            "image_size": 60
           }
         },
         "59c448b4-fb5b-4987-b666-5ecf98575911": {
@@ -87,9 +87,9 @@
           "settings": {
             "title": "COMPOSTABLE<br>PACKAGING*",
             "text": "",
-            "content_color": "#6e6d97",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 80
+            "image_size": 60
           }
         },
         "bda9b681-d3e0-49c3-994d-612d28d9ed87": {
@@ -97,9 +97,9 @@
           "settings": {
             "title": "PHTHALATE +<br> PARABEN",
             "text": "",
-            "content_color": "#6e6d97",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 80
+            "image_size": 60
           }
         },
         "747fda81-0370-4eb9-a3df-45f52d3a460e": {
@@ -107,9 +107,9 @@
           "settings": {
             "title": "CARBON NEUTRAL",
             "text": "",
-            "content_color": "#6e6d97",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 80
+            "image_size": 60
           }
         },
         "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4": {
@@ -117,9 +117,9 @@
           "settings": {
             "title": "COCONUT WAX",
             "text": "",
-            "content_color": "#6e6d97",
+            "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 80
+            "image_size": 60
           }
         }
       },
@@ -161,6 +161,48 @@
     },
     "1659021079d8b6ff21": {
       "type": "home-tabs",
+      "blocks": {
+        "59f25313-4c44-4755-86b8-f0b3ac51d7cd": {
+          "type": "product",
+          "settings": {
+            "title_image": "shopify:\/\/shop_images\/Recurso_1.png",
+            "title": "spiritual",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
+            "cta": "SHOP NOW",
+            "image": "shopify:\/\/shop_images\/spiritual_image.png"
+          }
+        },
+        "fc412688-657c-4ba0-891c-d5537a490bfd": {
+          "type": "product",
+          "settings": {
+            "title": "romantic",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
+            "cta": "SHOP NOW"
+          }
+        },
+        "9dfb75d4-b0bf-4e10-9c2c-d074b26a34a5": {
+          "type": "product",
+          "settings": {
+            "title": "sexy",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
+            "cta": "SHOP NOW"
+          }
+        },
+        "5ab61895-ccc5-49b5-b6b2-ea3153c59749": {
+          "type": "product",
+          "settings": {
+            "title": "adventure",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
+            "cta": "SHOP NOW"
+          }
+        }
+      },
+      "block_order": [
+        "59f25313-4c44-4755-86b8-f0b3ac51d7cd",
+        "fc412688-657c-4ba0-891c-d5537a490bfd",
+        "9dfb75d4-b0bf-4e10-9c2c-d074b26a34a5",
+        "5ab61895-ccc5-49b5-b6b2-ea3153c59749"
+      ],
       "settings": {
       }
     },
