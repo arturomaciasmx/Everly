@@ -45,7 +45,7 @@
 }
 </style>
 
-<div class="container">
+<div class="container {{ section.settings.class}}">
     {%- if image -%}
         <img src="{{ image | img_url: 'master' }}"/>
     {%- endif -%}
@@ -112,6 +112,11 @@
                 "id": "background",
                 "label": "Background",
                 "default": "#FFFFFF"
+            },
+            {
+                "type": "text",
+                "id": "class",
+                "label": "Class name"
             }
         ],
         "presets": [

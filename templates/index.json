@@ -44,7 +44,8 @@
         "space-bottom": 50,
         "cta-text": "",
         "cta-background": "#6e6d97",
-        "background": "#f3f9f3"
+        "background": "#f3f9f3",
+        "class": "title-bg"
       }
     },
     "16589609255b7f16c4": {
@@ -174,7 +175,8 @@
         "space-bottom": 50,
         "cta-text": "LEARN MORE",
         "cta-background": "#6e6d97",
-        "background": "#ffffff"
+        "background": "#ffffff",
+        "class": ""
       }
     },
     "16595592167283bc70": {
@@ -226,7 +228,8 @@
         "space-bottom": 0,
         "cta-text": "",
         "cta-background": "#6e6d97",
-        "background": "#ffffff"
+        "background": "#ffffff",
+        "class": ""
       }
     },
     "16595669505e4d8ad9": {
@@ -302,7 +305,8 @@
         "space-bottom": 50,
         "cta-text": "",
         "cta-background": "#6e6d97",
-        "background": "#f3f9f3"
+        "background": "#f3f9f3",
+        "class": ""
       }
     },
     "16596356155b9514ab": {
@@ -332,7 +336,7 @@
     "16596359491ba7d9af": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nWe care about our planet and because of that 1% of our profit goes to make it a better place.\n<\/div>",
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n<\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 4,
