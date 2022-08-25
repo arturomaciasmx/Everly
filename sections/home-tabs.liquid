@@ -26,28 +26,17 @@
   border-radius: 60px;
   text-transform: uppercase;
   font-size: 20px;
+  cursor: pointer;
 }
 /* tabs colors */
-#tabs-container .tabs-menu .spiritual {
-  /* background: #6e6d97; */
-  border-color: #badebe;
-  color: #badebe;
+{% for block  in section.blocks %}
+.{{ block.settings.title }}.active,
+.{{ block.settings.title }}:hover {
+  background: {{ block.settings.tab_color }};
+  color: #fff!important;
 }
-#tabs-container .tabs-menu .romantic {
-  /* background: #6e6d97; */
-  border-color: #d2d1e3;
-  color: #d2d1e3;
-}
-#tabs-container .tabs-menu .sexy {
-  /* background: #6e6d97; */
-  border-color: #ddcfca;
-  color: #ddcfca;
-}
-#tabs-container .tabs-menu .adventure {
-  /* background: #6e6d97; */
-  border-color: #d8d9c4;
-  color: #d8d9c4;
-}
+{% endfor %}
+
 
 
 .tabs-info-container div {
@@ -118,7 +107,11 @@
     <div class="tabs-menu">
       <ul>
         {% for block in section.blocks %}
-          <li class="tab {{ block.settings.title }} active" data-id="{{ block.settings.title }}">{{ block.settings.title }}</li>
+          <li class="tab {{ block.settings.title }}" 
+            data-id="{{ block.settings.title }}"
+            style="color: {{ block.settings.tab_color }};
+                  border-color: {{ block.settings.tab_color }};
+                  ">{{ block.settings.title }}</li>
         {% endfor %}
       </ul>
     </div>
@@ -144,6 +137,7 @@
 
 {% javascript %}
   $(document).ready(function() {
+    $(".tabs-menu ul li:first-child").addClass("active");
     $(".tabs-info-container .tab-info:first-child").addClass("active");
     $(".tab").on("click", function() {
       tabId = $(this).data("id");
@@ -193,6 +187,12 @@
         "type": "image_picker",
         "id": "image",
         "label": "Image"
+      },
+      {
+        "type": "color",
+        "id": "tab_color",
+        "label": "Tab Color",
+        "default": "#dadada"
       }
       ]
     }
