@@ -235,7 +235,7 @@
         "content-text": "",
         "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
         "heading": "Candle. Refill. Repeat.",
-        "text": "<p>1 Microwave the bag for 2 minutes.\n<\/p>\n<p>2 Pour liquid wax into your favorite vessel.\n<\/p>\n<p>3 Let it set and enjoy. <\/p>",
+        "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
         "text-align": "left",
         "cta-text": "LEARN MORE",
         "cta-background": "#6e6d97",
@@ -345,42 +345,15 @@
         "view-more-text": ""
       }
     },
-    "1659634224a6c5ec65": {
-      "type": "custom-image-with-text",
+    "166144511852071052": {
+      "type": "newsletter",
       "settings": {
-        "heading": "Join our mailing list",
-        "text": "Be the first to receive updates on new arrivals, special offers and tips.",
-        "image-size": 80,
-        "space-top": 50,
-        "space-bottom": 50,
-        "cta-text": "",
-        "cta-background": "#6e6d97",
-        "background": "#f3f9f3",
-        "class": ""
-      }
-    },
-    "16596356155b9514ab": {
-      "type": "image-with-text",
-      "settings": {
-        "text-color": "auto",
-        "background-color": "none",
-        "container-width": 6,
-        "spacing-above": false,
-        "spacing-below": false,
-        "image-height": 0,
-        "darken-image": false,
-        "parallax-enabled": false,
-        "text-position": "center",
-        "text-width": "medium",
-        "overlap": false,
-        "box-around-text": false,
-        "mobile-overlay": true,
-        "image": "shopify:\/\/shop_images\/Recurso_17512.png",
-        "overline": "",
-        "title": "",
-        "description": "",
-        "link-url": "",
-        "link-text": ""
+        "bg-color": "#f3f9f3",
+        "color": "#6e6d99",
+        "spacing-above": true,
+        "spacing-below": true,
+        "heading": "Subscribe to our newsletter",
+        "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
       }
     },
     "16596359491ba7d9af": {
@@ -412,8 +385,7 @@
     "165956671632b09cb0",
     "16595669505e4d8ad9",
     "16595717273374a996",
-    "1659634224a6c5ec65",
-    "16596356155b9514ab",
+    "166144511852071052",
     "16596359491ba7d9af"
   ]
 }

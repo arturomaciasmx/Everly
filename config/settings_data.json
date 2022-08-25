@@ -6,7 +6,7 @@
     "color--body": "#212121",
     "color--alternative": "#ffffff",
     "color--button": "#ffffff",
-    "bg-color--button": "#212121",
+    "bg-color--button": "#6e6d99",
     "bg-color--header": "#ffffff",
     "color--header": "#111111",
     "bg-color--footer": "#f3f9f3",
@@ -360,7 +360,6 @@
       "1620626720192887ce": {
         "type": "newsletter",
         "settings": {
-          "background-color": "light",
           "heading": "Subscribe to our newsletter",
           "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
         }

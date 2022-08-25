@@ -2,10 +2,8 @@
   assign email_placeholder_t = 'sections.newsletter.email_placeholder' | t
   assign button_t = 'sections.newsletter.button' | t
 
-  assign bg_color = section.settings.background-color
   assign form_id = 'newsletter--' | append: section.id
   assign heading = section.settings.heading | escape
-  assign light_text = section.settings.light-text
   assign spacing_above = section.settings.spacing-above
   assign spacing_below = section.settings.spacing-below
   assign subheading = section.settings.newsletter--subheading
@@ -20,12 +18,11 @@
 <div
   class="newsletter--root"
   data-section-id="{{ section.id }}"
-  data-background-color="{{ bg_color }}"
-  data-light-text="{{ light_text }}"
   data-spacing-above="{{ spacing_above }}"
   data-spacing-below="{{ spacing_below }}"
+  style="background:{{ section.settings.bg-color }};"
 >
-  <div class="newsletter--wrapper" data-container="block">
+  <div class="newsletter--wrapper" style="color: {{ section.settings.color }}" data-container="block">
     {% if heading != blank %}
       <h2 class="newsletter--heading" data-item="section-heading">{{ heading }}</h2>
     {% endif %}
@@ -53,7 +50,7 @@
             required
           />
           <div data-item="{{ button_type }}">
-            <button type="submit" value="{{ button_t }}">
+            <button class="cta-button" style="padding: 0 50px;" type="submit" value="{{ button_t }}">
               {{ button_t }}
             </button>
           </div>
@@ -86,22 +83,14 @@
     "name": "Newsletter",
     "settings": [
       {
-        "id": "background-color",
+        "id": "bg-color",
         "label": "Background color",
-        "type": "select",
-        "options": [
-          { "label": "None", "value": "none" },
-          { "label": "Light", "value": "light" },
-          { "label": "Dark", "value": "dark" },
-          { "label": "Accent", "value": "accent" }
-        ],
-        "default": "none"
+        "type": "color"
       },
       {
-        "id": "light-text",
-        "label": "Use light text color",
-        "type": "checkbox",
-        "default": false
+        "id": "color",
+        "label": "Text color",
+        "type": "color"
       },
       {
         "id": "spacing-above",
