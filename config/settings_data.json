@@ -31,7 +31,7 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enabled": true,
+          "enabled": false,
           "home-page-only": false,
           "background-color": "accent",
           "light-text": true,
@@ -442,10 +442,10 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo.png",
           "logo-position": "center",
-          "logo-height": 50,
+          "logo-height": 40,
           "menu": "main-menu",
           "fix-enabled": false,
-          "fixed-logo-height": 35,
+          "fixed-logo-height": 25,
           "account-icon": "text",
           "cart-icon": "text",
           "show-region-selector": false,

@@ -25,7 +25,7 @@
     "165895990452ce5d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\"><p>\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\"><p style=\"font-family: 'Metropolis-Bold'!important; font-size: 18px!important;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 5,
@@ -37,11 +37,11 @@
       "type": "custom-image-with-text",
       "settings": {
         "heading": "Candle. Refill. Repeat.",
-        "text": "Our <b style=\"text-decoration: underline\">clean candle<\/b> kits make it easy to refill any empty vessel at home. So you can choose refills > landfills, leaving <b style=\"text-decoration: underline\">our world a little cleaner<b><\/b>.<\/b>",
+        "text": "Our <b style=\"border-bottom: 1.5px solid;\">clean candle<\/b> kits make it easy to refill any empty vessel at home. So you can choose refills > landfills, leaving <b style=\"border-bottom: 1.5px solid;\">our world a little cleaner<b><\/b>.<\/b>",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
-        "image-size": 80,
+        "image-size": 60,
         "space-top": 50,
-        "space-bottom": 50,
+        "space-bottom": 49,
         "cta-text": "",
         "cta-background": "#6e6d97",
         "background": "#f3f9f3",
