@@ -3,13 +3,13 @@
     "color--accent": "#badfbe",
     "bg-color--light": "#b0afce",
     "bg-color--body": "#ffffff",
-    "color--body": "#212121",
+    "color--body": "#222222",
     "color--alternative": "#ffffff",
     "color--button": "#ffffff",
     "bg-color--button": "#6e6d99",
     "bg-color--header": "#ffffff",
     "color--header": "#111111",
-    "bg-color--footer": "#f3f9f3",
+    "bg-color--footer": "#f2f1f7",
     "color--footer": "#212121",
     "typography--heading": "lato_n7",
     "typography--heading--uppercase": false,
@@ -20,8 +20,9 @@
     "product--hover-image-enabled": false,
     "product--text-alignment": "center",
     "product--show-new-label": false,
-    "search--show-in-header": false,
+    "search--show-in-header": true,
     "social--instagram--url": "https:\/\/instagram.com\/tryeverly",
+    "social--facebook--url": "",
     "social--tiktok--url": "https:\/\/tiktok.com\/@tryeverly",
     "popup--show-image": false,
     "popup--social-enabled": false,
@@ -44,14 +45,14 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/logo.png",
           "logo-position": "center",
-          "logo-height": 60,
+          "logo-height": 45,
           "fix-enabled": true,
           "fixed-logo-height": 35,
-          "menu": "coming-soon-menu",
+          "menu": "main-menu",
           "header-account-show": false,
-          "account-icon": "text",
-          "search-icon": "text",
-          "cart-icon": "text",
+          "account-icon": "icon",
+          "search-icon": "icon",
+          "cart-icon": "bag",
           "show-region-selector": false,
           "show-locale-selector": false
         }
@@ -63,28 +64,29 @@
             "type": "about",
             "settings": {
               "about-title": "",
-              "logo": "shopify:\/\/shop_images\/carbon-neutral.png",
-              "text": "<p>[current_year] © Everly Clean Candle<br\/><\/p><p><\/p>",
+              "logo": "shopify:\/\/shop_images\/logo-everly.jpg",
+              "text": "<p>[current_year] · Everly · Toronto, Canada<\/p><p><\/p>",
               "subscribe--show-social-icons": false
             }
           },
           "71875b6d-1dad-4541-9984-699f9700b197": {
             "type": "menu",
             "settings": {
-              "menu-title": "Quick links",
+              "menu-title": "Shop",
               "menu": "footer"
             }
           },
           "fe0ec425-7c94-4816-bea7-1ed16b3e6ce8": {
             "type": "menu",
             "settings": {
-              "menu-title": "Quick links",
-              "menu": "footer"
+              "menu-title": "About",
+              "menu": "about"
             }
           },
           "204d49cd-ff3b-467b-a2d1-94d6517ed5da": {
             "type": "social",
             "settings": {
+              "social-title": "Follow Us"
             }
           }
         },
@@ -95,7 +97,7 @@
           "204d49cd-ff3b-467b-a2d1-94d6517ed5da"
         ],
         "settings": {
-          "show-region-selector": true,
+          "show-region-selector": false,
           "show-locale-selector": false,
           "show-payment-icons": false
         }

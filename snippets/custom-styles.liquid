@@ -1,6 +1,10 @@
 h1, h2, h3, h4, h5, h6 {
   font-family: "Metropolis-Bold"!important;
 }
+{% comment %} fix error on header when close mobile menu {% endcomment %}
+.off-canvas--viewport {
+  overflow: hidden!important;
+}
 p {
   font-family: "Metropolis-Regular";
   font-size: 16px!important;
@@ -107,6 +111,11 @@ h3 {
 .flexbox-gap .newsletter--inputs {
   width: 500px;
 }
+.newsletter--email::placeholder {
+  font-weight: 100;
+  font-family: 'Metropolis-Regular';
+  color: #cdcdcd;
+}
 {% comment %} SAVE on bundles section {% endcomment %}
 .home-bundles {
   background: rgb(242,245,245);
@@ -118,6 +127,48 @@ h3 {
 .home-bundles h2 {
   color: #6e6d97;
 }
+{% comment %} Footer {% endcomment %}
+.footer--about-text p {
+  font-size: 10px!important;
+  margin-top: 20px;
+  margin-left: 8px;
+  color: #222;
+  text-transform: capitalize;
+  
+}
+.footer--blocks {
+  justify-content: flex-start;
+}
+.footer--block {
+  display: flex;
+  padding: 16px;
+  flex-basis: initial!important;
+  flex: initial!important;
+  margin-right: 20px;
+}
+.footer--block--heading {
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-family: "Metropolis-regular";
+  font-weight: 600;
+  color: #6e6c99;
+  text-transform: uppercase;
+}
+.footer--block--body {
+  padding-bottom: 16px;
+  font-size: 14px;
+  font-family: "Metropolis-regular";
+  color: #6e6c99;
+  text-transform: uppercase;
+}
+.footer--social-icons svg {
+  height: 30px;
+  width: 30px;
+}
+.footer--sub--shopify-link {
+  font-size: 12px;
+}
+
 {% comment %} Why you'll love us? section {% endcomment %}
 #shopify-section-template--15870487822499__16589636434ae4b335 {
   background: #f2f5f5;
@@ -136,11 +187,25 @@ shopify-section-template--15867074379939__1658954607d06b1872 {
   background: #f2f5f5;
 }
 
+@media screen and (max-width: 1100px) {
+  .title-bg h2:before {
+    right: 75%;
+    left: auto;
+  }
+  .title-bg h2:after {
+    left: 75%;
+    right: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   h1 {font-size: 45px!important;}
   h2 {font-size: 34px!important;}
   .custom-divider .divider {
     background-size: cover!important;
+  }
+  .title-bg h2:before,
+  .title-bg h2:after {
+    display: none;
   }
   .custom-cols .row-grid {
     flex-wrap: wrap!important;
@@ -154,6 +219,15 @@ shopify-section-template--15867074379939__1658954607d06b1872 {
   .custom-2-columns .container > div {
     width: 100%!important;
     padding: 15px 10px!important;
+  }
+  .flexbox-gap .newsletter--inputs {
+    width: auto;
+  }
+  .newsletter--inputs .cta-button {
+    padding: 0 20px!important;
+  }
+  .footer--blocks {
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 480px) {

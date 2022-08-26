@@ -21,11 +21,17 @@
         "options": {
           "type": "options",
           "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
           }
         },
         "buy-buttons": {
           "type": "buy-buttons",
           "settings": {
+            "smart-payment-enabled": true
           }
         },
         "pickup": {
@@ -41,6 +47,9 @@
         "social-sharing": {
           "type": "social-sharing",
           "settings": {
+            "facebook-enabled": true,
+            "twitter-enabled": true,
+            "pinterest-enabled": true
           }
         }
       },
@@ -55,16 +64,38 @@
         "social-sharing"
       ],
       "settings": {
+        "product-media-spacing": "close-together",
+        "product-modal-enabled": true,
+        "variant-scroll-enabled": true,
+        "image-zoom-enabled": true,
+        "loop-enabled": false
       }
     },
     "recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "show": true,
+        "title": "You may also like",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true
+      }
+    },
+    "1661499090a6254527": {
+      "type": "newsletter",
+      "settings": {
+        "bg-color": "#f3f9f3",
+        "color": "#6e6d99",
+        "spacing-above": true,
+        "spacing-below": true,
+        "heading": "Subscribe to our newsletter",
+        "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
       }
     }
   },
   "order": [
     "main",
-    "recommendations"
+    "recommendations",
+    "1661499090a6254527"
   ]
 }
