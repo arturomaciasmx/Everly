@@ -1,4 +1,4 @@
-{% assign follow_types = "facebook twitter instagram pinterest vimeo youtube tiktok" | split: ' ' %}
+{% assign follow_types = "tiktok facebook twitter instagram pinterest vimeo youtube" | split: ' ' %}
 {% for type in follow_types %}
   {% capture follow_url %}social--{{ type }}--url{% endcapture %}
   {% if settings[follow_url].size > 0 %}

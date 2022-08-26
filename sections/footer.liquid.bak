@@ -55,7 +55,6 @@
 
           <div class="footer--block" data-block-type="about" {{ block.shopify_attributes }}>
             <div class="footer--block--container">
-              <img src="{{ block.settings.logo | img_url:"x300" }}" />
               {% if block.settings.about-title != blank %}
                 <div class="footer--block--heading" data-item="block-heading">
                   {{ block.settings.about-title | escape }}
@@ -196,36 +195,6 @@
               </div>
             </div>
           </div>
-          
-          {% when 'social' %}
-            {%- liquid
-              assign show_social = false
-  
-              if settings.social--facebook--url.size > 0 or settings.social--twitter--url.size > 0  or settings.social--tiktok--url.size > 0  or settings.social--instagram--url.size > 0 or settings.social--pinterest--url.size > 0 or settings.social--vimeo--url.size > 0 or settings.social--youtube--url.size > 0
-                assign show_social = true
-              endif
-  
-              if block.settings.subscribe--show-social-icons == false
-                assign show_social = false
-              endif
-            -%}
-  
-            <div class="footer--block" data-block-type="about" {{ block.shopify_attributes }}>
-              <div class="footer--block--container">
-                {% if block.settings.social-title != blank %}
-                  <div class="footer--block--heading" data-item="block-heading">
-                    {{ block.settings.social-title | escape }}
-                  </div>
-                {% endif %}
-  
-                <div class="footer--block--body">
-                    <div class="footer--social-icons">
-                      {% render 'social-follow' %}
-                    </div>
-                </div>
-              </div>
-            </div>
-
       {% endcase %}
     {% endfor %}
 
@@ -273,7 +242,7 @@
 {
   "name": "Footer",
   "class": "section--footer",
-  "max_blocks": 4,
+  "max_blocks": 3,
   "settings": [
     {
       "type": "header",
@@ -320,11 +289,6 @@
           "default": "About the store"
         },
         {
-          "type": "image_picker",
-          "id": "logo",
-          "label": "logo"
-        },
-        {
           "type": "richtext",
           "id": "text",
           "label": "Description and copyright",
@@ -355,18 +319,6 @@
           "label": "Menu",
           "default": "footer",
           "info": "This menu won't show submenu items."
-        }
-      ]
-    },
-    {
-      "type": "social",
-      "name": "Social",
-      "settings": [
-        {
-          "type": "text",
-          "id": "social-title",
-          "label": "Title",
-          "default": "Follow Us"
         }
       ]
     },

@@ -63,16 +63,9 @@
             "type": "about",
             "settings": {
               "about-title": "",
+              "logo": "shopify:\/\/shop_images\/carbon-neutral.png",
               "text": "<p>[current_year] © Everly Clean Candle<br\/><\/p><p><\/p>",
-              "subscribe--show-social-icons": true
-            }
-          },
-          "e32c2919-5280-4489-935f-dc5071aecf12": {
-            "type": "menu",
-            "disabled": true,
-            "settings": {
-              "menu-title": "Info",
-              "menu": "footer"
+              "subscribe--show-social-icons": false
             }
           },
           "71875b6d-1dad-4541-9984-699f9700b197": {
@@ -81,15 +74,28 @@
               "menu-title": "Quick links",
               "menu": "footer"
             }
+          },
+          "fe0ec425-7c94-4816-bea7-1ed16b3e6ce8": {
+            "type": "menu",
+            "settings": {
+              "menu-title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "204d49cd-ff3b-467b-a2d1-94d6517ed5da": {
+            "type": "social",
+            "settings": {
+            }
           }
         },
         "block_order": [
           "b6a3fdf5-9398-416f-b689-db3bc40597e0",
-          "e32c2919-5280-4489-935f-dc5071aecf12",
-          "71875b6d-1dad-4541-9984-699f9700b197"
+          "71875b6d-1dad-4541-9984-699f9700b197",
+          "fe0ec425-7c94-4816-bea7-1ed16b3e6ce8",
+          "204d49cd-ff3b-467b-a2d1-94d6517ed5da"
         ],
         "settings": {
-          "show-region-selector": false,
+          "show-region-selector": true,
           "show-locale-selector": false,
           "show-payment-icons": false
         }

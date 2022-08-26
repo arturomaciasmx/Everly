@@ -177,30 +177,36 @@
         "fc412688-657c-4ba0-891c-d5537a490bfd": {
           "type": "product",
           "settings": {
+            "title_image": "shopify:\/\/shop_images\/Recurso_1.png",
             "title": "romantic",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
             "text-color": "",
             "cta": "SHOP NOW",
+            "image": "shopify:\/\/shop_images\/spiritual_image.png",
             "tab_color": "#d2d1e3"
           }
         },
         "9dfb75d4-b0bf-4e10-9c2c-d074b26a34a5": {
           "type": "product",
           "settings": {
+            "title_image": "shopify:\/\/shop_images\/Recurso_1.png",
             "title": "sexy",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
             "text-color": "",
             "cta": "SHOP NOW",
+            "image": "shopify:\/\/shop_images\/spiritual_image.png",
             "tab_color": "#ddcfca"
           }
         },
         "5ab61895-ccc5-49b5-b6b2-ea3153c59749": {
           "type": "product",
           "settings": {
+            "title_image": "shopify:\/\/shop_images\/Recurso_1.png",
             "title": "adventure",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
             "text-color": "",
             "cta": "SHOP NOW",
+            "image": "shopify:\/\/shop_images\/spiritual_image.png",
             "tab_color": "#d8d9c4"
           }
         }
