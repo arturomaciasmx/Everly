@@ -109,11 +109,7 @@
       <div class="off-canvas--main-content">
         {% section 'announcement' %}
 
-        {% if true %}
-          {% section 'header-comingsoon' %}
-          {% else %}
-          {% section 'header' %}
-        {% endif %}
+        {% section 'header' %}
 
         <main class="layout--main-content" id="main-content">
           {{ content_for_layout }}

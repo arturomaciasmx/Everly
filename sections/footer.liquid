@@ -55,7 +55,7 @@
 
           <div class="footer--block" data-block-type="about" {{ block.shopify_attributes }}>
             <div class="footer--block--container">
-              <img src="{{ block.settings.logo | img_url:"x300" }}" />
+              <img src="{{ block.settings.logo | img_url:"x70" }}" />
               {% if block.settings.about-title != blank %}
                 <div class="footer--block--heading" data-item="block-heading">
                   {{ block.settings.about-title | escape }}
@@ -252,7 +252,7 @@
     {% if powered_check[1] != ' </a' %}
       <div class="footer--sub--block" data-type="powered-by">
         <div class="footer--sub--container" data-item="paragraph">
-          <span class="footer--sub--shopify-link">Powered by <a href="https://www.mediajetmarketing.com/">Media Jet</a></span>
+          <span class="footer--sub--shopify-link">Powered by <a href="https://www.mediajetmarketing.com/">Media Jet Marketing</a></span>
         </div>
       </div>
     {% endif %}

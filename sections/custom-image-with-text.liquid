@@ -43,6 +43,11 @@
 #shopify-section-{{ section.id }} a {
     background: {{ cta-background }};
 }
+@media screen and (max-width: 768px) {
+    .custom-image-with-text .container {
+        padding: 0 10px;
+    }
+}
 </style>
 
 <div class="container {{ section.settings.class}}">

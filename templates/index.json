@@ -165,7 +165,7 @@
         "59f25313-4c44-4755-86b8-f0b3ac51d7cd": {
           "type": "product",
           "settings": {
-            "title_image": "shopify:\/\/shop_images\/Recurso_1.png",
+            "title_image": "shopify:\/\/shop_images\/mood-icons-10.png",
             "title": "spiritual",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
             "text-color": "#212121",
@@ -177,7 +177,7 @@
         "fc412688-657c-4ba0-891c-d5537a490bfd": {
           "type": "product",
           "settings": {
-            "title_image": "shopify:\/\/shop_images\/Recurso_1.png",
+            "title_image": "shopify:\/\/shop_images\/mood-icons-11.png",
             "title": "romantic",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
             "text-color": "",
@@ -189,7 +189,7 @@
         "9dfb75d4-b0bf-4e10-9c2c-d074b26a34a5": {
           "type": "product",
           "settings": {
-            "title_image": "shopify:\/\/shop_images\/Recurso_1.png",
+            "title_image": "shopify:\/\/shop_images\/mood-icons-12.png",
             "title": "sexy",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
             "text-color": "",
@@ -201,7 +201,7 @@
         "5ab61895-ccc5-49b5-b6b2-ea3153c59749": {
           "type": "product",
           "settings": {
-            "title_image": "shopify:\/\/shop_images\/Recurso_1.png",
+            "title_image": "shopify:\/\/shop_images\/mood-icons-13.png",
             "title": "adventure",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
             "text-color": "",
@@ -224,9 +224,9 @@
       "type": "custom-image-with-text",
       "settings": {
         "heading": "Sustainability at Everly",
-        "text": "60 Tons of household waste is produced every second– contributing to massive C02 emissions, ocean pollution, and bursting landfills. \nWe want to be part of the solution, starting with candles.",
+        "text": "<b>60 Tons of household waste is produced every second–<\/b> contributing to massive C02 emissions, ocean pollution, and bursting landfills. \nWe want to be part of the solution, starting with candles.",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
-        "image-size": 80,
+        "image-size": 60,
         "space-top": 50,
         "space-bottom": 50,
         "cta-text": "LEARN MORE",
@@ -279,7 +279,7 @@
         "heading": "What people are saying",
         "text": "",
         "image": "shopify:\/\/shop_images\/Recurso_12512.jpg",
-        "image-size": 80,
+        "image-size": 60,
         "space-top": 50,
         "space-bottom": 0,
         "cta-text": "",
