@@ -30,6 +30,15 @@
   endif
 -%}
 
+<style>
+#shopify-section-{{ section.id }} .featured-collection--root  {
+  background: {{ section.settings.bg-color }}
+}
+#shopify-section-{{ section.id }} .featured-collection--title {
+  color: {{ section.settings.title-color }}
+}
+</style>
+
 <featured-collection-root
   class="featured-collection--root {{ custom_class }}"
   data-section-id="{{ section.id }}"
@@ -218,6 +227,18 @@
       "type": "text",
       "id": "custom-class",
       "label": "section-class"
+    },
+    {
+      "type": "color_background",
+      "id": "bg-color",
+      "label": "Background",
+      "default": "linear-gradient(#ffffff, #ffffff)"
+    },
+    {
+      "type": "color",
+      "id": "title-color",
+      "label": "Title Color",
+      "default": "#222222"
     }
   ],
   "presets": [

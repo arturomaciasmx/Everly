@@ -35,7 +35,11 @@
     assign image_zoom_enabled = false
   endif
 -%}
-
+<style>
+#shopify-section-{{ section.id }} .product-page--root {
+  background: {{ section.settings.bg-color }};
+}
+</style>
 {% unless onboarding %}
   {% for media in product.media %}
     {%- liquid
@@ -323,6 +327,12 @@
       "id": "loop-enabled",
       "label": "Enable video looping",
       "default": false
+    },
+    {
+      "type": "color_background",
+      "id": "bg-color",
+      "label": "Background",
+      "default": "linear-gradient(#ffffff, #ffffff)"
     }
   ],
   "blocks": [

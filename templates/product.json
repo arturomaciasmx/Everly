@@ -86,7 +86,8 @@
         "product-modal-enabled": false,
         "variant-scroll-enabled": false,
         "image-zoom-enabled": false,
-        "loop-enabled": false
+        "loop-enabled": false,
+        "bg-color": "linear-gradient(180deg, rgba(241, 242, 245, 1), rgba(243, 249, 243, 1) 100%)"
       }
     },
     "16615479979c88033e": {
@@ -200,7 +201,9 @@
         "heading": "SAVE on Bundles",
         "link-url": "",
         "link-text": "",
-        "custom-class": "home-bundles"
+        "custom-class": "",
+        "bg-color": "#F3F9F3",
+        "title-color": "#6e6d99"
       }
     },
     "1661551955cc609a9b": {
@@ -214,7 +217,7 @@
         "space-bottom": 0,
         "cta-text": "",
         "cta-background": "#6e6d97",
-        "background": "#FFFFFF",
+        "background": "#ffffff",
         "class": ""
       }
     },

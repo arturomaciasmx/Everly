@@ -28,7 +28,7 @@
 #shopify-section-{{ section.id }} .parallax h2,
 #shopify-section-{{ section.id }} .parallax p {
   position: relative;
-  z-index: 999;
+  z-index: 888;
 }
 #shopify-section-{{ section.id }} .container {
   max-width: 750px;
@@ -40,31 +40,31 @@
   scale: .8!important;
 }
 .parallax-img-2 {
-  top: 80px;
+  top: 80%;
   left: 5%;
 }
 .parallax-img-3 {
-  top: 20px;
+  top: 100%;
   left: 30%;
 }
 .parallax-img-4 {
-  top: 0px;
+  top: 50%;
   right: 25%;
 }
 .parallax-img-5 {
-  top: 0px;
+  top: 100%;
   right: 5%;
 }
 .parallax-img-6 {
-  top: 50%;
+  top: 100%;
   left: 3%;
 }
 .parallax-img-7 {
-  bottom: -100px;
+  bottom: -150%;
   left: 15%;
 }
 .parallax-img-8 {
-  bottom: -150px;
+  bottom: -150%;
   right: 15%;
 }
 #shopify-section-{{ section.id }} {
@@ -74,7 +74,7 @@
     margin-bottom: 30px;
     width: {{ image-size }}px;
     position: relative;
-    z-index: 99999;
+    z-index: 888;
 }
 #shopify-section-{{ section.id }} {
     padding-top: {{ space-top }}px;
@@ -83,10 +83,51 @@
 }
 #shopify-section-{{ section.id }} a {
     background: {{ cta-background }};
+    position: relative;
+    z-index: 888;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+  .parallax-img-4 {
+    display: none;
+}
+.parallax-img-8 {
+  bottom: -150px;
+  right: 0%;
+}
 
 }
+@media screen and (max-width: 768px) {
+  .parallax-img-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 678px) {
+  .parallax {
+    padding: 100px 0;
+  }
+  .parallax-img {
+    scale: .5!important;
+}
+.parallax-img-2 {
+  top: 0;
+}
+
+.parallax-img-5 {
+  top: 100%;
+  right: 0%;
+}
+.parallax-img-6 {
+  display: none;
+}
+.parallax-img-7 {
+  bottom: -100px;
+  left: -15%;
+}
+.parallax-img-8 {
+  right: -15%;
+}
+}
+
 </style>
 
   <div class="parallax">
@@ -119,31 +160,31 @@
       var controller = new ScrollMagic.Controller();
       
       var bottle2 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
-      .setTween('.parallax-img-2', {y: -250, rotate: 70})
+      .setTween('.parallax-img-2', {top: -350, rotate: 70})
       .addTo(controller)
 
       var bottle3 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
-      .setTween('.parallax-img-3', {y: -150, rotate: -30})
+      .setTween('.parallax-img-3', {top: -150, rotate: -50})
       .addTo(controller)
       
       var bottle4 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
-      .setTween('.parallax-img-4', {y: -80, rotate: 40})
+      .setTween('.parallax-img-4', {top: -80, rotate: 40})
       .addTo(controller)
       
       var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
-      .setTween('.parallax-img-5', {y: -180, rotate: -40})
+      .setTween('.parallax-img-5', {top: -200, rotate: -60})
       .addTo(controller)
       
       var bottle6 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
-      .setTween('.parallax-img-6', {y: -130, rotate: -30})
+      .setTween('.parallax-img-6', {top: 130, rotate: -30})
       .addTo(controller)
       
       var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
-      .setTween('.parallax-img-7', {y: -180, rotate: 50})
+      .setTween('.parallax-img-7', {top: 200, rotate: 50})
       .addTo(controller)
       
       var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
-      .setTween('.parallax-img-8', {y: -180, rotate: 50})
+      .setTween('.parallax-img-8', {top: 250, rotate: 50})
       .addTo(controller)
       
     });
