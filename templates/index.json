@@ -220,15 +220,15 @@
       "settings": {
       }
     },
-    "16595449695027c523": {
-      "type": "custom-image-with-text",
+    "1661574541f71d701a": {
+      "type": "home-parallax",
       "settings": {
         "heading": "Sustainability at Everly",
         "text": "<b>60 Tons of household waste is produced every second–<\/b> contributing to massive C02 emissions, ocean pollution, and bursting landfills. \nWe want to be part of the solution, starting with candles.",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
         "image-size": 60,
-        "space-top": 50,
-        "space-bottom": 50,
+        "space-top": 0,
+        "space-bottom": 0,
         "cta-text": "LEARN MORE",
         "cta-background": "#6e6d97",
         "background": "#ffffff",
@@ -384,7 +384,7 @@
     "165897291324a4fce9",
     "165949968326b2066d",
     "1659021079d8b6ff21",
-    "16595449695027c523",
+    "1661574541f71d701a",
     "16595592167283bc70",
     "1659562437e51df8bf",
     "1659562483f6113690",
