@@ -3,11 +3,12 @@
     "166154805413589c30": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "image": "shopify:\/\/shop_images\/Recurso_8.png",
         "height": 80,
-        "background": "",
+        "background": "#f1f2f5",
         "space-top": 0,
-        "space-bottom": 0
+        "space-bottom": 0,
+        "is-heading": true
       }
     },
     "main": {
@@ -37,11 +38,17 @@
         "options": {
           "type": "options",
           "settings": {
-            "variant-style": "buttons",
+            "variant-style": "dropdowns",
             "swatches-enabled": true,
             "size-chart-enabled": true,
             "size-chart-option": "size",
             "size-chart-content": ""
+          }
+        },
+        "0ae12d35-eb37-4fa6-b72f-59fed47e6cdb": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
           }
         },
         "buy-buttons": {
@@ -68,6 +75,30 @@
             "twitter-enabled": true,
             "pinterest-enabled": true
           }
+        },
+        "22bdc427-38d0-4d56-b3f8-d1760d00e6de": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Information",
+            "description": "<p>{{ product.metafields.product.information | metafield_tag }}<\/p>",
+            "page-content": ""
+          }
+        },
+        "014714cf-6ab9-4e0b-b446-dc488ed4f371": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "How To",
+            "description": "<p>{{ product.metafields.product.how_to | metafield_tag }}<\/p>",
+            "page-content": ""
+          }
+        },
+        "9b3e8cf7-a7e8-408e-9403-69f5534f52da": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Sustainability",
+            "description": "<p>{{ product.metafields.product.sustainability | metafield_tag }}<\/p>",
+            "page-content": ""
+          }
         }
       },
       "block_order": [
@@ -76,27 +107,33 @@
         "vendor",
         "price",
         "options",
+        "0ae12d35-eb37-4fa6-b72f-59fed47e6cdb",
         "buy-buttons",
         "pickup",
         "description",
-        "social-sharing"
+        "social-sharing",
+        "22bdc427-38d0-4d56-b3f8-d1760d00e6de",
+        "014714cf-6ab9-4e0b-b446-dc488ed4f371",
+        "9b3e8cf7-a7e8-408e-9403-69f5534f52da"
       ],
       "settings": {
         "product-media-spacing": "space-evenly",
         "product-modal-enabled": false,
         "variant-scroll-enabled": false,
         "image-zoom-enabled": false,
-        "loop-enabled": false
+        "loop-enabled": false,
+        "bg-color": "linear-gradient(180deg, rgba(241, 242, 245, 1), rgba(243, 249, 243, 1) 100%)"
       }
     },
     "16615479979c88033e": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "image": "shopify:\/\/shop_images\/Recurso_7.png",
         "height": 80,
         "background": "#f3f9f3",
-        "space-top": 0,
-        "space-bottom": 0
+        "space-top": 50,
+        "space-bottom": 0,
+        "is-heading": false
       }
     },
     "16615480953e561f9d": {
@@ -163,8 +200,8 @@
       "settings": {
         "title": "",
         "title_color": "#6e6d97",
-        "space-top": 50,
-        "space-bottom": 50,
+        "space-top": 31,
+        "space-bottom": 21,
         "background": "#f3f9f3"
       }
     },
@@ -200,7 +237,9 @@
         "heading": "SAVE on Bundles",
         "link-url": "",
         "link-text": "",
-        "custom-class": "home-bundles"
+        "custom-class": "",
+        "bg-color": "#F3F9F3",
+        "title-color": "#6e6d99"
       }
     },
     "1661551955cc609a9b": {
@@ -214,7 +253,7 @@
         "space-bottom": 0,
         "cta-text": "",
         "cta-background": "#6e6d97",
-        "background": "#FFFFFF",
+        "background": "#ffffff",
         "class": ""
       }
     },

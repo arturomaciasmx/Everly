@@ -3,7 +3,7 @@
     "166154805413589c30": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "image": "shopify:\/\/shop_images\/Recurso_9.png",
         "height": 80,
         "background": "#f1f2f5",
         "space-top": 0,
@@ -128,95 +128,57 @@
     "16615479979c88033e": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_7.png",
+        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
         "height": 80,
-        "background": "linear-gradient(180deg, rgba(241, 242, 245, 1), rgba(243, 249, 243, 1) 100%)",
+        "background": "#f1f2f5",
         "space-top": 50,
         "space-bottom": 0,
         "is-heading": false
       }
     },
-    "16615480953e561f9d": {
-      "type": "custom-columns-with-images",
+    "1661802217e8281133": {
+      "type": "custom-grid",
       "blocks": {
-        "1392c7a3-18e9-4d9d-81de-db5ef79ea999": {
-          "type": "image",
+        "b3d2f180-a8d1-4c7b-834f-b68792fcbe8f": {
+          "type": "text",
           "settings": {
-            "title": "NON-TOXIC OILS",
-            "text": "",
-            "content_color": "#231f20",
-            "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 60
+            "title": "Jane Doe",
+            "sub-title": "The artist behind Forreverly Vessel",
+            "text": "Don't have a vessel lying around at home? Our Eternal Vessel is the perfect companion to get started on your Everly journey.",
+            "cta-text": "LEARN MORE",
+            "cta-url": ""
           }
         },
-        "5a499600-a1cc-47be-91dd-bb77c41e030a": {
-          "type": "image",
+        "80b2c851-d5f9-43b6-a3d9-280d9a62020f": {
+          "type": "block-image",
           "settings": {
-            "title": "COMPOSTABLE PACKAGING*",
-            "text": "",
-            "content_color": "#231f20",
-            "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 60
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg"
           }
         },
-        "ebc8b12f-f715-4836-b96d-835ec9904f7b": {
-          "type": "image",
+        "0ad8fc07-291f-4d00-949f-28c9a6a512ba": {
+          "type": "block-image",
           "settings": {
-            "title": "PHTHALATE + <br>PARABEN",
-            "text": "",
-            "content_color": "#231f20",
-            "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 60
+            "image": "shopify:\/\/shop_images\/retail-shopping-package.jpg"
           }
         },
-        "b99dbcf0-09d8-41a8-8af3-813d47c72078": {
-          "type": "image",
+        "03656197-3978-49c4-8336-a9c037146269": {
+          "type": "block-image",
           "settings": {
-            "title": "CARBON NEUTRAL",
-            "text": "",
-            "content_color": "#231f20",
-            "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 60
-          }
-        },
-        "f4edffe4-67ad-478a-93c8-9415dc375874": {
-          "type": "image",
-          "settings": {
-            "title": "COCONUT WAX",
-            "text": "",
-            "content_color": "#231f20",
-            "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 60
+            "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg"
           }
         }
       },
       "block_order": [
-        "1392c7a3-18e9-4d9d-81de-db5ef79ea999",
-        "5a499600-a1cc-47be-91dd-bb77c41e030a",
-        "ebc8b12f-f715-4836-b96d-835ec9904f7b",
-        "b99dbcf0-09d8-41a8-8af3-813d47c72078",
-        "f4edffe4-67ad-478a-93c8-9415dc375874"
+        "b3d2f180-a8d1-4c7b-834f-b68792fcbe8f",
+        "80b2c851-d5f9-43b6-a3d9-280d9a62020f",
+        "0ad8fc07-291f-4d00-949f-28c9a6a512ba",
+        "03656197-3978-49c4-8336-a9c037146269"
       ],
       "settings": {
-        "title": "",
-        "title_color": "#6e6d97",
-        "space-top": 31,
-        "space-bottom": 21,
-        "background": "#f3f9f3"
-      }
-    },
-    "1661548650cb870787": {
-      "type": "custom-2-columns-text",
-      "settings": {
-        "content-text": "",
-        "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
-        "heading": "Candle. Refill. Repeat.",
-        "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
-        "text-align": "left",
-        "cta-text": "LEARN MORE",
-        "cta-background": "#6e6d97",
-        "background": "linear-gradient(180deg, rgba(243, 249, 243, 1), rgba(243, 249, 243, 1) 100%)",
-        "reverse": false
+        "bottom-space": 50,
+        "top-space": 50,
+        "background": "linear-gradient(180deg, rgba(241, 242, 245, 1), rgba(243, 249, 243, 1) 100%)",
+        "text-color": "#6e6d99"
       }
     },
     "1661548896fd9c05a5": {
@@ -238,7 +200,7 @@
         "link-url": "",
         "link-text": "",
         "custom-class": "",
-        "bg-color": "#F3F9F3",
+        "bg-color": "#fff",
         "title-color": "#6e6d99"
       }
     },
@@ -331,8 +293,7 @@
     "166154805413589c30",
     "main",
     "16615479979c88033e",
-    "16615480953e561f9d",
-    "1661548650cb870787",
+    "1661802217e8281133",
     "1661548896fd9c05a5",
     "1661551955cc609a9b",
     "1661550622b545a706",

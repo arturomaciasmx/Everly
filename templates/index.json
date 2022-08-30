@@ -53,8 +53,8 @@
       "settings": {
         "product-list": [
           "peppermint-cocoa-shavings-candle-8-oz",
-          "rawcinnamon",
-          "holiday-edition-roaster-chestnuts-rum"
+          "holiday-edition-roaster-chestnuts-rum",
+          "tobacco-white-santal"
         ],
         "background-color": "none",
         "light-text": false,
@@ -66,7 +66,9 @@
         "heading": "SAVE on Bundles",
         "link-url": "",
         "link-text": "",
-        "custom-class": "home-bundles"
+        "custom-class": "",
+        "bg-color": "linear-gradient(180deg, rgba(243, 249, 243, 1), rgba(242, 245, 245, 1) 100%)",
+        "title-color": "#6e6d99"
       }
     },
     "1659473617ac28edb6": {
@@ -156,7 +158,8 @@
         "height": 80,
         "background": "#f2f5f5",
         "space-top": 0,
-        "space-bottom": 0
+        "space-bottom": 0,
+        "is-heading": false
       }
     },
     "1659021079d8b6ff21": {
@@ -256,7 +259,8 @@
         "height": 80,
         "background": "#f2f5f5",
         "space-top": 0,
-        "space-bottom": 0
+        "space-bottom": 0,
+        "is-heading": false
       }
     },
     "1659562483f6113690": {
@@ -264,10 +268,10 @@
       "settings": {
         "content-text": "",
         "content-image": "shopify:\/\/shop_images\/Recurso_11512.jpg",
-        "heading": "Our Vessel",
+        "heading": "Our Vessel<br> <span style=\"     font-size: 18px;     font-family: 'Metropolis-Regular';     font-weight: 100;     position: relative;     top: -10px; \">Foreverly vessel<\/span>",
         "text": "Don't have a vessel lying around at home? Our Eternal Vessel is the perfect companion to get started on your Everly journey.",
         "text-align": "center",
-        "cta-text": "LEARN MORE",
+        "cta-text": "SHOP NOW",
         "cta-background": "#6e6d97",
         "background": "linear-gradient(0deg, rgba(243, 249, 243, 1) 75%, rgba(242, 245, 245, 1) 94%)",
         "reverse": true

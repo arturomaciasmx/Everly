@@ -1,0 +1,141 @@
+
+<style>
+#shopify-section-{{ section.id }} {
+  padding-top: {{ section.settings.top-space }}px;
+  padding-bottom: {{ section.settings.bottom-space }}px;
+  background: {{ section.settings.background }};
+}
+#shopify-section-{{ section.id }} .custom-grid-container {
+  max-width: 1200px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+#shopify-section-{{ section.id }} .custom-grid-block {
+  width: calc(50% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: {{ section.settings.text-color }};
+}
+#shopify-section-{{ section.id }} .custom-grid-block .block-subtitle {
+  margin-bottom: 15px;
+}
+#shopify-section-{{ section.id }} .custom-grid-block .block-title {
+  margin-bottom: 25px;
+}
+#shopify-section-{{ section.id }} .custom-grid-block .block-text {
+  margin-bottom: 50px;
+}
+#shopify-section-{{ section.id }} .cta-button {
+  background: {{ section.settings.text-color }};
+}
+</style>
+
+<div class="custom-grid-container">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'text' %}
+        <div class="custom-grid-block">
+          <p class="block-subtitle">{{ block.settings.sub-title }}</p>
+          <h2 class="block-title">{{ block.settings.title }}</h2>
+          <p class="block-text">{{ block.settings.text }}</p>
+          <a class="cta-button block-cta">{{ block.settings.cta-text }}</a>
+        </div>
+      {% else %}
+      <div class="custom-grid-block">
+        <img src="{{ block.settings.image | img_url:"x650" }}" />
+      </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Grid",
+    "settings": [
+      {
+        "type": "range",
+        "id": "bottom-space",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Bottom Space",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "top-space",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "label": "Top Space",
+        "default": 50
+      },
+      {
+        "type": "color_background",
+        "id": "background",
+        "label": "Background",
+        "default": "linear-gradient(#ffffff, #000000)"
+      },
+      {
+        "type": "color",
+        "id": "text-color",
+        "label": "Text Color"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Content",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "sub-title",
+            "label": "Sub Title"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          },
+          {
+            "type": "text",
+            "id": "cta-text",
+            "label": "CTA Text"
+          },
+          {
+            "type": "text",
+            "id": "cta-url",
+            "label": "CTA url"
+          }
+        ]
+      },
+      {
+        "type": "block-image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Grid"
+      }
+    ]
+  }
+{% endschema %}

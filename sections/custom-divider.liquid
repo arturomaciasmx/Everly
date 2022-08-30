@@ -20,6 +20,10 @@
         background: url({{ image | img_url: 'master' }});
         background-size: contain;
         background-position-x: center;
+        background-repeat: no-repeat;
+        {% if section.settings.is-heading %}
+            background-position-y: -10px;
+        {% endif %}
     }
     .custom-divider img {
         height: 100%;
@@ -48,7 +52,7 @@
                 "default": 80
             },
             {
-                "type": "color",
+                "type": "color_background",
                 "id": "background",
                 "label": "Background Color"
             },
@@ -71,6 +75,12 @@
                 "unit": "px",
                 "label": "Space Bottom",
                 "default": 0
+            },
+            {
+                "type": "checkbox",
+                "id": "is-heading",
+                "label": "Is Heading",
+                "default": false
             }
         ],
         "presets": [

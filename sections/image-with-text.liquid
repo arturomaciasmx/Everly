@@ -2,13 +2,18 @@
   assign settings_link = settings.color--alternative
 -%}
 
+<style>
+#shopify-section-{{ section.id }} .image-with-text--root {
+  background: {{ section.settings.bg-color }};
+}
+</style>
+
 <div
   class="image-with-text--root"
   data-section-id="{{ section.id }}"
 >
   {% render 'featured-content',
     text_color: section.settings.text-color,
-    bg_color: section.settings.background-color,
     box_around_text: section.settings.box-around-text,
     container_width: section.settings.container-width,
     darken_image: section.settings.darken-image,
@@ -185,6 +190,11 @@
       "id": "link-text",
       "label": "Link text",
       "type": "text"
+    },  
+    {
+      "type": "color_background",
+      "id": "bg-color",
+      "label": "Background"
     }
   ],
   "presets": [
