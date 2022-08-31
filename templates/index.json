@@ -18,6 +18,7 @@
         "background": "linear-gradient(180deg, rgba(177, 181, 204, 1), rgba(187, 223, 191, 1) 80%)",
         "image": "shopify:\/\/shop_images\/header_img.png",
         "cta_text": "SHOP NOW",
+        "cta-url": "\/collections\/shop-all",
         "cta_bg_color": "#6e6d99",
         "cta_text_color": "#ffffff"
       }
@@ -25,7 +26,7 @@
     "165895990452ce5d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\"><p style=\"font-family: 'Metropolis-Bold'!important; font-size: 18px!important;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
+        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold;\"><p style=\"font-family: 'Metropolis-Bold'!important; font-size: 18px!important;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 5,
@@ -39,7 +40,7 @@
         "heading": "Candle. Refill. Repeat.",
         "text": "Our <b style=\"border-bottom: 1.5px solid;\">clean candle<\/b> kits make it easy to refill any empty vessel at home. So you can choose refills > landfills, leaving <b style=\"border-bottom: 1.5px solid;\">our world a little cleaner<b><\/b>.<\/b>",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
-        "image-size": 60,
+        "image-size": 50,
         "space-top": 50,
         "space-bottom": 49,
         "cta-text": "",
@@ -77,51 +78,56 @@
         "f6345bcd-bff2-4866-a9ce-3521d23f4340": {
           "type": "image",
           "settings": {
-            "title": "NON-TOXIC OILS",
-            "text": "",
+            "title": "",
+            "text": "NON-TOXIC OILS",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "59c448b4-fb5b-4987-b666-5ecf98575911": {
           "type": "image",
           "settings": {
-            "title": "COMPOSTABLE<br>PACKAGING*",
-            "text": "",
+            "title": "",
+            "text": "COMPOSTABLE<br>PACKAGING*",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "bda9b681-d3e0-49c3-994d-612d28d9ed87": {
           "type": "image",
           "settings": {
-            "title": "PHTHALATE +<br> PARABEN",
-            "text": "",
+            "title": "",
+            "text": "PHTHALATE +<br> PARABEN FREE",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "747fda81-0370-4eb9-a3df-45f52d3a460e": {
           "type": "image",
           "settings": {
-            "title": "CARBON NEUTRAL",
-            "text": "",
+            "title": "",
+            "text": "CARBON NEUTRAL",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4": {
           "type": "image",
           "settings": {
-            "title": "COCONUT WAX",
-            "text": "",
+            "title": "",
+            "text": "COCONUT WAX",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 60
+            "image_size": 50
           }
         }
       },
@@ -144,7 +150,7 @@
       "type": "custom-cta",
       "settings": {
         "cta_text": "LEARN MORE",
-        "cta_link": "#",
+        "cta_link": "\/pages\/sustainability",
         "section_background_color": "#f2f5f5",
         "cta_background_color": "#6e6d97",
         "margin_top": 0,
@@ -171,7 +177,7 @@
             "title_image": "shopify:\/\/shop_images\/mood-icons-10.png",
             "title": "spiritual",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
-            "text-color": "#212121",
+            "text-color": "#6e6d99",
             "cta": "SHOP NOW",
             "image": "shopify:\/\/shop_images\/spiritual_image.png",
             "tab_color": "#badfbe"
@@ -183,7 +189,7 @@
             "title_image": "shopify:\/\/shop_images\/mood-icons-11.png",
             "title": "romantic",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
-            "text-color": "",
+            "text-color": "#6e6d99",
             "cta": "SHOP NOW",
             "image": "shopify:\/\/shop_images\/spiritual_image.png",
             "tab_color": "#d2d1e3"
@@ -195,7 +201,7 @@
             "title_image": "shopify:\/\/shop_images\/mood-icons-12.png",
             "title": "sexy",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
-            "text-color": "",
+            "text-color": "#6e6d99",
             "cta": "SHOP NOW",
             "image": "shopify:\/\/shop_images\/spiritual_image.png",
             "tab_color": "#ddcfca"
@@ -207,7 +213,7 @@
             "title_image": "shopify:\/\/shop_images\/mood-icons-13.png",
             "title": "adventure",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
-            "text-color": "",
+            "text-color": "#6e6d99",
             "cta": "SHOP NOW",
             "image": "shopify:\/\/shop_images\/spiritual_image.png",
             "tab_color": "#d8d9c4"
@@ -228,12 +234,13 @@
       "settings": {
         "heading": "Sustainability at Everly",
         "text": "<b>60 Tons of household waste is produced every second–<\/b> contributing to massive C02 emissions, ocean pollution, and bursting landfills. \nWe want to be part of the solution, starting with candles.",
-        "image": "shopify:\/\/shop_images\/Recurso_6512.png",
-        "image-size": 60,
+        "image": "shopify:\/\/shop_images\/Recurso_9_1.png",
+        "image-size": 50,
         "space-top": 0,
         "space-bottom": 0,
         "cta-text": "LEARN MORE",
         "cta-background": "#6e6d97",
+        "cta-url": "\/pages\/sustainability",
         "background": "#ffffff",
         "class": ""
       }
@@ -243,10 +250,12 @@
       "settings": {
         "content-text": "",
         "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "image-width": "master",
         "heading": "Candle. Refill. Repeat.",
         "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
         "text-align": "left",
         "cta-text": "LEARN MORE",
+        "cta-url": "#",
         "cta-background": "#6e6d97",
         "background": "#f2f5f5",
         "reverse": false
@@ -268,10 +277,12 @@
       "settings": {
         "content-text": "",
         "content-image": "shopify:\/\/shop_images\/Recurso_11512.jpg",
+        "image-width": "master",
         "heading": "Our Vessel<br> <span style=\"     font-size: 18px;     font-family: 'Metropolis-Regular';     font-weight: 100;     position: relative;     top: -10px; \">Foreverly vessel<\/span>",
         "text": "Don't have a vessel lying around at home? Our Eternal Vessel is the perfect companion to get started on your Everly journey.",
         "text-align": "center",
         "cta-text": "SHOP NOW",
+        "cta-url": "#",
         "cta-background": "#6e6d97",
         "background": "linear-gradient(0deg, rgba(243, 249, 243, 1) 75%, rgba(242, 245, 245, 1) 94%)",
         "reverse": true
@@ -283,7 +294,7 @@
         "heading": "What people are saying",
         "text": "",
         "image": "shopify:\/\/shop_images\/Recurso_12512.jpg",
-        "image-size": 60,
+        "image-size": 50,
         "space-top": 50,
         "space-bottom": 0,
         "cta-text": "",
@@ -298,8 +309,9 @@
         "836e2b4c-4560-4b4c-8e92-9dc643f08459": {
           "type": "image",
           "settings": {
-            "title": "<b>So so so easy!<\/b>",
+            "title": "So so so easy!",
             "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
+            "subtitle": "Lauryn M.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -308,8 +320,9 @@
         "8b9e5d30-8f47-4303-bb95-4aa0a67a1114": {
           "type": "image",
           "settings": {
-            "title": "<b>Love this idea!<\/b>",
+            "title": "Love this idea!",
             "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
+            "subtitle": "Lauryn M.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -318,8 +331,9 @@
         "499bb925-fa60-4405-a307-b6e2274c816d": {
           "type": "image",
           "settings": {
-            "title": "<b>It smells AMAZING!<\/b>",
+            "title": "It smells AMAZING!",
             "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
+            "subtitle": "Lauryn M.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -362,17 +376,17 @@
         "color": "#6e6d99",
         "spacing-above": true,
         "spacing-below": true,
-        "heading": "Subscribe to our newsletter",
-        "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        "heading": "Join our mailing list",
+        "newsletter--subheading": "<p>Be the first to recive updates on new arrivals, special offers and tips.<\/p>"
       }
     },
     "16596359491ba7d9af": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n<\/div>",
+        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
         "background-color": "light",
         "light-text": true,
-        "container-width": 4,
+        "container-width": 6,
         "spacing-above": false,
         "spacing-below": false
       }

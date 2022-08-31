@@ -4,11 +4,12 @@
       "type": "custom-divider",
       "settings": {
         "image": "shopify:\/\/shop_images\/Recurso_23512.png",
-        "height": 80,
+        "height": 82,
         "background": "#F3F5F5",
         "space-top": 0,
         "space-bottom": 0,
-        "is-heading": true
+        "is-heading": true,
+        "repeat": true
       }
     },
     "1661808504d6c2b82a": {
@@ -56,18 +57,20 @@
         "background": "#F3F5F5",
         "space-top": 0,
         "space-bottom": 0,
-        "is-heading": false
+        "is-heading": false,
+        "repeat": false
       }
     },
     "16616334767b674ce1": {
       "type": "custom-divider",
       "settings": {
         "image": "shopify:\/\/shop_images\/Recurso_7.png",
-        "height": 80,
+        "height": 90,
         "background": "linear-gradient(180deg, rgba(243, 245, 245, 1), rgba(243, 249, 243, 1) 100%)",
         "space-top": 50,
         "space-bottom": 30,
-        "is-heading": false
+        "is-heading": false,
+        "repeat": true
       }
     },
     "1661633573726c6981": {
@@ -78,6 +81,7 @@
           "settings": {
             "title": "NON-TOXIC OILS",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
             "image_size": 60
@@ -88,6 +92,7 @@
           "settings": {
             "title": "COMPOSTABLE <br>PACKAGING*",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
             "image_size": 60
@@ -98,6 +103,7 @@
           "settings": {
             "title": "PHTHALATE + PARABEN",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/phtalate.png",
             "image_size": 60
@@ -108,6 +114,7 @@
           "settings": {
             "title": "CARBON NEUTRAL",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
             "image_size": 60
@@ -118,6 +125,7 @@
           "settings": {
             "title": "COCONUT WAX",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
             "image_size": 60
@@ -143,13 +151,14 @@
       "type": "home-parallax",
       "settings": {
         "heading": "Sustainability at Everly",
-        "text": "60 Tons of household waste is produced every second– contributing to massive C02 emissions, ocean pollution, and bursting landfills. We want to be part of the solution, starting with candles.",
+        "text": "<b>60 Tons of household waste is produced every second–<\/b> contributing to massive C02 emissions, ocean pollution, and bursting landfills. We want to be part of the solution, starting with candles.",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
         "image-size": 60,
         "space-top": 0,
         "space-bottom": 0,
         "cta-text": "LEARN MORE",
         "cta-background": "#6e6d97",
+        "cta-url": "\/pages\/sustainability",
         "background": "#ffffff",
         "class": ""
       }
@@ -159,10 +168,12 @@
       "settings": {
         "content-text": "",
         "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "image-width": "master",
         "heading": "Candle. Refill. Repeat.",
         "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
         "text-align": "left",
         "cta-text": "LEARN MORE",
+        "cta-url": "#",
         "cta-background": "#6e6d97",
         "background": "#F3F9F3",
         "reverse": false
@@ -191,6 +202,7 @@
           "settings": {
             "title": "<b>So so so easy!<\/b>",
             "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
+            "subtitle": "",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -201,6 +213,7 @@
           "settings": {
             "title": "<b>Love this idea!<\/b>",
             "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
+            "subtitle": "",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -211,6 +224,7 @@
           "settings": {
             "title": "<b>It smells AMAZING!<\/b>",
             "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
+            "subtitle": "",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -240,6 +254,17 @@
         "heading": "Subscribe to our newsletter",
         "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
       }
+    },
+    "1661901551cf095a71": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "background-color": "light",
+        "light-text": true,
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false
+      }
     }
   },
   "order": [
@@ -254,6 +279,7 @@
     "1661635115fdb07569",
     "1661635542d38d2ea3",
     "1661635313e3c13e12",
-    "1661635605964e66d4"
+    "1661635605964e66d4",
+    "1661901551cf095a71"
   ]
 }

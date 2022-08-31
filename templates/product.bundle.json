@@ -8,7 +8,8 @@
         "background": "#f1f2f5",
         "space-top": 0,
         "space-bottom": 0,
-        "is-heading": true
+        "is-heading": true,
+        "repeat": true
       }
     },
     "main": {
@@ -17,6 +18,12 @@
         "heading": {
           "type": "heading",
           "settings": {
+          }
+        },
+        "95d4e4cb-c770-4dae-a51b-300991525fae": {
+          "type": "overline",
+          "settings": {
+            "text": "Overline text"
           }
         },
         "d403cd0d-f0b9-4db8-a52d-9fda698f6f73": {
@@ -103,6 +110,7 @@
       },
       "block_order": [
         "heading",
+        "95d4e4cb-c770-4dae-a51b-300991525fae",
         "d403cd0d-f0b9-4db8-a52d-9fda698f6f73",
         "vendor",
         "price",
@@ -117,9 +125,9 @@
         "9b3e8cf7-a7e8-408e-9403-69f5534f52da"
       ],
       "settings": {
-        "product-media-spacing": "space-evenly",
+        "product-media-spacing": "close-together",
         "product-modal-enabled": false,
-        "variant-scroll-enabled": false,
+        "variant-scroll-enabled": true,
         "image-zoom-enabled": false,
         "loop-enabled": false,
         "bg-color": "linear-gradient(180deg, rgba(241, 242, 245, 1), rgba(243, 249, 243, 1) 100%)"
@@ -133,7 +141,8 @@
         "background": "#f3f9f3",
         "space-top": 50,
         "space-bottom": 0,
-        "is-heading": false
+        "is-heading": false,
+        "repeat": true
       }
     },
     "16615480953e561f9d": {
@@ -142,51 +151,56 @@
         "1392c7a3-18e9-4d9d-81de-db5ef79ea999": {
           "type": "image",
           "settings": {
-            "title": "NON-TOXIC OILS",
-            "text": "",
+            "title": "",
+            "text": "NON-TOXIC OILS",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "5a499600-a1cc-47be-91dd-bb77c41e030a": {
           "type": "image",
           "settings": {
-            "title": "COMPOSTABLE PACKAGING*",
-            "text": "",
+            "title": "",
+            "text": "COMPOSTABLE PACKAGING*",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "ebc8b12f-f715-4836-b96d-835ec9904f7b": {
           "type": "image",
           "settings": {
-            "title": "PHTHALATE + <br>PARABEN",
-            "text": "",
+            "title": "",
+            "text": "PHTHALATE + <br> PARABEN FREE",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "b99dbcf0-09d8-41a8-8af3-813d47c72078": {
           "type": "image",
           "settings": {
-            "title": "CARBON NEUTRAL",
-            "text": "",
+            "title": "",
+            "text": "CARBON NEUTRAL",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "f4edffe4-67ad-478a-93c8-9415dc375874": {
           "type": "image",
           "settings": {
-            "title": "COCONUT WAX",
-            "text": "",
+            "title": "",
+            "text": "COCONUT WAX",
+            "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 60
+            "image_size": 50
           }
         }
       },
@@ -210,10 +224,12 @@
       "settings": {
         "content-text": "",
         "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "image-width": "master",
         "heading": "Candle. Refill. Repeat.",
         "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
         "text-align": "left",
-        "cta-text": "LEARN MORE",
+        "cta-text": "LEARN HOW TO",
+        "cta-url": "#",
         "cta-background": "#6e6d97",
         "background": "linear-gradient(180deg, rgba(243, 249, 243, 1), rgba(243, 249, 243, 1) 100%)",
         "reverse": false
@@ -263,8 +279,9 @@
         "68f9e8fd-61b6-453f-b4a9-86803c76c4ef": {
           "type": "image",
           "settings": {
-            "title": "<b>So so so easy!<\/b>",
+            "title": "So so so easy!",
             "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
+            "subtitle": "Lauryn M.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -273,8 +290,9 @@
         "e32199dc-600c-4f5c-9fa8-26b51d9ec309": {
           "type": "image",
           "settings": {
-            "title": "<b>Love this idea!<\/b>",
+            "title": "Love this idea!",
             "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
+            "subtitle": "Lauryn M.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -283,8 +301,9 @@
         "6d70511f-69a4-4782-af9a-3b991f75b157": {
           "type": "image",
           "settings": {
-            "title": "<b>It smells AMAZING!<\/b>",
+            "title": "It smells AMAZING!",
             "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
+            "subtitle": "Lauryn M.",
             "content_color": "#6e6d99",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -322,8 +341,19 @@
         "color": "#6e6d99",
         "spacing-above": true,
         "spacing-below": true,
-        "heading": "Subscribe to our newsletter",
-        "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        "heading": "Join our mailing list",
+        "newsletter--subheading": "<p>Be the first to recive updates on new arrivals, special offers and tips.<\/p>"
+      }
+    },
+    "1661901407cd0e065e": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "background-color": "light",
+        "light-text": true,
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false
       }
     }
   },
@@ -337,6 +367,7 @@
     "1661551955cc609a9b",
     "1661550622b545a706",
     "recommendations",
-    "1661499090a6254527"
+    "1661499090a6254527",
+    "1661901407cd0e065e"
   ]
 }

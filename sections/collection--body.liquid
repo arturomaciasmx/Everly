@@ -112,6 +112,12 @@
   assign promo_html_arr = promo_html | split: '|'
 -%}
 
+<style>
+  .collection--body--root {
+    background: {{ section.settings.background }};
+  }
+</style>
+
 <collection-root
   class="collection--body--root"
   id="collection-root"
@@ -134,7 +140,7 @@
 
   {% paginate collection.products by products_per_page %}
     {% if paginate.pages > 1 %}
-      <a data-item="a11y-button" href='#collection-pagination' data-body-pagination-link>
+      <a data-item="a11y-button" href="#collection-pagination" data-body-pagination-link>
         {{ skip_link_t }}
       </a>
     {% endif %}
@@ -261,7 +267,6 @@
 
           endfor
         -%}
-
       {% elsif current_tags == blank %}
         <div class="collection--body--empty" data-container="block">
           <p data-item="paragraph">
@@ -271,14 +276,12 @@
             <div>{{ continue_shopping_t }}</div>
           </a>
         </div>
-
       {% else %}
         <div class="collection--body--empty" data-container="block">
           <p data-item="paragraph">
             {{ filter_feedback_t }}
           </p>
         </div>
-
       {% endif %}
     </div>
 
@@ -319,8 +322,14 @@
       "id": "products-per-row--mobile",
       "type": "radio",
       "options": [
-        { "value": "1", "label": "1" },
-        { "value": "2", "label": "2" }
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
       ]
     },
     {
@@ -331,6 +340,11 @@
       "max": 12,
       "step": 1,
       "default": 4
+    },
+    {
+      "type": "color_background",
+      "id": "background",
+      "label": "Background"
     }
   ],
   "blocks": [
@@ -374,10 +388,22 @@
           "label": "Background color",
           "type": "select",
           "options": [
-            { "label": "None", "value": "none" },
-            { "label": "Light", "value": "light" },
-            { "label": "Dark", "value": "dark" },
-            { "label": "Accent", "value": "accent" }
+            {
+              "label": "None",
+              "value": "none"
+            },
+            {
+              "label": "Light",
+              "value": "light"
+            },
+            {
+              "label": "Dark",
+              "value": "dark"
+            },
+            {
+              "label": "Accent",
+              "value": "accent"
+            }
           ],
           "default": "light"
         },
@@ -386,8 +412,14 @@
           "label": "Text color",
           "type": "select",
           "options": [
-            { "label": "Dark", "value": "dark" },
-            { "label": "Light", "value": "light" }
+            {
+              "label": "Dark",
+              "value": "dark"
+            },
+            {
+              "label": "Light",
+              "value": "light"
+            }
           ],
           "default": "dark"
         },
@@ -412,8 +444,14 @@
           "label": "Image size",
           "type": "select",
           "options": [
-            { "label": "Fit to container", "value": "fit-to-container" },
-            { "label": "Preserve aspect ratio", "value": "aspect-ratio" }
+            {
+              "label": "Fit to container",
+              "value": "fit-to-container"
+            },
+            {
+              "label": "Preserve aspect ratio",
+              "value": "aspect-ratio"
+            }
           ],
           "default": "fit-to-container"
         },

@@ -128,7 +128,7 @@
     "16615479979c88033e": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "image": "shopify:\/\/shop_images\/Recurso_7.png",
         "height": 80,
         "background": "#f1f2f5",
         "space-top": 50,
@@ -152,19 +152,19 @@
         "80b2c851-d5f9-43b6-a3d9-280d9a62020f": {
           "type": "block-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg"
+            "image": "shopify:\/\/shop_images\/Recurso_10.jpg"
           }
         },
         "0ad8fc07-291f-4d00-949f-28c9a6a512ba": {
           "type": "block-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/retail-shopping-package.jpg"
+            "image": "shopify:\/\/shop_images\/Recurso_12.jpg"
           }
         },
         "03656197-3978-49c4-8336-a9c037146269": {
           "type": "block-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/iphone-detects-qr-code.jpg"
+            "image": "shopify:\/\/shop_images\/Recurso_11.jpg"
           }
         }
       },
@@ -287,6 +287,17 @@
         "heading": "Subscribe to our newsletter",
         "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
       }
+    },
+    "1661901438dd659084": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "background-color": "light",
+        "light-text": true,
+        "container-width": 6,
+        "spacing-above": false,
+        "spacing-below": false
+      }
     }
   },
   "order": [
@@ -298,6 +309,7 @@
     "1661551955cc609a9b",
     "1661550622b545a706",
     "recommendations",
-    "1661499090a6254527"
+    "1661499090a6254527",
+    "1661901438dd659084"
   ]
 }

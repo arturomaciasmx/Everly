@@ -1,4 +1,4 @@
-{%-liquid
+{%- liquid
   assign image = section.settings.image
   assign image-size = section.settings.image-size
   assign heading = section.settings.heading
@@ -10,253 +10,300 @@
   assign background = section.settings.background
 -%}
 <style>
-.parallax {
-  text-align: center;
-  padding: 100px 0;
-  position: relative;
-  overflow: hidden;
-}
-#shopify-section-{{ section.id }} .parallax h2 {
-  margin-bottom: 20px;
-  color: {{ cta-background }};
-}
-#shopify-section-{{ section.id }} .parallax p {
-  margin: auto;
-  color: {{ cta-background }};
-  margin-bottom: 30px;
-}
-#shopify-section-{{ section.id }} .parallax h2,
-#shopify-section-{{ section.id }} .parallax p {
-  position: relative;
-  z-index: 888;
-}
-#shopify-section-{{ section.id }} .container {
-  max-width: 750px;
-  margin: auto;
-}
-.parallax-img {
-  position: absolute;
-  z-index: 5;
-  scale: .8!important;
-}
-.parallax-img-2 {
-  top: 80%;
-  left: 5%;
-}
-.parallax-img-3 {
-  top: 100%;
-  left: 30%;
-}
-.parallax-img-4 {
-  top: 50%;
-  right: 25%;
-}
-.parallax-img-5 {
-  top: 100%;
-  right: 5%;
-}
-.parallax-img-6 {
-  top: 100%;
-  left: 3%;
-}
-.parallax-img-7 {
-  bottom: -150%;
-  left: 15%;
-}
-.parallax-img-8 {
-  bottom: -150%;
-  right: 15%;
-}
-#shopify-section-{{ section.id }} {
-  text-align: center;
-}
-#shopify-section-{{ section.id }} .parallax-icon {
-    margin-bottom: 30px;
-    width: {{ image-size }}px;
-    position: relative;
-    z-index: 888;
-}
-#shopify-section-{{ section.id }} {
-    padding-top: {{ space-top }}px;
-    padding-bottom: {{ space-bottom }}px;
-    background: {{ background }};
-}
-#shopify-section-{{ section.id }} a {
-    background: {{ cta-background }};
-    position: relative;
-    z-index: 888;
-}
-@media screen and (max-width: 1000px) {
-  .parallax-img-4 {
-    display: none;
-}
-.parallax-img-8 {
-  bottom: -150px;
-  right: 0%;
-}
-
-}
-@media screen and (max-width: 768px) {
-  .parallax-img-3 {
-    display: none;
-  }
-}
-@media screen and (max-width: 678px) {
   .parallax {
+    text-align: center;
     padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  #shopify-section-{{ section.id }} .parallax h2 {
+    margin-bottom: 20px;
+    color: {{ cta-background }};
+  }
+  #shopify-section-{{ section.id }} .parallax p {
+    margin: auto;
+    color: {{ cta-background }};
+    margin-bottom: 30px;
+  }
+  #shopify-section-{{ section.id }} .parallax h2,
+  #shopify-section-{{ section.id }} .parallax p {
+    position: relative;
+    z-index: 888;
+  }
+  #shopify-section-{{ section.id }} .container {
+    max-width: 750px;
+    margin: auto;
   }
   .parallax-img {
-    scale: .5!important;
-}
-.parallax-img-2 {
-  top: 0;
-}
+    position: absolute;
+    z-index: 5;
+    scale: .8!important;
+  }
+  .parallax-img-2 {
+    top: 80%;
+    left: 5%;
+  }
+  .parallax-img-3 {
+    top: 100%;
+    left: 30%;
+  }
+  .parallax-img-4 {
+    top: 50%;
+    right: 25%;
+  }
+  .parallax-img-5 {
+    top: 100%;
+    right: 5%;
+  }
+  .parallax-img-6 {
+    top: 100%;
+    left: 3%;
+  }
+  .parallax-img-7 {
+    bottom: -150%;
+    left: 15%;
+  }
+  .parallax-img-8 {
+    bottom: -150%;
+    right: 15%;
+  }
+  #shopify-section-{{ section.id }} {
+    text-align: center;
+  }
+  #shopify-section-{{ section.id }} .parallax-icon {
+      margin-bottom: 30px;
+      width: {{ image-size }}px;
+      position: relative;
+      z-index: 888;
+  }
+  #shopify-section-{{ section.id }} {
+      padding-top: {{ space-top }}px;
+      padding-bottom: {{ space-bottom }}px;
+      background: {{ background }};
+  }
+  #shopify-section-{{ section.id }} a {
+      background: {{ cta-background }};
+      position: relative;
+      z-index: 888;
+  }
+  @media screen and (max-width: 1000px) {
+    .parallax-img-4 {
+      display: none;
+  }
+  .parallax-img-8 {
+    bottom: -150px;
+    right: 0%;
+  }
 
-.parallax-img-5 {
-  top: 100%;
-  right: 0%;
-}
-.parallax-img-6 {
-  display: none;
-}
-.parallax-img-7 {
-  bottom: -100px;
-  left: -15%;
-}
-.parallax-img-8 {
-  right: -15%;
-}
-}
+  }
+  @media screen and (max-width: 768px) {
+    .parallax-img-3 {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 678px) {
+    .parallax {
+      padding: 100px 0;
+    }
+    .parallax-img {
+      scale: .5!important;
+  }
+  .parallax-img-2 {
+    top: 0;
+  }
 
+  .parallax-img-5 {
+    top: 100%;
+    right: 0%;
+  }
+  .parallax-img-6 {
+    display: none;
+  }
+  .parallax-img-7 {
+    bottom: -100px;
+    left: -15%;
+  }
+  .parallax-img-8 {
+    right: -15%;
+  }
+  }
 </style>
 
-  <div class="parallax">
-    <img class="parallax-img parallax-img-2" src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-02.png"/>
-    <img class="parallax-img parallax-img-3" src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-03.png"/>
-    <img class="parallax-img parallax-img-4" src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-04.png"/>
-    <img class="parallax-img parallax-img-5" src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-05.png"/>
-    <img class="parallax-img parallax-img-6" src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-06.png"/>
-    <img class="parallax-img parallax-img-7" src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-07.png"/>
-    <img class="parallax-img parallax-img-8" src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-08.png"/>
-    <div class="container {{ section.settings.class}}">
-      {%- if image -%}
-        <img class="parallax-icon" src="{{ image | img_url: 'master' }}"/>
-      {%- endif -%}
-      <h2>{{ heading }}</h2>
-      <p>{{ text }}</p>
-      {% if cta-text != "" %}
-          <a class="cta-button">{{ cta-text }}</a>
-      {% endif %}
-    </div>
+<div class="parallax">
+  <img
+    class="parallax-img parallax-img-2"
+    src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-02.png"
+  >
+  <img
+    class="parallax-img parallax-img-3"
+    src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-03.png"
+  >
+  <img
+    class="parallax-img parallax-img-4"
+    src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-04.png"
+  >
+  <img
+    class="parallax-img parallax-img-5"
+    src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-05.png"
+  >
+  <img
+    class="parallax-img parallax-img-6"
+    src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-06.png"
+  >
+  <img
+    class="parallax-img parallax-img-7"
+    src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-07.png"
+  >
+  <img
+    class="parallax-img parallax-img-8"
+    src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/everly-jars-parallax-08.png"
+  >
+  <div class="container {{ section.settings.class}}">
+    {%- if image -%}
+      <img class="parallax-icon" src="{{ image | img_url: 'master' }}">
+    {%- endif -%}
+    <h2>{{ heading }}</h2>
+    <p>{{ text }}</p>
+    {% if cta-text != '' %}
+      <a class="cta-button" href="{{ section.settings.cta-url }}">{{ cta-text }}</a>
+    {% endif %}
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js" integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-  
-  <script>
-    $(document).ready(function() {
-      var controller = new ScrollMagic.Controller();
-      
-      var bottle2 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
-      .setTween('.parallax-img-2', {top: -350, rotate: 70})
-      .addTo(controller)
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"
+>
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+  integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js">
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+  integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+>
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"
+>
+</script>
 
-      var bottle3 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
-      .setTween('.parallax-img-3', {top: -150, rotate: -50})
-      .addTo(controller)
-      
-      var bottle4 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
-      .setTween('.parallax-img-4', {top: -80, rotate: 40})
-      .addTo(controller)
-      
-      var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
-      .setTween('.parallax-img-5', {top: -200, rotate: -60})
-      .addTo(controller)
-      
-      var bottle6 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
-      .setTween('.parallax-img-6', {top: 130, rotate: -30})
-      .addTo(controller)
-      
-      var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
-      .setTween('.parallax-img-7', {top: 200, rotate: 50})
-      .addTo(controller)
-      
-      var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
-      .setTween('.parallax-img-8', {top: 250, rotate: 50})
-      .addTo(controller)
-      
-    });
-  </script>
+<script>
+  $(document).ready(function() {
+    var controller = new ScrollMagic.Controller();
 
-  {% schema %}
+    var bottle2 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
+    .setTween('.parallax-img-2', {top: -350, rotate: 70})
+    .addTo(controller)
+
+    var bottle3 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
+    .setTween('.parallax-img-3', {top: -150, rotate: -50})
+    .addTo(controller)
+
+    var bottle4 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
+    .setTween('.parallax-img-4', {top: -80, rotate: 40})
+    .addTo(controller)
+
+    var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1200,})
+    .setTween('.parallax-img-5', {top: -200, rotate: -60})
+    .addTo(controller)
+
+    var bottle6 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
+    .setTween('.parallax-img-6', {top: 130, rotate: -30})
+    .addTo(controller)
+
+    var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
+    .setTween('.parallax-img-7', {top: 200, rotate: 50})
+    .addTo(controller)
+
+    var bottle5 = new ScrollMagic.Scene({triggerElement: '.parallax', offset: -300, duration: 1500,})
+    .setTween('.parallax-img-8', {top: 250, rotate: 50})
+    .addTo(controller)
+
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Parallax",
+  "settings": [
     {
-      "name": "Parallax",
-      "settings": [
-          {
-              "type": "text",
-              "id": "heading",
-              "label": "Heading",
-              "default": "Heading"
-          },
-          {
-              "type": "textarea",
-              "id": "text",
-              "label": "Text",
-              "default": "Text Content For Section"
-          },
-          {
-              "type": "image_picker",
-              "id": "image",
-              "label": "Image"
-          },
-          {
-              "type": "number",
-              "id": "image-size",
-              "label": "Image Size",
-              "default": 80
-          },
-          {
-              "type": "number",
-              "id": "space-top",
-              "label": "Space Top",
-              "default": 50
-          },
-          {
-              "type": "number",
-              "id": "space-bottom",
-              "label": "Space Bottom",
-              "default": 50
-          },
-          {
-              "type": "text",
-              "id": "cta-text",
-              "label": "CTA Text",
-              "default": "LEARN MORE"
-          },
-          {
-              "type": "color",
-              "id": "cta-background",
-              "label": "CTA Background",
-              "default": "#6e6d97"
-          },
-          {
-              "type": "color",
-              "id": "background",
-              "label": "Background",
-              "default": "#FFFFFF"
-          },
-          {
-              "type": "text",
-              "id": "class",
-              "label": "Class name"
-          }
-      ],
-      "presets": [
-        {
-          "name": "Parallax"
-        }
-      ]
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text",
+      "default": "Text Content For Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "number",
+      "id": "image-size",
+      "label": "Image Size",
+      "default": 80
+    },
+    {
+      "type": "number",
+      "id": "space-top",
+      "label": "Space Top",
+      "default": 50
+    },
+    {
+      "type": "number",
+      "id": "space-bottom",
+      "label": "Space Bottom",
+      "default": 50
+    },
+    {
+      "type": "text",
+      "id": "cta-text",
+      "label": "CTA Text",
+      "default": "LEARN MORE"
+    },
+    {
+      "type": "color",
+      "id": "cta-background",
+      "label": "CTA Background",
+      "default": "#6e6d97"
+    },
+    {
+      "type": "text",
+      "id": "cta-url",
+      "label": "CTA url",
+      "default": "#"
+    },
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "Class name"
     }
-  {% endschema %}
+  ],
+  "presets": [
+    {
+      "name": "Parallax"
+    }
+  ]
+}
+{% endschema %}

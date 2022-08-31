@@ -182,11 +182,6 @@
   capture display_prices
     echo '<div class="product--price-container">'
       echo '<div class="product--price-wrapper">'
-        if product.price_varies
-          echo '<span class="product--from" data-item="accent-text">'
-            echo from_t
-          echo '</span>'
-        endif
 
         if compare_price
           echo '<span class="product--compare-price money" data-item="light-accent-text">'
@@ -336,7 +331,7 @@
       -%}
     </div>
   </a>
-  
+
   <div>
     <a class="cta-button" style="background: #6E6D97" href="{{ url }}">SHOP NOW</a>
   </div>
@@ -361,13 +356,12 @@
 
           <div class="product--form--media-container">
             {%- for media in product.media -%}
-              {%
-                render "product--media",
-                media_view: "featured",
+              {% render 'product--media',
+                media_view: 'featured',
                 product: product,
                 inside_carousel: false,
                 product_media: media,
-                media_size: "desktop"
+                media_size: 'desktop'
               %}
             {%- endfor -%}
           </div>

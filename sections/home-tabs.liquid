@@ -1,123 +1,129 @@
 <style>
-.home-tabs {
-  text-align: center;
-  padding-top: 50px;
-  background: rgb(242,242,247);
-  background: linear-gradient(0deg, rgba(241,242,246,1) 0%, rgba(242,245,245,1) 100%);
-}
-.home-tabs h2 {
-  color: #6e6d99;
-  margin-bottom: 20px;
-}
-.home-tabs .container > p {
-  color: #6e6d99;
-}
-#tabs-container {
-  margin-top: 30px;
-}
-#tabs-container .tabs-menu ul {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-}
-#tabs-container .tabs-menu ul li {
-  padding: 15px 50px;
-  border: 1px solid #666;
-  border-radius: 60px;
-  text-transform: uppercase;
-  font-size: 20px;
-  cursor: pointer;
-}
-/* tabs colors */
-{% for block  in section.blocks %}
-.{{ block.settings.title }}.active,
-.{{ block.settings.title }}:hover {
-  background: {{ block.settings.tab_color }};
-  color: #fff!important;
-}
-{% endfor %}
-
-
-
-.tabs-info-container div {
-  width: 50%;
-}
-.tabs-info-container .tab-info {
-  align-items: center;
-  position: relative;
-  justify-content: flex-end;
-  width: 100%;
-  height: 650px;
-  display: none;
-  padding: 80px ;
-}
-.tabs-info-container .tab-info.active {
-  display: flex;
-}
-.tabs-info-container .tab-image {
-  position: absolute;
-  left: 12%;
-}
-.tabs-info-container .tab-image img {
-  height: 500px;
-  max-width: none;
-}
-.tabs-info-container .tab-text {
-  text-align: center;
-  padding: 30px;
-  max-width: 500px;
-}
-.tabs-info-container .tab-text a {
-  background: #6e6d97;
-  padding: 15px 40px;
-  margin-top: 30px;
-}
-@media screen and (max-width: 768px) {
   .home-tabs {
-    padding-bottom: 50px;
+    text-align: center;
+    padding-top: 50px;
+    background: rgb(242,242,247);
+    background: linear-gradient(0deg, rgba(241,242,246,1) 0%, rgba(242,245,245,1) 100%);
+  }
+  .home-tabs h2 {
+    color: #6e6d99;
+    margin-bottom: 20px;
+  }
+  .home-tabs .container > p {
+    color: #6e6d99;
+  }
+  #tabs-container {
+    margin-top: 30px;
   }
   #tabs-container .tabs-menu ul {
-    flex-wrap: wrap!important;
-    gap: 20px!important;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
   }
   #tabs-container .tabs-menu ul li {
-    padding: 10px 20px!important;
-    width: 46%!important;
+    padding: 15px 50px;
+    border: 2px solid #666;
+    border-radius: 60px;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
   }
-  .tabs-info-container .tab-info.active {
-    flex-direction: column!important;
+  /* tabs colors */
+  {% for block  in section.blocks %}
+  .{{ block.settings.title }}.active,
+  .{{ block.settings.title }}:hover {
+    background: {{ block.settings.tab_color }};
+    color: #fff!important;
   }
-  .tabs-info-container .tab-image {
-    position: relative!important;
-    padding: 30px 0;
-  }
-  .tabs-info-container .tab-image img {
-    width: 100%;
-    height: auto;
-    margin-left: 12%;
+  {% endfor %}
+
+
+
+  .tabs-info-container div {
+    width: 50%;
   }
   .tabs-info-container .tab-info {
-    padding: 0!important;
-    height: auto;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    width: 100%;
+    height: 650px;
+    display: none;
+    padding: 80px ;
   }
-  .tabs-info-container .tab-info > div {
-    width: 100%!important;
+  .tabs-info-container .tab-info.active {
+    display: flex;
   }
-}
+  .tabs-info-container .tab-image {
+    position: absolute;
+    left: 12%;
+  }
+  .tabs-info-container .tab-image img {
+    height: 500px;
+    max-width: none;
+  }
+  .tabs-info-container .tab-text {
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+    color: #6E6D99;
+  }
+  .tabs-info-container .tab-text a {
+    background: #6e6d97;
+    padding: 15px 40px;
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 768px) {
+    .home-tabs {
+      padding-bottom: 50px;
+    }
+    #tabs-container .tabs-menu ul {
+      flex-wrap: wrap!important;
+      gap: 20px!important;
+    }
+    #tabs-container .tabs-menu ul li {
+      padding: 10px 20px!important;
+      width: 46%!important;
+    }
+    .tabs-info-container .tab-info.active {
+      flex-direction: column!important;
+    }
+    .tabs-info-container .tab-image {
+      position: relative!important;
+      padding: 30px 0;
+    }
+    .tabs-info-container .tab-image img {
+      width: 100%;
+      height: auto;
+      margin-left: 12%;
+    }
+    .tabs-info-container .tab-info {
+      padding: 0!important;
+      height: auto;
+    }
+    .tabs-info-container .tab-info > div {
+      width: 100%!important;
+    }
+  }
 </style>
 
 <div class="container">
-  <h2>What's your mode</h2>
+  <h2>What's your mood?</h2>
   <p>Let us help pick the scent that fits you.</p>
   <div id="tabs-container">
     <div class="tabs-menu">
       <ul>
         {% for block in section.blocks %}
-          <li class="tab {{ block.settings.title }}" 
+          <li
+            class="tab {{ block.settings.title }}"
             data-id="{{ block.settings.title }}"
-            style="color: {{ block.settings.tab_color }};
-                  border-color: {{ block.settings.tab_color }};
-                  ">{{ block.settings.title }}</li>
+            style="
+              color: {{ block.settings.tab_color }};
+              border-color: {{ block.settings.tab_color }};
+            "
+          >
+            {{ block.settings.title }}
+          </li>
         {% endfor %}
       </ul>
     </div>
@@ -129,7 +135,10 @@
           <img src="{{ block.settings.image | img_url: 'master' }}">
         </div>
         <div class="tab-text">
-          <img src="{{ block.settings.title_image | img_url: '250x' }}" style="margin-bottom: 20px;">
+          <img
+            src="{{ block.settings.title_image | img_url: '250x' }}"
+            style="margin-bottom: 20px;"
+          >
           {% comment %} <h3>{{ block.settings.title }}</h3> {% endcomment %}
           <p>
             {{ block.settings.text }}
@@ -140,7 +149,12 @@
     {% endfor %}
   </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"
+>
+</script>
 <script>
   $(document).ready(function() {
     $(".tabs-menu ul li:first-child").addClass("active");
@@ -161,51 +175,51 @@
   "settings": [],
   "blocks": [
     {
-    "name": "Tab",
-    "type": "product",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "title_image",
-        "label": "Title Image"
-      },
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-      },
-      {
-        "type": "textarea",
-        "id": "text",
-        "label": "Text"
-      },
-      {
-        "type": "color",
-        "id": "text-color",
-        "label": "Text Color"
-      },
-      {
-        "type": "text",
-        "id": "cta",
-        "label": "Call to Action"
-      },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
-        "type": "color",
-        "id": "tab_color",
-        "label": "Tab Color",
-        "default": "#dadada"
-      }
+      "name": "Tab",
+      "type": "product",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "title_image",
+          "label": "Title Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "color",
+          "id": "text-color",
+          "label": "Text Color"
+        },
+        {
+          "type": "text",
+          "id": "cta",
+          "label": "Call to Action"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "color",
+          "id": "tab_color",
+          "label": "Tab Color",
+          "default": "#dadada"
+        }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Home Tabs"  
+      "name": "Home Tabs"
     }
   ]
 }

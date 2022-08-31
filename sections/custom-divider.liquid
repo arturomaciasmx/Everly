@@ -1,92 +1,101 @@
 {%- liquid
-    assign image = section.settings.image
-    assign height = section.settings.height
-    assign background = section.settings.background
-    assign space-top = section.settings.space-top
-    assign space-bottom = section.settings.space-bottom
+  assign image = section.settings.image
+  assign height = section.settings.height
+  assign background = section.settings.background
+  assign space-top = section.settings.space-top
+  assign space-bottom = section.settings.space-bottom
 -%}
 
 <style>
-    .custom-divider {
-        padding: 0 20px;
-    }
-    #shopify-section-{{ section.id }} {
-        padding-top: {{ space-top }}px;
-        padding-bottom: {{ space-bottom }}px;
-        background: {{ background }};
-    }
-    #shopify-section-{{ section.id }} .divider {
-        height: {{height}}px;
-        background: url({{ image | img_url: 'master' }});
-        background-size: contain;
-        background-position-x: center;
-        background-repeat: no-repeat;
-        {% if section.settings.is-heading %}
-            background-position-y: -10px;
-        {% endif %}
-    }
-    .custom-divider img {
-        height: 100%;
-        width: 100%;
-    }
+  .custom-divider {
+       	    padding: 0 20px;
+  }
+  #shopify-section-{{ section.id }} {
+      padding-top: {{ space-top }}px;
+      padding-bottom: {{ space-bottom }}px;
+      background: {{ background }};
+  }
+  #shopify-section-{{ section.id }} .divider {
+    height: {{height}}px;
+    background: url({{ image | img_url: 'master' }});
+    background-size: contain;
+    background-position-x: center;
+    {% if section.settings.repeat %}
+      background-repeat-x: repeat;
+      background-repeat-y: no-repeat;
+    {% else %}
+      background-repeat: no-repeat;
+    {% endif %}
+    {% if section.settings.is-heading %}
+        background-position-y: -10px;
+    {% endif %}
+  }
+  .custom-divider img {
+      height: 100%;
+      width: 100%;
+  }
 </style>
 
-<div class="divider">
-    
-</div>
+<div class="divider"></div>
 
 {% schema %}
+{
+  "name": "Custom Divider",
+  "class": "custom-divider",
+  "settings": [
     {
-        "name": "Custom Divider",
-        "class": "custom-divider",
-        "settings": [
-            {
-                "type": "image_picker",
-                "id": "image",
-                "label": "Image"
-            },
-            {
-                "type": "number",
-                "id": "height",
-                "label": "Height",
-                "default": 80
-            },
-            {
-                "type": "color_background",
-                "id": "background",
-                "label": "Background Color"
-            },
-            {
-                "type": "range",
-                "id": "space-top",
-                "min": 0,
-                "max": 100,
-                "step": 1,
-                "unit": "px",
-                "label": "Space Top",
-                "default": 0
-            },
-            {
-                "type": "range",
-                "id": "space-bottom",
-                "min": 0,
-                "max": 100,
-                "step": 1,
-                "unit": "px",
-                "label": "Space Bottom",
-                "default": 0
-            },
-            {
-                "type": "checkbox",
-                "id": "is-heading",
-                "label": "Is Heading",
-                "default": false
-            }
-        ],
-        "presets": [
-            {
-                "name": "Custom Divider"
-            }
-        ]
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "number",
+      "id": "height",
+      "label": "Height",
+      "default": 80
+    },
+    {
+      "type": "color_background",
+      "id": "background",
+      "label": "Background Color"
+    },
+    {
+      "type": "range",
+      "id": "space-top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Space Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "space-bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Space Bottom",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "is-heading",
+      "label": "Is Heading",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "repeat",
+      "label": "Repeat",
+      "default": true
     }
+  ],
+  "presets": [
+    {
+      "name": "Custom Divider"
+    }
+  ]
+}
 {% endschema %}

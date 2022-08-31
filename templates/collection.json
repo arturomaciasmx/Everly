@@ -3,23 +3,55 @@
     "collection-header": {
       "type": "collection--header",
       "settings": {
+        "enable-header": true,
+        "show-title": true,
+        "title-alignment": "center",
+        "show-description": true,
+        "show-image": false,
+        "use-image-fallback": true,
+        "image-height": "medium",
+        "alt-color": true,
+        "apply-overlay": true
       }
     },
     "header-promo": {
       "type": "image-with-text",
+      "disabled": true,
       "settings": {
+        "text-color": "auto",
         "background-color": "light",
         "container-width": 5,
         "spacing-above": true,
         "spacing-below": true,
         "image-height": 2,
+        "darken-image": true,
+        "parallax-enabled": false,
+        "text-position": "center",
+        "text-width": "medium",
+        "overlap": false,
+        "box-around-text": false,
+        "mobile-overlay": true,
+        "overline": "Overline text",
         "title": "Collection Promotion",
-        "description": "<p>A collection-wide promotion for sales, product announcements and more.<\/p>"
+        "description": "<p>A collection-wide promotion for sales, product announcements and more.<\/p>",
+        "link-url": "",
+        "link-text": "",
+        "bg-color": ""
       }
     },
     "navigation": {
       "type": "collection--navigation",
       "settings": {
+        "show-browse-button": true,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": false,
+        "custom-list-collections": "main-menu",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches-enabled": false,
+        "show-search-link": true
       }
     },
     "main": {
@@ -27,6 +59,7 @@
       "blocks": {
         "grid-promo-1": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "row-number": 2,
             "column-number": 2,
@@ -47,23 +80,205 @@
         "grid-promo-1"
       ],
       "settings": {
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "1",
+        "number-of-rows": 3,
+        "background": "linear-gradient(180deg, rgba(242, 241, 247, 1) 51%, rgba(244, 249, 243, 1) 100%)"
       }
     },
-    "recent-products": {
-      "type": "recent-products",
+    "166189386982ab9cfe": {
+      "type": "custom-divider",
       "settings": {
-        "spacing-above": false
+        "image": "shopify:\/\/shop_images\/Recurso_7.png",
+        "height": 80,
+        "background": "#F4F9F3",
+        "space-top": 30,
+        "space-bottom": 30,
+        "is-heading": false
       }
     },
-    "footer-promo": {
-      "type": "image-with-text",
+    "1661893966ccf59fb5": {
+      "type": "custom-columns-with-images",
+      "blocks": {
+        "fe7b6ade-0394-4a20-989c-784455cf2d05": {
+          "type": "image",
+          "settings": {
+            "title": "NON-TOXIC OILS",
+            "text": "",
+            "content_color": "#222222",
+            "image": "shopify:\/\/shop_images\/Recurso_11512.png",
+            "image_size": 60
+          }
+        },
+        "a53a2d6b-6a91-44c9-acbc-2cbc1b68b4ca": {
+          "type": "image",
+          "settings": {
+            "title": "COMPOSTABLE PACKAGING*",
+            "text": "",
+            "content_color": "#222222",
+            "image": "shopify:\/\/shop_images\/compostable-packaging.png",
+            "image_size": 60
+          }
+        },
+        "e1af6b16-dbbc-4a8d-8925-e5dd20270a9f": {
+          "type": "image",
+          "settings": {
+            "title": "PHTHALATE +PARABEN",
+            "text": "",
+            "content_color": "#222222",
+            "image": "shopify:\/\/shop_images\/phtalate.png",
+            "image_size": 60
+          }
+        },
+        "5d57f61f-420a-4785-8358-86adfbfeca78": {
+          "type": "image",
+          "settings": {
+            "title": "CARBON NEUTRAL",
+            "text": "",
+            "content_color": "#222222",
+            "image": "shopify:\/\/shop_images\/carbon-neutral.png",
+            "image_size": 60
+          }
+        },
+        "e9ec3536-00b2-4a40-ac62-18d8ea843efd": {
+          "type": "image",
+          "settings": {
+            "title": "COCONUT WAX",
+            "text": "",
+            "content_color": "#222222",
+            "image": "shopify:\/\/shop_images\/coconut-wax.png",
+            "image_size": 60
+          }
+        }
+      },
+      "block_order": [
+        "fe7b6ade-0394-4a20-989c-784455cf2d05",
+        "a53a2d6b-6a91-44c9-acbc-2cbc1b68b4ca",
+        "e1af6b16-dbbc-4a8d-8925-e5dd20270a9f",
+        "5d57f61f-420a-4785-8358-86adfbfeca78",
+        "e9ec3536-00b2-4a40-ac62-18d8ea843efd"
+      ],
       "settings": {
+        "title": "",
+        "title_color": "#6e6d97",
+        "space-top": 1,
+        "space-bottom": 50,
+        "background": "#f4f9f3"
+      }
+    },
+    "1661894212bec768a6": {
+      "type": "home-parallax",
+      "settings": {
+        "heading": "Sustainability at Everly",
+        "text": "<b>60 Tons of household waste is produced every second–<\/b> contributing to massive C02 emissions, ocean pollution, and bursting landfills. We want to be part of the solution, starting with candles.",
+        "image": "shopify:\/\/shop_images\/Recurso_9_1.png",
+        "image-size": 60,
+        "space-top": 0,
+        "space-bottom": 0,
+        "cta-text": "LEARN MORE",
+        "cta-background": "#6e6d97",
+        "cta-url": "#",
+        "background": "#ffffff",
+        "class": ""
+      }
+    },
+    "16618943111f25e489": {
+      "type": "custom-2-columns-text",
+      "settings": {
+        "content-text": "",
+        "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "heading": "Candle. Refill. Repeat.",
+        "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
+        "text-align": "left",
+        "cta-text": "LEARN MORE",
+        "cta-url": "#",
+        "cta-background": "#6e6d97",
+        "background": "linear-gradient(180deg, rgba(242, 241, 247, 1), rgba(244, 249, 243, 1) 100%)",
+        "reverse": false
+      }
+    },
+    "16618944306e950a7d": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "What people are saying",
+        "text": "",
+        "image": "shopify:\/\/shop_images\/Recurso_12512.jpg",
+        "image-size": 60,
+        "space-top": 50,
+        "space-bottom": 0,
+        "cta-text": "",
+        "cta-background": "#6e6d97",
+        "background": "#FFFFFF",
+        "class": ""
+      }
+    },
+    "1661894471137d3703": {
+      "type": "custom-columns-with-images",
+      "blocks": {
+        "705bd5e4-1f24-465d-97b0-5b5047320ab5": {
+          "type": "image",
+          "settings": {
+            "title": "So so so easy!",
+            "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        },
+        "fa3265b9-e5e5-4bf4-8898-2e4fec6ff536": {
+          "type": "image",
+          "settings": {
+            "title": "Love this idea!",
+            "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        },
+        "0d805f2c-c1da-4eb4-aabd-a0aced9040cd": {
+          "type": "image",
+          "settings": {
+            "title": "It smells AMAZING!",
+            "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
+            "content_color": "#6e6d97",
+            "image": "shopify:\/\/shop_images\/Recurso_15512.png",
+            "image_size": 15
+          }
+        }
+      },
+      "block_order": [
+        "705bd5e4-1f24-465d-97b0-5b5047320ab5",
+        "fa3265b9-e5e5-4bf4-8898-2e4fec6ff536",
+        "0d805f2c-c1da-4eb4-aabd-a0aced9040cd"
+      ],
+      "settings": {
+        "title": "",
+        "title_color": "#6e6d97",
+        "space-top": 0,
+        "space-bottom": 50,
+        "background": "#ffffff"
+      }
+    },
+    "166189464236d3e34c": {
+      "type": "newsletter",
+      "settings": {
+        "bg-color": "#f4f9f3",
+        "color": "#6e6d99",
+        "spacing-above": true,
+        "spacing-below": true,
+        "heading": "Subscribe to our newsletter",
+        "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+      }
+    },
+    "1661901477e56648fd": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "background-color": "light",
+        "light-text": true,
         "container-width": 6,
         "spacing-above": false,
-        "spacing-below": false,
-        "image-height": 2,
-        "title": "Collection Promotion",
-        "description": "<p>A collection-wide promotion for sales, product announcements and more.<\/p>"
+        "spacing-below": false
       }
     }
   },
@@ -72,7 +287,13 @@
     "header-promo",
     "navigation",
     "main",
-    "recent-products",
-    "footer-promo"
+    "166189386982ab9cfe",
+    "1661893966ccf59fb5",
+    "1661894212bec768a6",
+    "16618943111f25e489",
+    "16618944306e950a7d",
+    "1661894471137d3703",
+    "166189464236d3e34c",
+    "1661901477e56648fd"
   ]
 }

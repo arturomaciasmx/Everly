@@ -32,11 +32,11 @@
       "announcement": {
         "type": "announcement",
         "settings": {
-          "enabled": false,
+          "enabled": true,
           "home-page-only": false,
-          "background-color": "accent",
-          "light-text": true,
-          "text": "LAUNCHING ON SEPTEMBER 2022",
+          "background-color": "light",
+          "light-text": false,
+          "text": "FREE SHIPPING <span style=\"font-weight: 100;\">on orders over $100<\/span>",
           "link": ""
         }
       },
