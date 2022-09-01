@@ -113,136 +113,189 @@
 -%}
 
 <style>
-  .collection--body--root {
+  #shopify-section-{{ section.id }} {
     background: {{ section.settings.background }};
   }
+  .collection--container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .collections--menu {
+    padding-left: 40px;
+  }
+  .menu--section {
+    color: #6e6d97;
+    padding-top: 40px;
+  }
+  .menu--section h3 {
+    border-bottom: 1px solid #b0afce;
+    line-height: 1.5;
+  }
+  .menu--section ul {
+    margin-top: 20px;
+  }
 </style>
-
-<collection-root
-  class="collection--body--root"
-  id="collection-root"
-  data-section-id="{{ section.id }}"
-  data-section-type="collection"
-  data-container="section"
-  data-max-columns="{{ products_per_row_desktop }}"
-  data-body-root
->
-  <div
-    class="collection--body--spinner"
-    style="display:none;"
-    data-container="block"
-    data-body-spinner
-  >
-    <div class="collection--body--spinner-wrapper" data-item="spinner">
-      {% render 'loading-spinner' %}
+<div class="collection--container">
+  <div class="collections--menu">
+    <div class="menu--section">
+      <h3>MOOD</h3>
+      <ul>
+        <li>Spiritual</li>
+        <li>Romantic</li>
+        <li>Sexy</li>
+        <li>Adventure</li>
+      </ul>
+    </div>
+    <div class="menu--section">
+      <h3>SCENT</h3>
+      <ul>
+        <li>Citrus</li>
+        <li>Earthy</li>
+        <li>Floral</li>
+        <li>Fruity</li>
+        <li>Spiced</li>
+        <li>Woody</li>
+      </ul>
+    </div>
+    <div class="menu--section">
+      <h3>PRODUCT</h3>
+      <ul>
+        <li>Candle</li>
+        <li>Vessel</li>
+      </ul>
     </div>
   </div>
-
-  {% paginate collection.products by products_per_page %}
-    {% if paginate.pages > 1 %}
-      <a data-item="a11y-button" href="#collection-pagination" data-body-pagination-link>
-        {{ skip_link_t }}
-      </a>
-    {% endif %}
-
+  <collection-root
+    class="collection--body--root"
+    id="collection-root"
+    data-section-id="{{ section.id }}"
+    data-section-type="collection"
+    data-container="section"
+    data-max-columns="{{ products_per_row_desktop }}"
+    data-body-root
+  >
     <div
-      class="collection--body--grid"
-      data-body-grid
-      data-container="panel"
-      data-columns="{{ products_per_row_desktop }}"
-      data-mobile-columns="{{ products_per_row_mobile }}"
+      class="collection--body--spinner"
+      style="display:none;"
+      data-container="block"
+      data-body-spinner
     >
-      {% if collection.products_count > 0 %}
-        {%- liquid
-          assign current_block_num = 1
+      <div class="collection--body--spinner-wrapper" data-item="spinner">
+        {% render 'loading-spinner' %}
+      </div>
+    </div>
 
-          for product in collection.products
+    {% paginate collection.products by products_per_page %}
+      {% if paginate.pages > 1 %}
+        <a
+          data-item="a11y-button"
+          href="#collection-pagination"
+          data-body-pagination-link
+        >
+          {{ skip_link_t }}
+        </a>
+      {% endif %}
+
+      <div
+        class="collection--body--grid"
+        data-body-grid
+        data-container="panel"
+        data-columns="{{ products_per_row_desktop }}"
+        data-mobile-columns="{{ products_per_row_mobile }}"
+      >
+        {% if collection.products_count > 0 %}
+          {%- liquid
+            assign current_block_num = 1
+
+            for product in collection.products
             assign current_row = current_block_num | divided_by: products_per_row_desktop
             assign current_column = current_block_num | modulo: products_per_row_desktop
 
             comment
-              "last column condition"
+            "last column condition"
             endcomment
 
             if current_column == 0
-              assign current_column = products_per_row_desktop
+            assign current_column = products_per_row_desktop
             else
-              assign current_row = current_row | plus: 1
+            assign current_row = current_row | plus: 1
             endif
 
             assign current_coords = current_row | append: ',' | append: current_column
 
             if promo_grid_coords_arr contains current_coords
-              for promo_grid_coords in promo_grid_coords_arr
-                if promo_grid_coords == current_coords
-                  assign promo_arr_index = forloop.index0
-                  break
-                endif
-              endfor
+            for promo_grid_coords in promo_grid_coords_arr
+            if promo_grid_coords == current_coords
+            assign promo_arr_index = forloop.index0
+            break
+            endif
+            endfor
 
-              echo promo_html_arr[promo_arr_index]
+            echo promo_html_arr[promo_arr_index]
 
-              comment
-                "track what we've rendered for end of the grid condition"
-              endcomment
+            comment
+            "track what we've rendered for end of the grid condition"
+            endcomment
 
-              capture indexes_accessed
-                unless indexes_accessed == blank
-                  echo indexes_accessed | append: ','
-                endunless
-                echo promo_arr_index
-              endcapture
+            capture indexes_accessed
+            unless indexes_accessed == blank
+            echo indexes_accessed | append: ','
+            endunless
+            echo promo_arr_index
+            endcapture
 
-              comment
-                "need to keep track of promos width, and how that will change where we are on the grid"
-              endcomment
+            comment
+            "need to keep track of promos width, and how that will change where we are on the grid"
+            endcomment
 
-              assign current_promo_width = promo_widths_arr[promo_arr_index] | plus: 0
-              assign current_block_num = current_block_num | plus: current_promo_width
+            assign current_promo_width = promo_widths_arr[promo_arr_index] | plus: 0
+            assign current_block_num = current_block_num | plus: current_promo_width
 
-              comment
-                "check if next block is a promo"
-              endcomment
+            comment
+            "check if next block is a promo"
+            endcomment
 
-              assign next_row = current_block_num | divided_by: products_per_row_desktop
-              assign next_column = current_block_num | modulo: products_per_row_desktop
-              if next_column == 0
-                assign next_column = products_per_row_desktop
-              else
-                assign next_row = next_row | plus: 1
-              endif
+            assign next_row = current_block_num | divided_by: products_per_row_desktop
+            assign next_column = current_block_num | modulo: products_per_row_desktop
+            if next_column == 0
+            assign next_column = products_per_row_desktop
+            else
+            assign next_row = next_row | plus: 1
+            endif
 
-              assign next_coords = next_row | append: ',' | append: next_column
+            assign next_coords = next_row | append: ',' | append: next_column
 
-              comment
-                "if we need to render the product html later, due to consecutive promos"
-              endcomment
+            comment
+            "if we need to render the product html later, due to consecutive promos"
+            endcomment
 
-              if promo_grid_coords_arr contains next_coords
-                capture pending_products_to_render
-                  unless pending_products_to_render == blank
-                    echo pending_products_to_render | append: '|'
-                  endunless
+            if promo_grid_coords_arr contains next_coords
+            capture pending_products_to_render
+            unless pending_products_to_render == blank
+            echo pending_products_to_render | append: '|'
+            endunless
 
-                  render 'product--item', product: product, unique_handle: 'filter', section_id: section.id
-                endcapture
+            render 'product--item', product: product, unique_handle: 'filter', section_id: section.id
+            endcapture
 
-                continue
-              endif
+            continue
+            endif
 
             endif
 
             comment
-              "render stored products if they've been previously skipped"
+            "render stored products if they've been previously skipped"
             endcomment
 
             unless pending_products_to_render == blank
-              assign pending_products_to_render_arr = pending_products_to_render | split: '|'
-              for pending_product in pending_products_to_render_arr
-                echo pending_product
-                assign current_block_num = current_block_num | plus: 1
-              endfor
-              assign pending_products_to_render = blank
+            assign pending_products_to_render_arr = pending_products_to_render | split: '|'
+            for pending_product in pending_products_to_render_arr
+            echo pending_product
+            assign current_block_num = current_block_num | plus: 1
+            endfor
+            assign pending_products_to_render = blank
             endunless
 
             render 'product--item', product: product, unique_handle: 'filter', section_id: section.id
@@ -251,54 +304,55 @@
             assign indexes_accessed_arr = indexes_accessed | split: ","
 
             comment
-              "condition where promo is placed at the end of the grid"
+            "condition where promo is placed at the end of the grid"
             endcomment
 
             if products_per_page == forloop.index and promo_html_arr.size > indexes_accessed_arr.size
-              assign indexes = promo_html_arr.size | minus: 1
-              for i in (0..indexes)
-                if indexes_accessed_arr contains i
-                  continue
-                elsif promo_grid_coords_arr[i] contains number_of_rows
-                  echo promo_html_arr[i]
-                endif
-              endfor
+            assign indexes = promo_html_arr.size | minus: 1
+            for i in (0..indexes)
+            if indexes_accessed_arr contains i
+            continue
+            elsif promo_grid_coords_arr[i] contains number_of_rows
+            echo promo_html_arr[i]
+            endif
+            endfor
             endif
 
-          endfor
-        -%}
-      {% elsif current_tags == blank %}
-        <div class="collection--body--empty" data-container="block">
-          <p data-item="paragraph">
-            {{ no_products_t }}
-          </p>
-          <a href="{{ routes.root_url }}" data-item="block-link">
-            <div>{{ continue_shopping_t }}</div>
-          </a>
-        </div>
-      {% else %}
-        <div class="collection--body--empty" data-container="block">
-          <p data-item="paragraph">
-            {{ filter_feedback_t }}
-          </p>
-        </div>
-      {% endif %}
-    </div>
+            endfor
+          -%}
+        {% elsif current_tags == blank %}
+          <div class="collection--body--empty" data-container="block">
+            <p data-item="paragraph">
+              {{ no_products_t }}
+            </p>
+            <a href="{{ routes.root_url }}" data-item="block-link">
+              <div>{{ continue_shopping_t }}</div>
+            </a>
+          </div>
+        {% else %}
+          <div class="collection--body--empty" data-container="block">
+            <p data-item="paragraph">
+              {{ filter_feedback_t }}
+            </p>
+          </div>
+        {% endif %}
+      </div>
 
-    <div
-      class="collection--body--pagination"
-      id="collection-pagination"
-      data-container="block"
-      data-body-pagination
-    >
-      {%- liquid
-        if paginate.pages > 1
+      <div
+        class="collection--body--pagination"
+        id="collection-pagination"
+        data-container="block"
+        data-body-pagination
+      >
+        {%- liquid
+          if paginate.pages > 1
           render 'pagination', paginate: paginate, view: 'collection'
-        endif
-      -%}
-    </div>
-  {% endpaginate %}
-</collection-root>
+          endif
+        -%}
+      </div>
+    {% endpaginate %}
+  </collection-root>
+</div>
 
 <script type="module">
   import "{{ 'collection.js' | asset_url }}";

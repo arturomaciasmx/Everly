@@ -41,6 +41,7 @@
     },
     "navigation": {
       "type": "collection--navigation",
+      "disabled": true,
       "settings": {
         "show-browse-button": true,
         "show-sort-button": true,
@@ -80,9 +81,9 @@
         "grid-promo-1"
       ],
       "settings": {
-        "products-per-row--desktop": 4,
+        "products-per-row--desktop": 3,
         "products-per-row--mobile": "1",
-        "number-of-rows": 3,
+        "number-of-rows": 2,
         "background": "linear-gradient(180deg, rgba(242, 241, 247, 1) 51%, rgba(244, 249, 243, 1) 100%)"
       }
     },
@@ -94,7 +95,8 @@
         "background": "#F4F9F3",
         "space-top": 30,
         "space-bottom": 30,
-        "is-heading": false
+        "is-heading": false,
+        "repeat": true
       }
     },
     "1661893966ccf59fb5": {
@@ -105,6 +107,7 @@
           "settings": {
             "title": "NON-TOXIC OILS",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
             "image_size": 60
@@ -115,6 +118,7 @@
           "settings": {
             "title": "COMPOSTABLE PACKAGING*",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
             "image_size": 60
@@ -125,6 +129,7 @@
           "settings": {
             "title": "PHTHALATE +PARABEN",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/phtalate.png",
             "image_size": 60
@@ -135,6 +140,7 @@
           "settings": {
             "title": "CARBON NEUTRAL",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
             "image_size": 60
@@ -145,6 +151,7 @@
           "settings": {
             "title": "COCONUT WAX",
             "text": "",
+            "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
             "image_size": 60
@@ -187,6 +194,7 @@
       "settings": {
         "content-text": "",
         "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "image-width": "master",
         "heading": "Candle. Refill. Repeat.",
         "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
         "text-align": "left",
@@ -220,6 +228,7 @@
           "settings": {
             "title": "So so so easy!",
             "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
+            "subtitle": "",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -230,6 +239,7 @@
           "settings": {
             "title": "Love this idea!",
             "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
+            "subtitle": "",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -240,6 +250,7 @@
           "settings": {
             "title": "It smells AMAZING!",
             "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
+            "subtitle": "",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15

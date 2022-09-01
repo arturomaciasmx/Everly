@@ -5,7 +5,10 @@
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    >
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
@@ -24,14 +27,22 @@
     {%- endif -%}
 
     {% if settings.favicon != blank %}
-      <link rel="shortcut icon" href="{{ settings.favicon | image_url: width: 32 }}" type="image/png">
+      <link
+        rel="shortcut icon"
+        href="{{ settings.favicon | image_url: width: 32 }}"
+        type="image/png"
+      >
       <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180 }}">
     {% endif %}
 
     {% if request.page_type == 'index' %}
       <title>{{ page_title }}</title>
     {% else %}
-      <title>{{ page_title }} | {{ shop.name }}</title>
+      <title>
+        {{ page_title }}
+        |
+        {{ shop.name }}
+      </title>
     {% endif %}
 
     {%- liquid
@@ -61,7 +72,7 @@
       <link href="{{ 'theme--async.css' | asset_url }}" rel="stylesheet">
     </noscript>
 
-    <link href="{{ 'theme--critical.css' | asset_url }}" rel="stylesheet" media="all"/>
+    <link href="{{ 'theme--critical.css' | asset_url }}" rel="stylesheet" media="all">
     <link
       href="{{ 'theme--async.css' | asset_url }}"
       rel="stylesheet"
@@ -69,12 +80,23 @@
       onload="this.media='all'"
     >
 
-      <link href="{{ 'custom.css' | asset_url }}" rel="stylesheet">
+    <link href="{{ 'custom.css' | asset_url }}" rel="stylesheet">
 
     <style>
       {% render 'custom-styles' %}
     </style>
-    <script async src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script
+      async
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    >
+    </script>
+    <script
+      src="https://cdn-widgetsrepository.yotpo.com/v1/loader/oNQrEYeQ5g0BZGiNe4RsjkdXmaokVRgoxIYLMIV0"
+      async
+    >
+    </script>
     {{ content_for_header }}
   </head>
 
@@ -84,16 +106,18 @@
     data-theme-name="Beyond"
     data-theme-version="2.5.0"
   >
-    <!--[if IE]>
-      <div style="text-align:center;padding:72px 16px;">
-        {{ 'general.browser_unsupported' | t }}
-      </div>
-      <style>
-        .off-canvas--viewport { display: none; }
-      </style>
-    <![endif]-->
+    <!--
+      [if IE]>
+        <div style="text-align:center;padding:72px 16px;">
+          {{ 'general.browser_unsupported' | t }}
+        </div>
+        <style>
+          .off-canvas--viewport { display: none; }
+        </style>
+      <![endif]
+    -->
 
-    <a data-item="a11y-button" href='#main-content'>
+    <a data-item="a11y-button" href="#main-content">
       {{ 'general.a11y.skip_main' | t }}
     </a>
 
@@ -114,10 +138,8 @@
         <main class="layout--main-content" id="main-content">
           {{ content_for_layout }}
         </main>
-        
 
         {% section 'footer' %}
-        
       </div>
 
       <transition-root class="off-canvas--right-sidebar" data-active="cart">

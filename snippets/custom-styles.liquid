@@ -1,6 +1,4 @@
-h1, h2, h3, h4, h5, h6 { font-family: "Metropolis-Bold"!important; }
-{% comment %} fix error on header when close mobile menu {% endcomment %}
-.off-canvas--viewport { overflow: hidden!important; } p { font-family:
+h1, h2, h3, h4, h5, h6 { font-family: "Metropolis-Bold"!important; } p { font-family:
 "Metropolis-Regular"; font-size: 16px!important; letter-spacing: 1.3px; line-height: 28px;
 } a, a:link, a:visited { background-color: initial; } h1 { font-size: 45px!important; } h2
 { font-size: 40px!important; } h3 { font-size: 19px!important; } .container { max-width:
@@ -17,6 +15,7 @@ font-weight: 400; } .article--item { text-align: center; } .article--item--headi
 .article--item--date { color: #6e6d97; } .article--item .cta-button { background: #6e6d97;
 } .featured-blog--heading { color: #6e6d97; } .featured-collection--grid { max-width:
 1200px; margin: auto; }
+
 {% comment %} Product Page {% endcomment %}
 .disclosure--toggle { background: none!important; border-color: #dad9ee!important; }
 .collapsible-tab--wrapper { border-color: #ddd9ec; } .collapsible-tab--heading { color:
@@ -24,7 +23,8 @@ font-weight: 400; } .article--item { text-align: center; } .article--item--headi
 14px; } .product--title { text-transform: uppercase; } .product-page--grid {
 grid-template-areas: "featured featured"; grid-gap: 40px!important; } .product-page--grid
 .placeholder--root:first-child, .product-media--wrapper:first-child { grid-area: featured;
-}
+} .star-container svg { width: 20px; height: 20px; } .yotpo-sr-bottom-line-summary {
+align-items: flex-end; }
 
 {% comment %} Collection Page {% endcomment %}
 .collection--header--root { background: #f2f1f7; } .navigation--root { background:
@@ -63,5 +63,9 @@ none; } .custom-cols .row-grid { flex-wrap: wrap!important; } .custom-cols .row-
 column!important; } .custom-2-columns .container > div { width: 100%!important; padding:
 15px 10px!important; } .flexbox-gap .newsletter--inputs { width: auto; }
 .newsletter--inputs .cta-button { padding: 0 20px!important; } .footer--blocks {
-justify-content: space-around; } } @media screen and (max-width: 480px) { h1 {font-size:
-32px!important;} h2 {font-size: 28px!important;} }
+justify-content: space-around; } }
+
+@media screen and (max-width: 480px) { h1 {font-size: 32px!important;} h2 {font-size:
+28px!important;}
+{% comment %} fix error on header when close mobile menu {% endcomment %}
+.off-canvas--viewport { overflow: hidden!important; } }

@@ -191,6 +191,9 @@
           {{ block.shopify_attributes }}
         >
           {%- case block.type -%}
+            {%- when 'pair-product' -%}
+              <p>test: {{ block.settings.product }}</p>
+            
             {%- when 'overline' -%}
               <div class="product-page--overline" data-item="overline">
                 {{ block.settings.text }}
@@ -349,6 +352,17 @@
     }
   ],
   "blocks": [
+    {
+      "type": "pair-product",
+      "name": "Pair Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Pair Product"
+        }
+      ]
+    },
     {
       "type": "overline",
       "name": "Overline text",

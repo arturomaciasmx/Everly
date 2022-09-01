@@ -20,9 +20,21 @@
           "settings": {
           }
         },
-        "d403cd0d-f0b9-4db8-a52d-9fda698f6f73": {
-          "type": "rating",
+        "d6793c79-8da3-42d1-926a-df6daec6254b": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "fd3ecfb0-d81c-430b-ab1b-4494035b4679": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "disabled": true,
+          "settings": {
+            "stars_fill_color": "#fadd23",
+            "star_size": 25,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": ""
           }
         },
         "vendor": {
@@ -65,6 +77,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -100,11 +113,18 @@
             "description": "<p>{{ product.metafields.product.sustainability | metafield_tag }}<\/p>",
             "page-content": ""
           }
+        },
+        "9ead130e-9089-4900-a2b1-3a05211d03f4": {
+          "type": "pair-product",
+          "settings": {
+            "product": "{{ product.metafields.custom.pair_product.value }}"
+          }
         }
       },
       "block_order": [
         "heading",
-        "d403cd0d-f0b9-4db8-a52d-9fda698f6f73",
+        "d6793c79-8da3-42d1-926a-df6daec6254b",
+        "fd3ecfb0-d81c-430b-ab1b-4494035b4679",
         "vendor",
         "price",
         "options",
@@ -115,12 +135,13 @@
         "social-sharing",
         "22bdc427-38d0-4d56-b3f8-d1760d00e6de",
         "014714cf-6ab9-4e0b-b446-dc488ed4f371",
-        "9b3e8cf7-a7e8-408e-9403-69f5534f52da"
+        "9b3e8cf7-a7e8-408e-9403-69f5534f52da",
+        "9ead130e-9089-4900-a2b1-3a05211d03f4"
       ],
       "settings": {
         "product-media-spacing": "space-evenly",
         "product-modal-enabled": false,
-        "variant-scroll-enabled": false,
+        "variant-scroll-enabled": true,
         "image-zoom-enabled": false,
         "loop-enabled": false,
         "bg-color": "#F1F2F5"
