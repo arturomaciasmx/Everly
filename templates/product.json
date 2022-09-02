@@ -48,13 +48,19 @@
           "settings": {
           }
         },
+        "a07b7d01-7f4c-493a-8fa1-5be9468ba124": {
+          "type": "product-select",
+          "settings": {
+          }
+        },
         "options": {
           "type": "options",
+          "disabled": true,
           "settings": {
             "variant-style": "dropdowns",
-            "swatches-enabled": true,
-            "size-chart-enabled": true,
-            "size-chart-option": "size",
+            "swatches-enabled": false,
+            "size-chart-enabled": false,
+            "size-chart-option": "{{ product.title }}",
             "size-chart-content": ""
           }
         },
@@ -77,7 +83,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
           }
         },
@@ -88,6 +93,12 @@
             "facebook-enabled": true,
             "twitter-enabled": true,
             "pinterest-enabled": true
+          }
+        },
+        "9ead130e-9089-4900-a2b1-3a05211d03f4": {
+          "type": "pair-product",
+          "settings": {
+            "product": "{{ product.metafields.custom.pair_product.value }}"
           }
         },
         "22bdc427-38d0-4d56-b3f8-d1760d00e6de": {
@@ -113,12 +124,6 @@
             "description": "<p>{{ product.metafields.product.sustainability | metafield_tag }}<\/p>",
             "page-content": ""
           }
-        },
-        "9ead130e-9089-4900-a2b1-3a05211d03f4": {
-          "type": "pair-product",
-          "settings": {
-            "product": "{{ product.metafields.custom.pair_product.value }}"
-          }
         }
       },
       "block_order": [
@@ -127,16 +132,17 @@
         "fd3ecfb0-d81c-430b-ab1b-4494035b4679",
         "vendor",
         "price",
+        "a07b7d01-7f4c-493a-8fa1-5be9468ba124",
         "options",
         "0ae12d35-eb37-4fa6-b72f-59fed47e6cdb",
         "buy-buttons",
         "pickup",
         "description",
         "social-sharing",
+        "9ead130e-9089-4900-a2b1-3a05211d03f4",
         "22bdc427-38d0-4d56-b3f8-d1760d00e6de",
         "014714cf-6ab9-4e0b-b446-dc488ed4f371",
-        "9b3e8cf7-a7e8-408e-9403-69f5534f52da",
-        "9ead130e-9089-4900-a2b1-3a05211d03f4"
+        "9b3e8cf7-a7e8-408e-9403-69f5534f52da"
       ],
       "settings": {
         "product-media-spacing": "space-evenly",

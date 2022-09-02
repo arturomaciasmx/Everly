@@ -50,6 +50,62 @@
 .product-page--right-column {
   max-width: 500px;
 }
+.select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}    
+.select select {
+  font-family: "Metropolis-Regular";
+  font-size: 16px!important;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 15px 25px;
+  margin: 0px;
+  outline: 0;
+  border: 1px solid #b0afce;
+  border-radius: 0px;
+  background: transparent;
+  color: #222;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select select::-ms-expand {
+    display: none;
+}
+.select select:hover,
+.select select:focus {
+    color: #222;
+    background: ;
+}
+.select select:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.select_arrow {
+  position: absolute;
+  top: 14px;
+  right: 15px;
+  width: 14px;
+  height: 14px;
+  border: solid #b0afce;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+  border-color: #b0afce;
+}
+.select select:disabled ~ .select_arrow {
+  border-top-color: #cccccc;
+}
 </style>
 
 
@@ -183,6 +239,7 @@
 
   <div class="product-page--right-column">
     <div class="product-page--blocks">
+      
       {%- for block in section.blocks -%}
         <div
           class="product-page--block"
@@ -191,9 +248,61 @@
           {{ block.shopify_attributes }}
         >
           {%- case block.type -%}
+            {%- when 'product-select' -%}
+              <div class="select">
+                <select>
+                {% for product_c in collections['candles'].products %}
+                  <option value="{{ product_c.handle }}" 
+                    {% if product.id == product_c.id %}
+                      selected
+                    {% endif %}
+                  >{{- product_c.title | link_to: product_c.url }} SCENT</option>
+                {% endfor %}
+              </select>
+              <div class="select_arrow">
+              </div>
+            </div>
+
             {%- when 'pair-product' -%}
-              <p>test: {{ block.settings.product }}</p>
-            
+              {%- assign is_in_cart = false -%}
+              {% for item in cart.items %}
+                {% if item.variant_id == block.settings.product.selected_or_first_available_variant.id %}
+                  {% assign is_in_cart = true %}
+                {% endif %}
+              {% endfor %}
+              
+              {% if is_in_cart == false and block.settings.product != blank %}
+                <div id="pair-title" class="product-page--overline" data-item="overline">
+                  PAIR WITH
+                </div>
+                <div id="pair-container" style="display: flex; align-items: center; background: #e8e8f2; padding: 10px;justify-content: space-between;
+                };">
+                  <img src="{{ block.settings.product.featured_image.src | img_url: "x80"}}"/>
+                  <p style="
+                    padding: 0 15px;
+                    font-family: 'Metropolis-Bold';
+                    text-transform: uppercase;
+                    flex: auto;">{{ block.settings.product.title }} 
+                    <br/><span style="font-family: 'Metropolis-Regular'">{{ block.settings.product.selected_or_first_available_variant.price | money }}</span>
+                  </p>
+                  
+                    <input type="button" style="
+                    padding: 2px 14px;
+                    padding-right: 12px;
+                    background: #6e6d97;
+                    border-radius: 50px;
+                    font-size: 30px;
+                    font-family: Metropolis-Bold;
+                    color: #FFF;
+                    margin: 0;
+                    overflow: visible;"
+                    
+                    onClick="addItemToCart(this, {{ block.settings.product.selected_or_first_available_variant.id }}, 1, {{ block.settings.product.selling_plan_groups[0].selling_plans[0].id }})"
+                    value="+"/>
+                  
+                </div>
+              {% endif %}
+
             {%- when 'overline' -%}
               <div class="product-page--overline" data-item="overline">
                 {{ block.settings.text }}
@@ -201,8 +310,9 @@
 
             {%- when 'heading' -%}
               <h2 class="product-page--heading" data-item="section-heading">
-                {{ product.title }}
+                {{ product.title | upcase }}
               </h2>
+              <p style="margin-top: 8px;">{{ product.metafields.custom.subtitle | upcase }}</p>
 
             {%- when 'vendor' -%}
               <div
@@ -285,6 +395,43 @@
   </div>
 </product-root>
 
+<script>  
+
+if($(".product-page--right-column").offset() >= 210) {
+  $(".product-page--right-column").css("top", "60px");
+} 
+else {
+  $(".product-page--right-column").css("top", "60px")
+}
+
+$(".select select").change(function() {
+  window.location.href = '/products/' + $(this).val();
+});
+
+{% comment %} Add to cart with ajax {% endcomment %}
+function addItemToCart(el, variant_id, qty, selling_plan) {
+  data = {
+    "id": variant_id,
+    "quantity": qty,
+    "selling_plan": selling_plan
+  }
+    jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() { 
+        location.reload();
+        {% comment %} window.location.href = '/cart';  {% endcomment %}
+      }, 
+      error: function (xhr, ajaxOptions, thrownError) {
+        console.log(xhr.responseText);
+        console.log(thrownError);
+      }
+    });
+  }
+</script>  
+
 {%
   render "product--scripts",
   product: product,
@@ -352,6 +499,13 @@
     }
   ],
   "blocks": [
+    {
+      "type": "product-select",
+      "name": "Product Select",
+      "settings": [
+
+      ]     
+    },
     {
       "type": "pair-product",
       "name": "Pair Product",
