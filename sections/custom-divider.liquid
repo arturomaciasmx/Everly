@@ -7,9 +7,6 @@
 -%}
 
 <style>
-  .custom-divider {
-       	    padding: 0 20px;
-  }
   #shopify-section-{{ section.id }} {
       padding-top: {{ space-top }}px;
       padding-bottom: {{ space-bottom }}px;
@@ -18,7 +15,7 @@
   #shopify-section-{{ section.id }} .divider {
     height: {{height}}px;
     background: url({{ image | img_url: 'master' }});
-    background-size: contain;
+    background-size: auto {{ height }}px;
     background-position-x: center;
     {% if section.settings.repeat %}
       background-repeat-x: repeat;
@@ -27,12 +24,8 @@
       background-repeat: no-repeat;
     {% endif %}
     {% if section.settings.is-heading %}
-        background-position-y: -10px;
+        background-position-y: -20px;
     {% endif %}
-  }
-  .custom-divider img {
-      height: 100%;
-      width: 100%;
   }
 </style>
 

@@ -3,8 +3,8 @@
     "166154805413589c30": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_8.png",
-        "height": 80,
+        "image": "shopify:\/\/shop_images\/Recurso_7_0e7a8568-82b1-4324-9ec4-6a85815773e2.png",
+        "height": 100,
         "background": "#f1f2f5",
         "space-top": 0,
         "space-bottom": 0,
@@ -20,14 +20,15 @@
           "settings": {
           }
         },
-        "95d4e4cb-c770-4dae-a51b-300991525fae": {
-          "type": "overline",
+        "ff342f3d-05a2-478e-876c-94ca7439e169": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
           "settings": {
-            "text": "Overline text"
+            "product": "{{product}}"
           }
         },
         "d403cd0d-f0b9-4db8-a52d-9fda698f6f73": {
           "type": "rating",
+          "disabled": true,
           "settings": {
           }
         },
@@ -39,6 +40,11 @@
         },
         "price": {
           "type": "price",
+          "settings": {
+          }
+        },
+        "12f92561-f4bb-48f0-a160-fe767bc232f3": {
+          "type": "product-select",
           "settings": {
           }
         },
@@ -83,6 +89,12 @@
             "pinterest-enabled": true
           }
         },
+        "274bc3c0-9205-4c7e-9305-77b63e94c126": {
+          "type": "pair-product",
+          "settings": {
+            "product": "{{ product.metafields.custom.pair_product.value }}"
+          }
+        },
         "22bdc427-38d0-4d56-b3f8-d1760d00e6de": {
           "type": "collapsible-tab",
           "settings": {
@@ -110,16 +122,18 @@
       },
       "block_order": [
         "heading",
-        "95d4e4cb-c770-4dae-a51b-300991525fae",
+        "ff342f3d-05a2-478e-876c-94ca7439e169",
         "d403cd0d-f0b9-4db8-a52d-9fda698f6f73",
         "vendor",
         "price",
+        "12f92561-f4bb-48f0-a160-fe767bc232f3",
         "options",
         "0ae12d35-eb37-4fa6-b72f-59fed47e6cdb",
         "buy-buttons",
         "pickup",
         "description",
         "social-sharing",
+        "274bc3c0-9205-4c7e-9305-77b63e94c126",
         "22bdc427-38d0-4d56-b3f8-d1760d00e6de",
         "014714cf-6ab9-4e0b-b446-dc488ed4f371",
         "9b3e8cf7-a7e8-408e-9403-69f5534f52da"
@@ -136,7 +150,7 @@
     "16615479979c88033e": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_7.png",
+        "image": "shopify:\/\/shop_images\/Recurso_6.png",
         "height": 80,
         "background": "#f3f9f3",
         "space-top": 50,
@@ -239,9 +253,9 @@
       "type": "featured-products",
       "settings": {
         "product-list": [
-          "peppermint-cocoa-shavings-candle-8-oz",
-          "rawcinnamon",
-          "holiday-edition-roaster-chestnuts-rum"
+          "jardin",
+          "magia",
+          "nebula"
         ],
         "background-color": "none",
         "light-text": false,
@@ -250,7 +264,7 @@
         "display-type": "grid",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
-        "heading": "SAVE on Bundles",
+        "heading": "TRY more Scents",
         "link-url": "",
         "link-text": "",
         "custom-class": "",

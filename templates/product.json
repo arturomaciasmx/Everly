@@ -3,8 +3,8 @@
     "166154805413589c30": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
-        "height": 82,
+        "image": "shopify:\/\/shop_images\/Recurso_8_555285fa-a72d-4af3-a516-cfb1b1c15f24.png",
+        "height": 100,
         "background": "#f1f2f5",
         "space-top": 0,
         "space-bottom": 0,
@@ -156,7 +156,7 @@
     "16615479979c88033e": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_7.png",
+        "image": "shopify:\/\/shop_images\/Recurso_6.png",
         "height": 80,
         "background": "linear-gradient(180deg, rgba(241, 242, 245, 1), rgba(243, 249, 243, 1) 100%)",
         "space-top": 50,
@@ -259,9 +259,9 @@
       "type": "featured-products",
       "settings": {
         "product-list": [
-          "peppermint-cocoa-shavings-candle-8-oz",
-          "holiday-edition-roaster-chestnuts-rum",
-          "sage-palo-santo"
+          "magia",
+          "jardin",
+          "nebula"
         ],
         "background-color": "none",
         "light-text": false,

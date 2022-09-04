@@ -3,8 +3,8 @@
     "166181091554470c05": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
-        "height": 82,
+        "image": "shopify:\/\/shop_images\/Recurso_8_555285fa-a72d-4af3-a516-cfb1b1c15f24.png",
+        "height": 100,
         "background": "#F3F5F5",
         "space-top": 0,
         "space-bottom": 0,
@@ -64,8 +64,8 @@
     "16616334767b674ce1": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_7.png",
-        "height": 90,
+        "image": "shopify:\/\/shop_images\/Recurso_6.png",
+        "height": 80,
         "background": "linear-gradient(180deg, rgba(243, 245, 245, 1), rgba(243, 249, 243, 1) 100%)",
         "space-top": 50,
         "space-bottom": 30,
@@ -79,56 +79,56 @@
         "f2ea7cb0-775d-4783-bd5b-59e5491a518a": {
           "type": "image",
           "settings": {
-            "title": "NON-TOXIC OILS",
-            "text": "",
+            "title": "",
+            "text": "NON-TOXIC OILS",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "2727d41a-8292-4d2e-b910-c58439500686": {
           "type": "image",
           "settings": {
-            "title": "COMPOSTABLE <br>PACKAGING*",
-            "text": "",
+            "title": "",
+            "text": "COMPOSTABLE <br>PACKAGING*",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "0337c103-9459-4ad1-b471-86f2f5d1e10b": {
           "type": "image",
           "settings": {
-            "title": "PHTHALATE + PARABEN",
-            "text": "",
+            "title": "",
+            "text": "PHTHALATE + PARABEN FREE",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "1d9d22ed-a503-4911-8d61-d3635b33747e": {
           "type": "image",
           "settings": {
-            "title": "CARBON NEUTRAL",
-            "text": "",
+            "title": "",
+            "text": "CARBON NEUTRAL",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 60
+            "image_size": 50
           }
         },
         "73d87b31-5785-4165-a136-0cd2d93c40d5": {
           "type": "image",
           "settings": {
-            "title": "COCONUT WAX",
-            "text": "",
+            "title": "",
+            "text": "COCONUT WAX",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 60
+            "image_size": 50
           }
         }
       },

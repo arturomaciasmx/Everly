@@ -108,7 +108,7 @@
     assign title = product.title
     assign url = product.url | within: collection
     assign vendor = product.vendor
-    assign price = product.price | money
+    assign price = product.price | money_without_trailing_zeros
 
     if product.compare_at_price > product.price and product.available
       assign compare_price = product.compare_at_price | money
@@ -214,29 +214,6 @@
     echo '</div>'
   endcapture
 -%}
-
-<style>
-  .featured-label {
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    z-index: 999;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -20px;
-    left: -20px;
-    background: rgb(177,181,204);
-    background: linear-gradient(324deg, rgba(177,181,204,1) 33%, rgba(187,223,191,1) 79%);
-    color: #fff;
-    font-family: Metropolis-Bold;
-    text-transform: uppercase;
-    padding: 10px;
-    font-size: 18px;
-    line-height: 1.2;
-  }
-</style>
 
 <div
   class="product--root"

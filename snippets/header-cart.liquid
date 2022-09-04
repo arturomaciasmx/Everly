@@ -25,7 +25,8 @@
       href="{{ routes.cart_url }}"
     {% endif %}
   >
-    {{ cart_icon }}
+    {% comment %} {{ cart_icon }} {% endcomment %}
+    <img src="https://cdn.shopify.com/s/files/1/0493/9261/5587/t/26/assets/custom-cart.png" width="30" />
     <span class="cart--external--total-price">
       {%- if cart.item_count > 0 -%}{{ cart.total_price | money }}{%- endif -%}
     </span>

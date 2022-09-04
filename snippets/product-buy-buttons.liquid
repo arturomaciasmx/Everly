@@ -5,6 +5,17 @@
   assign current_variant = product.selected_or_first_available_variant
 %}
 
+
+<style>
+  .qtybox{border: 1px solid #b0afce; padding: 0 7px;margin-bottom: 0;}
+  .qtydiv .btnqty{display: inline-block;cursor: pointer;user-select: none;font-size: 25px;padding: 5px;line-height: 5px;}
+  .qtydiv .btnqty.qtyminus{margin-right: 8px;}
+  .qtydiv .btnqty.qtyplus{margin-left: 8px;}
+  .qtydiv .quantity-input{margin: 0; border: none;border: none;padding: 8px;text-align: center;width: 50px;outline: none;display: inline-block; background: none;}
+  .qtydiv {display: inline-block;padding-right: 15px;}
+</style>
+
+
 <product-buy-buttons-root
   class="product-buy-buttons--root"
   data-id="{{ id }}"
@@ -14,34 +25,52 @@
     {{- form | payment_terms -}}
 
     {% if request.page_type != "password" %}
-      <div class="product-buy-buttons--primary"
-        data-enabled="true"
-        {% if smart_payment_enabled and product.selling_plan_groups == empty %}
-          data-item='secondary-button'
-        {% else %}
-          data-item='button'
-        {% endif %}
-      >
-        <button
-          class="product-buy-buttons--cta"
-          {%- unless current_variant.available -%}
-            disabled
-          {%- endunless -%}
+      <div style="display:flex;">
+        
+        <div class="qtydiv">
+          <div class="qtybox">
+            <span class="btnqty qtyminus icon icon-minus">-</span>
+            <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector quantity-input" readonly="">
+            <span class="btnqty qtyplus icon icon-plus">+</span>
+          </div>
+        </div>
+
+        <div class="product-buy-buttons--primary" 
+          style="flex: 1;"
+          data-enabled="true"
+          {% if smart_payment_enabled and product.selling_plan_groups == empty %}
+            data-item='secondary-button'
+          {% else %}
+            data-item='button'
+          {% endif %}
         >
-          <span class="product-buy-buttons--cta-text">
-            {%- liquid
-              if current_variant.available
-                echo add_to_cart_t
-              else
-                echo out_of_stock_t
-              endif
-            -%}
-          </span>
-          <span class="product-buy-buttons--spinner">
-            {% render 'loading-spinner', size: '41px' %}
-          </span>
-        </button>
+  
+          
+  
+          <button
+            class="product-buy-buttons--cta cta-button"
+            {%- unless current_variant.available -%}
+              disabled
+            {%- endunless -%}
+          >
+            <span class="product-buy-buttons--cta-text">
+              {%- liquid
+                if current_variant.available
+                  echo add_to_cart_t
+                else
+                  echo out_of_stock_t
+                endif
+              -%}
+            </span>
+            <span class="product-buy-buttons--spinner">
+              {% render 'loading-spinner', size: '41px' %}
+            </span>
+          </button>
+        </div>
       </div>
+      
+
+      
 
       {% if smart_payment_enabled and product.available and product.selling_plan_groups == empty %}
         <div
@@ -74,6 +103,21 @@
     </select>
   {% endform %}
 </product-buy-buttons-root>
+
+<script>
+  $('.qtybox .btnqty').on('click', function(){
+    var qty = parseInt($(this).parent('.qtybox').find('.quantity-input').val());
+    if($(this).hasClass('qtyplus')) {
+      qty++;
+    }else {
+      if(qty > 1) {
+        qty--;
+      }
+    }
+    qty = (isNaN(qty))?1:qty;
+    $(this).parent('.qtybox').find('.quantity-input').val(qty);
+  }); 
+</script>
 
 <script type="module">
   import "{{ 'product-buy-buttons.js' | asset_url }}";

@@ -15,7 +15,7 @@
       "type": "home-header",
       "settings": {
         "header-text": "The clean, waste-free way to get your candle fix (minus the guilt).",
-        "background": "linear-gradient(180deg, rgba(177, 181, 204, 1), rgba(187, 223, 191, 1) 80%)",
+        "background": "linear-gradient(168deg, rgba(177, 181, 204, 1) 11%, rgba(187, 223, 191, 1) 71%)",
         "image": "shopify:\/\/shop_images\/header_img.png",
         "cta_text": "SHOP NOW",
         "cta-url": "\/collections\/shop-all",
@@ -26,7 +26,7 @@
     "165895990452ce5d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold;\"><p style=\"font-family: 'Metropolis-Bold'!important; font-size: 18px!important;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
+        "custom-liquid": "<div class=\"for-the-planet\" >\n<p>\n<span class=\"mobile-hide\">Proud Earthlings, Proud members of 1% for the Planet<\/span> <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 5,
@@ -38,11 +38,11 @@
       "type": "custom-image-with-text",
       "settings": {
         "heading": "Candle. Refill. Repeat.",
-        "text": "Our <b style=\"border-bottom: 1.5px solid;\">clean candle<\/b> kits make it easy to refill any empty vessel at home. So you can choose refills > landfills, leaving <b style=\"border-bottom: 1.5px solid;\">our world a little cleaner<b><\/b>.<\/b>",
+        "text": "Our <b style=\"border-bottom: 1.5px solid;\">clean candle<\/b> kits make it easy to refill any vessel, including ours at home, So you can choose refills > landfills, leaving <b style=\"border-bottom: 1.5px solid;\">our world a little cleaner<b><\/b>.<\/b>",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
         "image-size": 50,
         "space-top": 50,
-        "space-bottom": 49,
+        "space-bottom": 80,
         "cta-text": "",
         "cta-background": "#6e6d97",
         "background": "#f3f9f3",
@@ -53,9 +53,9 @@
       "type": "featured-products",
       "settings": {
         "product-list": [
-          "peppermint-cocoa-shavings-candle-8-oz",
-          "holiday-edition-roaster-chestnuts-rum",
-          "tobacco-white-santal"
+          "nebula",
+          "jardin",
+          "magia"
         ],
         "background-color": "none",
         "light-text": false,
@@ -83,7 +83,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "59c448b4-fb5b-4987-b666-5ecf98575911": {
@@ -94,7 +94,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "bda9b681-d3e0-49c3-994d-612d28d9ed87": {
@@ -105,7 +105,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "747fda81-0370-4eb9-a3df-45f52d3a460e": {
@@ -116,7 +116,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4": {
@@ -127,7 +127,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 50
+            "image_size": 45
           }
         }
       },
@@ -160,12 +160,13 @@
     "165949968326b2066d": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
-        "height": 80,
-        "background": "#f2f5f5",
+        "image": "shopify:\/\/shop_images\/Recurso_8_555285fa-a72d-4af3-a516-cfb1b1c15f24.png",
+        "height": 100,
+        "background": "linear-gradient(180deg, rgba(242, 245, 245, 1), rgba(242, 243, 246, 1) 100%)",
         "space-top": 0,
         "space-bottom": 0,
-        "is-heading": false
+        "is-heading": false,
+        "repeat": true
       }
     },
     "1659021079d8b6ff21": {
@@ -252,9 +253,9 @@
         "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
         "image-width": "master",
         "heading": "Candle. Refill. Repeat.",
-        "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
+        "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
         "text-align": "left",
-        "cta-text": "LEARN MORE",
+        "cta-text": "SHOP CANDLES",
         "cta-url": "#",
         "cta-background": "#6e6d97",
         "background": "#f2f5f5",
@@ -264,12 +265,13 @@
     "1659562437e51df8bf": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "image": "shopify:\/\/shop_images\/Recurso_6.png",
         "height": 80,
         "background": "#f2f5f5",
         "space-top": 0,
         "space-bottom": 0,
-        "is-heading": false
+        "is-heading": false,
+        "repeat": true
       }
     },
     "1659562483f6113690": {
@@ -349,7 +351,7 @@
         "title": "",
         "title_color": "#6e6d97",
         "space-top": 0,
-        "space-bottom": 50,
+        "space-bottom": 90,
         "background": "rgba(0,0,0,0)"
       }
     },
@@ -359,7 +361,7 @@
         "background-color": "none",
         "light-text": false,
         "container-width": 3,
-        "spacing-above": true,
+        "spacing-above": false,
         "spacing-below": true,
         "blog-heading": "Journal",
         "blog": "news",
@@ -383,7 +385,7 @@
     "16596359491ba7d9af": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "custom-liquid": "<div class=\"for-the-planet bottom-bar\">\n<p>\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/p>\n<\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 6,

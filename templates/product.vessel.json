@@ -3,8 +3,8 @@
     "166154805413589c30": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_9.png",
-        "height": 80,
+        "image": "shopify:\/\/shop_images\/Recurso_9_35c08e9c-c35f-4219-adae-61fba608d401.png",
+        "height": 100,
         "background": "#f1f2f5",
         "space-top": 0,
         "space-bottom": 0,
@@ -22,7 +22,14 @@
         },
         "d403cd0d-f0b9-4db8-a52d-9fda698f6f73": {
           "type": "rating",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "532afa2a-21bc-45f0-8cd7-bc0b5d865574": {
+          "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/star-rating\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
           }
         },
         "vendor": {
@@ -111,6 +118,7 @@
       "block_order": [
         "heading",
         "d403cd0d-f0b9-4db8-a52d-9fda698f6f73",
+        "532afa2a-21bc-45f0-8cd7-bc0b5d865574",
         "vendor",
         "price",
         "options",
@@ -136,7 +144,7 @@
     "16615479979c88033e": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_7.png",
+        "image": "shopify:\/\/shop_images\/Recurso_6.png",
         "height": 80,
         "background": "#f1f2f5",
         "space-top": 50,
@@ -194,9 +202,9 @@
       "type": "featured-products",
       "settings": {
         "product-list": [
-          "peppermint-cocoa-shavings-candle-8-oz",
-          "rawcinnamon",
-          "holiday-edition-roaster-chestnuts-rum"
+          "magia",
+          "nebula",
+          "jardin"
         ],
         "background-color": "none",
         "light-text": false,

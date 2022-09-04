@@ -90,7 +90,7 @@
     "166189386982ab9cfe": {
       "type": "custom-divider",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Recurso_7.png",
+        "image": "shopify:\/\/shop_images\/Recurso_6.png",
         "height": 80,
         "background": "#F4F9F3",
         "space-top": 30,
@@ -105,56 +105,56 @@
         "fe7b6ade-0394-4a20-989c-784455cf2d05": {
           "type": "image",
           "settings": {
-            "title": "NON-TOXIC OILS",
-            "text": "",
+            "title": "",
+            "text": "NON-TOXIC OILS",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 60
+            "image_size": 40
           }
         },
         "a53a2d6b-6a91-44c9-acbc-2cbc1b68b4ca": {
           "type": "image",
           "settings": {
-            "title": "COMPOSTABLE PACKAGING*",
-            "text": "",
+            "title": "",
+            "text": "COMPOSTABLE PACKAGING*",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 60
+            "image_size": 40
           }
         },
         "e1af6b16-dbbc-4a8d-8925-e5dd20270a9f": {
           "type": "image",
           "settings": {
-            "title": "PHTHALATE +PARABEN",
-            "text": "",
+            "title": "",
+            "text": "PHTHALATE +PARABEN",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 60
+            "image_size": 40
           }
         },
         "5d57f61f-420a-4785-8358-86adfbfeca78": {
           "type": "image",
           "settings": {
-            "title": "CARBON NEUTRAL",
-            "text": "",
+            "title": "",
+            "text": "CARBON NEUTRAL",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 60
+            "image_size": 40
           }
         },
         "e9ec3536-00b2-4a40-ac62-18d8ea843efd": {
           "type": "image",
           "settings": {
-            "title": "COCONUT WAX",
-            "text": "",
+            "title": "",
+            "text": "COCONUT WAX",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 60
+            "image_size": 40
           }
         }
       },
@@ -284,7 +284,7 @@
     "1661901477e56648fd": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold; font-size: 12px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 6,

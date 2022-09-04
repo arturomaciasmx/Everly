@@ -11,7 +11,7 @@
 <product-price-root class="product-price--root" data-id="{{ id }}">
   <div class="product-price--wrapper">
     <div class="product-price--original" data-item='accent-text'>
-      {{ current_variant.price | money }}
+      {{ current_variant.price | money_without_trailing_zeros }}
     </div>
 
     <div

@@ -42,7 +42,7 @@
   background: {{ section.settings.bg-color }};
 }
 #shopify-section-{{ section.id }} .product-page--root {
-  max-width: 1280px;
+  max-width: 1200px;
 }
 .product-page--left-column {
   max-width: calc(100% - 500px);
@@ -283,7 +283,7 @@
                     font-family: 'Metropolis-Bold';
                     text-transform: uppercase;
                     flex: auto;">{{ block.settings.product.title }} 
-                    <br/><span style="font-family: 'Metropolis-Regular'">{{ block.settings.product.selected_or_first_available_variant.price | money }}</span>
+                    <br/><span style="font-family: 'Metropolis-Regular'">{{ block.settings.product.selected_or_first_available_variant.price | money_without_trailing_zeros }}</span>
                   </p>
                   
                     <input type="button" style="

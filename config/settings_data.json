@@ -56,7 +56,7 @@
           "account-icon": "icon",
           "search-icon": "icon",
           "cart-icon": "bag",
-          "show-region-selector": false,
+          "show-region-selector": true,
           "show-locale-selector": false
         }
       },
