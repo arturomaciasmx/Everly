@@ -60,6 +60,7 @@
             aria-haspopup="true"
             aria-expanded="false"
             aria-controls="x-menu--sub-{{ link.handle }}"
+            style="{% if link.child_active %}color: #b0afce;{% endif %}"
           >
             <span>
               {{ link.title }}
@@ -68,7 +69,7 @@
             {% render 'icons', icon: 'chevron-up' %}
           </a>
         {% else %}
-          <a href="{{ link.url }}"><span>{{ link.title }}</span></a>
+          <a href="{{ link.url }}" style="{% if link.active %}color: #b0afce;{% endif %}"><span>{{ link.title }}</span></a>
         {% endif %}
 
           {% comment %} Level 2 {% endcomment %}
@@ -91,7 +92,7 @@
                       data-x-menu--single-parent="true"
                     {% endif %}
                   >
-                    <a href="{{ link.url }}">{{ link.title }}</a>
+                    <a href="{{ link.url }}" style="{% if link.active %}color: #b0afce;{% endif %}">{{ link.title }}</a>
 
                     {% comment %} Level 3 {% endcomment %}
 
@@ -104,7 +105,7 @@
                             class="x-menu--level-3--link"
                             data-link-id="{{ list_lvl_2 }}--{{ list_lvl_3 }}--{{ link.handle }}"
                           >
-                            <a href="{{ link.url }}">{{ link.title }}</a>
+                            <a href="{{ link.url }}" style="{% if link.active %}color: #b0afce;{% endif %}">{{ link.title }}</a>
                           </li>
                         {% endfor %}
                       </ul>

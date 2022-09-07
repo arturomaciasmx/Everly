@@ -144,7 +144,8 @@
         "title_color": "#6e6d97",
         "space-top": 12,
         "space-bottom": 50,
-        "background": "#f3f9f3"
+        "background": "#f3f9f3",
+        "class": "icons-with-text"
       }
     },
     "1661633932f04f93be": {
@@ -241,7 +242,8 @@
         "title_color": "#6e6d97",
         "space-top": 0,
         "space-bottom": 50,
-        "background": "rgba(0,0,0,0)"
+        "background": "rgba(0,0,0,0)",
+        "class": ""
       }
     },
     "1661635605964e66d4": {
@@ -258,7 +260,7 @@
     "1661901551cf095a71": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding: 20px 0; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "custom-liquid": "<div class=\"for-the-planet bottom-bar\">\n<p>\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/p>\n<\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 6,

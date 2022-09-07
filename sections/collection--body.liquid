@@ -136,36 +136,30 @@
   .menu--section ul {
     margin-top: 20px;
   }
+  .menu--section ul a {
+    color: #6e6d97;
+  }
+  .menu--section ul a.active {
+    font-family: 'Metropolis-Bold';
+  }
 </style>
 <div class="collection--container">
   <div class="collections--menu">
-    <div class="menu--section">
-      <h3>MOOD</h3>
-      <ul>
-        <li>Spiritual</li>
-        <li>Romantic</li>
-        <li>Sexy</li>
-        <li>Adventure</li>
-      </ul>
-    </div>
-    <div class="menu--section">
-      <h3>SCENT</h3>
-      <ul>
-        <li>Citrus</li>
-        <li>Earthy</li>
-        <li>Floral</li>
-        <li>Fruity</li>
-        <li>Spiced</li>
-        <li>Woody</li>
-      </ul>
-    </div>
-    <div class="menu--section">
-      <h3>PRODUCT</h3>
-      <ul>
-        <li>Candle</li>
-        <li>Vessel</li>
-      </ul>
-    </div>
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'sidebar-menu' %}
+          <div class="menu--section">
+            <h3>{{ block.settings.menu.title | upcase }}</h3>
+              <ul>
+                {% for link in block.settings.menu.links %}
+                  <li><a class="{% if link.active %}active{% endif %}" href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+              </ul>
+          </div>
+        {% else %}
+          
+      {% endcase %}
+    {% endfor %}
   </div>
   <collection-root
     class="collection--body--root"
@@ -402,6 +396,17 @@
     }
   ],
   "blocks": [
+    {
+      "type": "sidebar-menu",
+      "name": "Menu",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
+        }
+      ]
+    },
     {
       "type": "promotion",
       "name": "Promotion",

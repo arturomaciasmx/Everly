@@ -36,7 +36,7 @@
   }
 </style>
 
-<div class="container">
+<div class="container {{ section.settings.class }}">
   <h2>{{ title }}</h2>
   <div class="row-grid">
     {%- for block in section.blocks -%}
@@ -100,6 +100,11 @@
       "id": "background",
       "label": "Background",
       "default": "#F2F5F5"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "CSS Class"
     }
   ],
   "blocks": [

@@ -41,7 +41,7 @@
     "165895990452ce5d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold;\"><p style=\"font-family: 'Metropolis-Bold'!important; font-size: 18px!important;\">\nProud Earthlings, Proud members of 1% for the Planet <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
+        "custom-liquid": "<div class=\"for-the-planet\" >\n<p>\n<span class=\"mobile-hide\">Proud Earthlings, Proud members of 1% for the Planet<\/span> <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 5,
@@ -53,15 +53,15 @@
       "type": "custom-image-with-text",
       "settings": {
         "heading": "Sustainability",
-        "text": "Our <b style=\"border-bottom: 1.5px solid;\">clean candle<\/b> kits make it easy to refill any empty vessel at home. So you can choose refills > landfills, leaving <b style=\"border-bottom: 1.5px solid;\">our world a little cleaner<b><\/b>.<\/b>",
-        "image": "shopify:\/\/shop_images\/Recurso_6512.png",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s.",
+        "image": "shopify:\/\/shop_images\/Recurso_9_1.png",
         "image-size": 50,
         "space-top": 50,
         "space-bottom": 50,
         "cta-text": "",
         "cta-background": "#6e6d97",
         "background": "#f2f5f5",
-        "class": ""
+        "class": "headding-text"
       }
     },
     "1659473617ac28edb6": {
@@ -75,7 +75,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "59c448b4-fb5b-4987-b666-5ecf98575911": {
@@ -86,7 +86,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "bda9b681-d3e0-49c3-994d-612d28d9ed87": {
@@ -97,7 +97,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "747fda81-0370-4eb9-a3df-45f52d3a460e": {
@@ -108,7 +108,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4": {
@@ -119,7 +119,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 50
+            "image_size": 45
           }
         }
       },
@@ -135,14 +135,15 @@
         "title_color": "#6e6d97",
         "space-top": 5,
         "space-bottom": 30,
-        "background": "#f2f5f5"
+        "background": "#f2f5f5",
+        "class": "icons-with-text"
       }
     },
     "16618794690be2de63": {
       "type": "custom-image-with-text",
       "settings": {
         "heading": "Recycle. reuse. revive",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.",
+        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         "image-size": 60,
         "space-top": 50,
         "space-bottom": 50,
@@ -210,7 +211,7 @@
     "16596359491ba7d9af": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "custom-liquid": "<div class=\"for-the-planet bottom-bar\">\n<p>\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/p>\n<\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 4,

@@ -170,7 +170,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/Recurso_11512.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "5a499600-a1cc-47be-91dd-bb77c41e030a": {
@@ -181,7 +181,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/compostable-packaging.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "ebc8b12f-f715-4836-b96d-835ec9904f7b": {
@@ -192,7 +192,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/phtalate.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "b99dbcf0-09d8-41a8-8af3-813d47c72078": {
@@ -203,7 +203,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/carbon-neutral.png",
-            "image_size": 50
+            "image_size": 45
           }
         },
         "f4edffe4-67ad-478a-93c8-9415dc375874": {
@@ -214,7 +214,7 @@
             "subtitle": "",
             "content_color": "#231f20",
             "image": "shopify:\/\/shop_images\/coconut-wax.png",
-            "image_size": 50
+            "image_size": 45
           }
         }
       },
@@ -230,7 +230,8 @@
         "title_color": "#6e6d97",
         "space-top": 31,
         "space-bottom": 21,
-        "background": "#f3f9f3"
+        "background": "#f3f9f3",
+        "class": "icons-with-text"
       }
     },
     "1661548650cb870787": {
@@ -334,7 +335,8 @@
         "title_color": "#6e6d97",
         "space-top": 0,
         "space-bottom": 50,
-        "background": "#ffffff"
+        "background": "#ffffff",
+        "class": ""
       }
     },
     "recommendations": {
@@ -362,7 +364,7 @@
     "1661901407cd0e065e": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div style=\"text-align: center; padding-top: 13px; padding-bottom: 6px; font-weight: bold; font-size: 14px\">\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/div>",
+        "custom-liquid": "<div class=\"for-the-planet bottom-bar\">\n<p>\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/p>\n<\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 6,

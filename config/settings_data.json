@@ -38,7 +38,7 @@
           "enabled": true,
           "home-page-only": false,
           "background-color": "light",
-          "light-text": false,
+          "light-text": true,
           "text": "FREE SHIPPING <span style=\"font-weight: 100;\">on orders over $100<\/span>",
           "link": ""
         }
