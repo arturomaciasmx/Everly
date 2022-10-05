@@ -9,18 +9,8 @@
         "space-top": 0,
         "space-bottom": 0,
         "is-heading": true,
-        "repeat": true
-      }
-    },
-    "1661808504d6c2b82a": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom-liquid": "<div style=\"padding: 20px 0; background: #F3F5F5\">\n<h1 style=\"text-align: center; color: #6E6D97\">Our Story<\/h1>\n<\/div>",
-        "background-color": "none",
-        "light-text": false,
-        "container-width": 6,
-        "spacing-above": false,
-        "spacing-below": false
+        "repeat": true,
+        "class": ""
       }
     },
     "main": {
@@ -34,6 +24,21 @@
         "spacing-below": true
       }
     },
+    "1662658615b72df577": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "<h1 style=\"text-align: center; color: #6E6D97\">Our Story<\/h1>",
+        "text": "",
+        "image-size": 80,
+        "space-top": 10,
+        "space-bottom": 10,
+        "cta-text": "",
+        "cta-url": "",
+        "cta-background": "#6e6d97",
+        "background": "#F3F5F5",
+        "class": ""
+      }
+    },
     "16618088757fa0a9d7": {
       "type": "custom-image-with-text",
       "settings": {
@@ -44,6 +49,7 @@
         "space-top": 0,
         "space-bottom": 20,
         "cta-text": "",
+        "cta-url": "",
         "cta-background": "#6e6d97",
         "background": "#F3F5F5",
         "class": ""
@@ -58,7 +64,8 @@
         "space-top": 0,
         "space-bottom": 0,
         "is-heading": false,
-        "repeat": false
+        "repeat": false,
+        "class": "about-firm"
       }
     },
     "16616334767b674ce1": {
@@ -70,7 +77,8 @@
         "space-top": 50,
         "space-bottom": 30,
         "is-heading": false,
-        "repeat": true
+        "repeat": true,
+        "class": ""
       }
     },
     "1661633573726c6981": {
@@ -102,7 +110,7 @@
           "type": "image",
           "settings": {
             "title": "",
-            "text": "PHTHALATE + PARABEN FREE",
+            "text": "PHTHALATE + <br>PARABEN FREE",
             "subtitle": "",
             "content_color": "#222222",
             "image": "shopify:\/\/shop_images\/phtalate.png",
@@ -154,12 +162,12 @@
         "heading": "Sustainability at Everly",
         "text": "<b>60 Tons of household waste is produced every second–<\/b> contributing to massive C02 emissions, ocean pollution, and bursting landfills. We want to be part of the solution, starting with candles.",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
-        "image-size": 60,
+        "image-size": 50,
         "space-top": 0,
         "space-bottom": 0,
         "cta-text": "LEARN MORE",
         "cta-background": "#6e6d97",
-        "cta-url": "\/pages\/sustainability",
+        "cta-url": "shopify:\/\/pages\/sustainability",
         "background": "#ffffff",
         "class": ""
       }
@@ -168,13 +176,13 @@
       "type": "custom-2-columns-text",
       "settings": {
         "content-text": "",
-        "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "content-image": "shopify:\/\/shop_images\/Untitled_design_2.gif",
         "image-width": "master",
         "heading": "Candle. Refill. Repeat.",
         "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
         "text-align": "left",
         "cta-text": "LEARN MORE",
-        "cta-url": "#",
+        "cta-url": "shopify:\/\/pages\/about",
         "cta-background": "#6e6d97",
         "background": "#F3F9F3",
         "reverse": false
@@ -190,6 +198,7 @@
         "space-top": 50,
         "space-bottom": 0,
         "cta-text": "",
+        "cta-url": "",
         "cta-background": "#6e6d97",
         "background": "#ffffff",
         "class": ""
@@ -202,8 +211,8 @@
           "type": "image",
           "settings": {
             "title": "<b>So so so easy!<\/b>",
-            "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
-            "subtitle": "",
+            "text": "\"I bought these for my girlfriend because she would complain about having to throw out her candle jars after they were done. She loved the simple process.\"",
+            "subtitle": "Dominick C.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -213,8 +222,8 @@
           "type": "image",
           "settings": {
             "title": "<b>Love this idea!<\/b>",
-            "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
-            "subtitle": "",
+            "text": "“Love this idea! I’m a huge candle fan but hated throwing out all my empty candle jars. Now I get to upcycle them! So far I’m very impressed with Everly.”",
+            "subtitle": "Lauryn H.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -224,8 +233,8 @@
           "type": "image",
           "settings": {
             "title": "<b>It smells AMAZING!<\/b>",
-            "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
-            "subtitle": "",
+            "text": "“I've been looking for a clean burning candle ever since I became a mom. I love that Everly is not only NON-TOXIC (still smells great) but waste-free.\"",
+            "subtitle": "Aaliyah G.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -253,8 +262,8 @@
         "color": "#6e6d99",
         "spacing-above": true,
         "spacing-below": true,
-        "heading": "Subscribe to our newsletter",
-        "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        "heading": "Let's make this official 💍",
+        "newsletter--subheading": "<p>Join our mailing list to get sustainability tips, special offers & know about new scent drops.<\/p>"
       }
     },
     "1661901551cf095a71": {
@@ -271,8 +280,8 @@
   },
   "order": [
     "166181091554470c05",
-    "1661808504d6c2b82a",
     "main",
+    "1662658615b72df577",
     "16618088757fa0a9d7",
     "1661810314897f904b",
     "16616334767b674ce1",

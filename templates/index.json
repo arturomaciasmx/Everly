@@ -14,11 +14,11 @@
     "header-home": {
       "type": "home-header",
       "settings": {
-        "header-text": "The clean, waste-free way to get your candle fix (minus the guilt).",
+        "header-text": "The clean, waste-free way to get your candle fix.",
         "background": "linear-gradient(168deg, rgba(177, 181, 204, 1) 11%, rgba(187, 223, 191, 1) 71%)",
         "image": "shopify:\/\/shop_images\/header_img.png",
         "cta_text": "SHOP NOW",
-        "cta-url": "\/collections\/shop-all",
+        "cta-url": "shopify:\/\/collections\/shop-all",
         "cta_bg_color": "#6e6d99",
         "cta_text_color": "#ffffff"
       }
@@ -26,10 +26,10 @@
     "165895990452ce5d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div class=\"for-the-planet\" >\n<p>\n<span class=\"mobile-hide\">Proud Earthlings, Proud members of 1% for the Planet<\/span> <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
+        "custom-liquid": "<div class=\"for-the-planet\" >\n<p>\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>  <span class=\"mobile-hide\"> Proud members of 1% for the Planet.<\/span>                    1% of all sales donated to environmental causes. \n <\/p><\/div>",
         "background-color": "light",
         "light-text": true,
-        "container-width": 5,
+        "container-width": 6,
         "spacing-above": false,
         "spacing-below": false
       }
@@ -38,24 +38,56 @@
       "type": "custom-image-with-text",
       "settings": {
         "heading": "Candle. Refill. Repeat.",
-        "text": "Our <b style=\"border-bottom: 1.5px solid;\">clean candle<\/b> kits make it easy to refill any vessel, including ours at home, So you can choose refills > landfills, leaving <b style=\"border-bottom: 1.5px solid;\">our world a little cleaner<b><\/b>.<\/b>",
+        "text": "Our <b style=\"border-bottom: 1.5px solid;\">clean candle<\/b> kits make it easy to refill any vessel at home,  so you can choose refills over landfills, leaving <b style=\"border-bottom: 1.5px solid;\">our world a little cleaner<b><\/b>.<\/b> <br> No vessel? Np. Check out ours.",
         "image": "shopify:\/\/shop_images\/Recurso_6512.png",
-        "image-size": 50,
+        "image-size": 45,
         "space-top": 50,
         "space-bottom": 80,
         "cta-text": "",
+        "cta-url": "",
         "cta-background": "#6e6d97",
         "background": "#f3f9f3",
         "class": "title-bg"
+      }
+    },
+    "16595592167283bc70": {
+      "type": "custom-2-columns-text",
+      "settings": {
+        "content-text": "",
+        "content-image": "shopify:\/\/shop_images\/Untitled_design_2.gif",
+        "image-width": "",
+        "heading": "Easy as 1. 2. 3.",
+        "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
+        "text-align": "left",
+        "cta-text": "SHOP CANDLES",
+        "cta-url": "shopify:\/\/collections\/candles",
+        "cta-background": "#6e6d97",
+        "background": "#f2f5f5",
+        "reverse": false
+      }
+    },
+    "f95f437c-ca53-4b3d-a37f-c6243be20db1": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "New to Everly?",
+        "text": "Our bestsellers and bundles  are the best way to get started on your clean candle journey 👀",
+        "image-size": 80,
+        "space-top": 45,
+        "space-bottom": 19,
+        "cta-text": "",
+        "cta-url": "",
+        "cta-background": "#6e6d97",
+        "background": "#F3F9F3",
+        "class": ""
       }
     },
     "16589609255b7f16c4": {
       "type": "featured-products",
       "settings": {
         "product-list": [
-          "nebula",
-          "jardin",
-          "magia"
+          "santo-starter-bundle",
+          "best-sellers-bundle",
+          "tierra-starter-bundle"
         ],
         "background-color": "none",
         "light-text": false,
@@ -64,7 +96,7 @@
         "display-type": "grid",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
-        "heading": "SAVE on Bundles",
+        "heading": "",
         "link-url": "",
         "link-text": "",
         "custom-class": "",
@@ -139,7 +171,7 @@
         "6d3f6a13-b4b8-4411-bd0a-4a2cc3fe58a4"
       ],
       "settings": {
-        "title": "Why you’ll love us?",
+        "title": "You'll love us!",
         "title_color": "#6e6d97",
         "space-top": 50,
         "space-bottom": 50,
@@ -151,7 +183,7 @@
       "type": "custom-cta",
       "settings": {
         "cta_text": "LEARN MORE",
-        "cta_link": "\/pages\/sustainability",
+        "cta_link": "shopify:\/\/pages\/sustainability",
         "section_background_color": "#f2f5f5",
         "cta_background_color": "#6e6d97",
         "margin_top": 0,
@@ -167,7 +199,8 @@
         "space-top": 0,
         "space-bottom": 0,
         "is-heading": false,
-        "repeat": true
+        "repeat": true,
+        "class": ""
       }
     },
     "1659021079d8b6ff21": {
@@ -177,11 +210,12 @@
           "type": "product",
           "settings": {
             "title_image": "shopify:\/\/shop_images\/mood-icons-10.png",
-            "title": "spiritual",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
+            "title": "Playful",
+            "text": "Feeling Playful? Our FRUTA scent is perfect for you. Like the first day of summer, this fun scent will instantly wake your inner child. The MVPs: crisp black tea, sweet cardamom, citrusy plum, and bright hemp, all grounded by earthy notes of vetiver.",
             "text-color": "#6e6d99",
             "cta": "SHOP NOW",
-            "image": "shopify:\/\/shop_images\/spiritual_image.png",
+            "cta-url": "shopify:\/\/products\/fruta",
+            "image": "shopify:\/\/shop_images\/romantic_image.png",
             "tab_color": "#badfbe"
           }
         },
@@ -190,10 +224,11 @@
           "settings": {
             "title_image": "shopify:\/\/shop_images\/mood-icons-11.png",
             "title": "romantic",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
+            "text": "Feeling Romantic? TIERRA is your gal. Moody and mysterious, Tierra reminds us of an intimate night spent with a loved one or friends. Its rich hints of jasmine, sweet and herbaceous tonka bean, and grounding spicy saffron will make your heart swoon.",
             "text-color": "#6e6d99",
             "cta": "SHOP NOW",
-            "image": "shopify:\/\/shop_images\/spiritual_image.png",
+            "cta-url": "shopify:\/\/products\/tierra",
+            "image": "shopify:\/\/shop_images\/romantic_image.png",
             "tab_color": "#d2d1e3"
           }
         },
@@ -201,11 +236,12 @@
           "type": "product",
           "settings": {
             "title_image": "shopify:\/\/shop_images\/mood-icons-12.png",
-            "title": "sexy",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
+            "title": "Cozy",
+            "text": "In the mood to bundle up and be cozy? Boy, do we have the perfect candle for you! OTOÑO is like a Pumpkin Spice Latte minus the basicness. So you can enjoy Fall like a champ while cozying up with your fave book or Netflix show. Your pick.",
             "text-color": "#6e6d99",
             "cta": "SHOP NOW",
-            "image": "shopify:\/\/shop_images\/spiritual_image.png",
+            "cta-url": "shopify:\/\/products\/otono",
+            "image": "shopify:\/\/shop_images\/sexy_image.png",
             "tab_color": "#ddcfca"
           }
         },
@@ -213,11 +249,12 @@
           "type": "product",
           "settings": {
             "title_image": "shopify:\/\/shop_images\/mood-icons-13.png",
-            "title": "adventure",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nisi ipsam molestias non a maiores quos ad, illo vitae, enim voluptates dicta cupiditate nemo corrupti at veniam adipisci minus animi.",
+            "title": "Relax",
+            "text": "Need to chill out? Don't worry—we gotcha. Try SANTO. A whiff of this calming concoction is sure to help you unwind. The refreshing, woodsy scent of Palo Santo with earthy aromas of sage will instantly bring you back to home base.",
             "text-color": "#6e6d99",
             "cta": "SHOP NOW",
-            "image": "shopify:\/\/shop_images\/spiritual_image.png",
+            "cta-url": "shopify:\/\/products\/santo-1",
+            "image": "shopify:\/\/shop_images\/adventure_image.png",
             "tab_color": "#d8d9c4"
           }
         }
@@ -242,25 +279,9 @@
         "space-bottom": 0,
         "cta-text": "LEARN MORE",
         "cta-background": "#6e6d97",
-        "cta-url": "\/pages\/sustainability",
+        "cta-url": "shopify:\/\/pages\/sustainability",
         "background": "#ffffff",
         "class": ""
-      }
-    },
-    "16595592167283bc70": {
-      "type": "custom-2-columns-text",
-      "settings": {
-        "content-text": "",
-        "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
-        "image-width": "master",
-        "heading": "Candle. Refill. Repeat.",
-        "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
-        "text-align": "left",
-        "cta-text": "SHOP CANDLES",
-        "cta-url": "#",
-        "cta-background": "#6e6d97",
-        "background": "#f2f5f5",
-        "reverse": false
       }
     },
     "1659562437e51df8bf": {
@@ -272,20 +293,21 @@
         "space-top": 0,
         "space-bottom": 0,
         "is-heading": false,
-        "repeat": true
+        "repeat": true,
+        "class": ""
       }
     },
     "1659562483f6113690": {
       "type": "custom-2-columns-text",
       "settings": {
         "content-text": "",
-        "content-image": "shopify:\/\/shop_images\/Recurso_11512.jpg",
+        "content-image": "shopify:\/\/shop_images\/VESSEL_4.png",
         "image-width": "master",
-        "heading": "Our Vessel<br> <span style=\"     font-size: 18px;     font-family: 'Metropolis-Regular';     font-weight: 100;     position: relative;     top: -10px; \">Foreverly vessel<\/span>",
-        "text": "Don't have a vessel lying around at home? Our Eternal Vessel is the perfect companion to get started on your Everly journey.",
+        "heading": "Our Vessel<br> <span style=\"     font-size: 18px;     font-family: 'Metropolis-Regular';     font-weight: 100;     position: relative;     top: -10px; \">Eternal vessel<\/span>",
+        "text": "Don't have an empty jar to upcycle into a candle? Our Eternal Vessel is the perfect companion to get started on your Everly journey.",
         "text-align": "center",
         "cta-text": "SHOP NOW",
-        "cta-url": "#",
+        "cta-url": "shopify:\/\/products\/eternal-vessel",
         "cta-background": "#6e6d97",
         "background": "linear-gradient(0deg, rgba(243, 249, 243, 1) 75%, rgba(242, 245, 245, 1) 94%)",
         "reverse": true
@@ -301,6 +323,7 @@
         "space-top": 50,
         "space-bottom": 0,
         "cta-text": "",
+        "cta-url": "",
         "cta-background": "#6e6d97",
         "background": "#ffffff",
         "class": ""
@@ -313,8 +336,8 @@
           "type": "image",
           "settings": {
             "title": "So so so easy!",
-            "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
-            "subtitle": "Lauryn M.",
+            "text": "“I bought these for my girlfriend because she would complain about having to throw out her candle jars after they were done. She loved the simple process.\"",
+            "subtitle": "Dominick C.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -324,8 +347,8 @@
           "type": "image",
           "settings": {
             "title": "Love this idea!",
-            "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
-            "subtitle": "Lauryn M.",
+            "text": "“Love this idea! I’m a huge candle fan but hated throwing out all my empty candle jars. Now I get to upcycle them! So far I’m very impressed with Everly.”",
+            "subtitle": "Lauryn H.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -335,8 +358,8 @@
           "type": "image",
           "settings": {
             "title": "It smells AMAZING!",
-            "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
-            "subtitle": "Lauryn M.",
+            "text": "“I've been looking for a clean burning candle ever since I became a mom. I love that Everly is not only NON-TOXIC (still smells great) but waste-free.\"",
+            "subtitle": "Aaliyah G.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -365,7 +388,7 @@
         "container-width": 3,
         "spacing-above": false,
         "spacing-below": true,
-        "blog-heading": "Journal",
+        "blog-heading": "The Journal",
         "blog": "news",
         "tag-select": "pinned",
         "show-date": true,
@@ -380,8 +403,8 @@
         "color": "#6e6d99",
         "spacing-above": true,
         "spacing-below": true,
-        "heading": "Join our mailing list",
-        "newsletter--subheading": "<p>Be the first to recive updates on new arrivals, special offers and tips.<\/p>"
+        "heading": "Let's make this official 💍",
+        "newsletter--subheading": "<p>Join our mailing list to get sustainability tips, special offers & know about new scent drops.<\/p>"
       }
     },
     "16596359491ba7d9af": {
@@ -401,13 +424,14 @@
     "header-home",
     "165895990452ce5d7a",
     "1660248612d42c6963",
+    "16595592167283bc70",
+    "f95f437c-ca53-4b3d-a37f-c6243be20db1",
     "16589609255b7f16c4",
     "1659473617ac28edb6",
     "165897291324a4fce9",
     "165949968326b2066d",
     "1659021079d8b6ff21",
     "1661574541f71d701a",
-    "16595592167283bc70",
     "1659562437e51df8bf",
     "1659562483f6113690",
     "165956671632b09cb0",

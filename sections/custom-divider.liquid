@@ -20,6 +20,7 @@
     {% if section.settings.repeat %}
       background-repeat-x: repeat;
       background-repeat-y: no-repeat;
+      background-repeat: repeat-x;
     {% else %}
       background-repeat: no-repeat;
     {% endif %}
@@ -29,7 +30,7 @@
   }
 </style>
 
-<div class="divider"></div>
+<div class="divider {{ section.settings.class }}"></div>
 
 {% schema %}
 {
@@ -83,6 +84,11 @@
       "id": "repeat",
       "label": "Repeat",
       "default": true
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "CSS Class"
     }
   ],
   "presets": [

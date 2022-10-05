@@ -14,7 +14,7 @@
         "tag": "featured",
         "image-height": "medium",
         "alt-color": true,
-        "parallax-enabled": false,
+        "parallax-enabled": true,
         "apply-overlay": true
       }
     }

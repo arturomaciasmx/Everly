@@ -145,7 +145,7 @@
           <p>
             {{ block.settings.text }}
           </p>
-          <a class="cta-button" href="#">{{ block.settings.cta }}</a>
+          <a class="cta-button" href="{{ block.settings.cta-url }}">{{ block.settings.cta }}</a>
         </div>
       </div>
     {% endfor %}
@@ -204,6 +204,11 @@
           "type": "text",
           "id": "cta",
           "label": "Call to Action"
+        },
+        {
+          "type": "url",
+          "id": "cta-url",
+          "label": "CTA url"
         },
         {
           "type": "image_picker",

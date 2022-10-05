@@ -9,7 +9,8 @@
         "space-top": 0,
         "space-bottom": 0,
         "is-heading": true,
-        "repeat": true
+        "repeat": true,
+        "class": ""
       }
     },
     "main": {
@@ -156,7 +157,8 @@
         "space-top": 50,
         "space-bottom": 0,
         "is-heading": false,
-        "repeat": true
+        "repeat": true,
+        "class": ""
       }
     },
     "16615480953e561f9d": {
@@ -238,13 +240,13 @@
       "type": "custom-2-columns-text",
       "settings": {
         "content-text": "",
-        "content-image": "shopify:\/\/shop_images\/Recurso_9512.jpg",
+        "content-image": "shopify:\/\/shop_images\/Untitled_design_2.gif",
         "image-width": "master",
         "heading": "Candle. Refill. Repeat.",
         "text": "<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px;\">1<\/span> Microwave the bag for 2 minutes.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff; margin-bottom: 8px; padding-left: 2px\">2<\/span> Pour liquid wax into your favorite vessel.\n<\/p>\n<p><span style=\"background: #6E6D97; border-radius: 50px; width: 25px; height: 25px; display: inline-block;\ntext-align: center; color: #fff;padding-left: 2px \">3<\/span> Let it set and enjoy. <\/p>",
         "text-align": "left",
         "cta-text": "LEARN HOW TO",
-        "cta-url": "#",
+        "cta-url": "shopify:\/\/pages\/about",
         "cta-background": "#6e6d97",
         "background": "linear-gradient(180deg, rgba(243, 249, 243, 1), rgba(243, 249, 243, 1) 100%)",
         "reverse": false
@@ -254,9 +256,9 @@
       "type": "featured-products",
       "settings": {
         "product-list": [
-          "jardin",
           "magia",
-          "nebula"
+          "fruta",
+          "santo-1"
         ],
         "background-color": "none",
         "light-text": false,
@@ -283,6 +285,7 @@
         "space-top": 50,
         "space-bottom": 0,
         "cta-text": "",
+        "cta-url": "",
         "cta-background": "#6e6d97",
         "background": "#ffffff",
         "class": ""
@@ -295,8 +298,8 @@
           "type": "image",
           "settings": {
             "title": "So so so easy!",
-            "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
-            "subtitle": "Lauryn M.",
+            "text": "“I bought these for my girlfriend because she would complain about having to throw out her candle jars after they were done. She loved the simple process.”",
+            "subtitle": "Dominick C.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -306,8 +309,8 @@
           "type": "image",
           "settings": {
             "title": "Love this idea!",
-            "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
-            "subtitle": "Lauryn M.",
+            "text": "“Love this idea! I’m a huge candle fan but hated throwing out all my empty candle jars. Now I get to upcycle them! So far I’m very impressed with Everly.”",
+            "subtitle": "Lauryn H.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -317,8 +320,8 @@
           "type": "image",
           "settings": {
             "title": "It smells AMAZING!",
-            "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
-            "subtitle": "Lauryn M.",
+            "text": "“I've been looking for a clean burning candle ever since I became a mom. I love that Everly is not only NON-TOXIC (still smells great) but waste-free.”",
+            "subtitle": "Aaliyah G.",
             "content_color": "#6e6d99",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -357,8 +360,8 @@
         "color": "#6e6d99",
         "spacing-above": true,
         "spacing-below": true,
-        "heading": "Join our mailing list",
-        "newsletter--subheading": "<p>Be the first to recive updates on new arrivals, special offers and tips.<\/p>"
+        "heading": "Let's make this official 💍",
+        "newsletter--subheading": "<p>Join our mailing list to get sustainability tips, special offers & know about new scent drops.<\/p>"
       }
     },
     "1661901407cd0e065e": {

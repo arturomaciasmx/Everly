@@ -29,8 +29,14 @@
     "social--tiktok--url": "https:\/\/tiktok.com\/@tryeverly",
     "popup--show-image": false,
     "popup--social-enabled": false,
+    "favicon": "shopify:\/\/shop_images\/Sin_titulo-1.png",
+    "hide-tags": "",
     "cart--type": "drawer",
     "cart--show-note": true,
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo.png",
+    "checkout_body_background_color": "#ffffff",
+    "checkout_accent_color": "#b0afce",
+    "checkout_button_color": "#b0afce",
     "sections": {
       "announcement": {
         "type": "announcement",
@@ -39,7 +45,7 @@
           "home-page-only": false,
           "background-color": "light",
           "light-text": true,
-          "text": "FREE SHIPPING <span style=\"font-weight: 100;\">on orders over $100<\/span>",
+          "text": "FREE SHIPPING <span style=\"font-weight: 100;\">on orders over $80<\/span>",
           "link": ""
         }
       },
@@ -484,6 +490,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "7570552984445421165": {
+        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
@@ -699,9 +711,9 @@
           "settings": {
             "text-style": "light-with-overlay",
             "background-color": "light",
-            "spacing": true,
             "mobile-overlay": true,
             "container-width": 4,
+            "spacing": true,
             "width": 4,
             "mobile-width": "2",
             "heading": "Grid with overlay",
@@ -833,7 +845,6 @@
         "1620626720192887ce": {
           "type": "newsletter",
           "settings": {
-            "background-color": "light",
             "heading": "Subscribe to our newsletter",
             "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
           }
@@ -1137,9 +1148,9 @@
           "settings": {
             "text-style": "light-with-overlay",
             "background-color": "light",
-            "spacing": true,
             "mobile-overlay": true,
             "container-width": 4,
+            "spacing": true,
             "width": 4,
             "mobile-width": "2",
             "heading": "Grid with overlay",
@@ -1271,7 +1282,6 @@
         "1620626720192887ce": {
           "type": "newsletter",
           "settings": {
-            "background-color": "light",
             "heading": "Subscribe to our newsletter",
             "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
           }
@@ -1576,9 +1586,9 @@
           "settings": {
             "text-style": "light-with-overlay",
             "background-color": "light",
-            "spacing": true,
             "mobile-overlay": true,
             "container-width": 4,
+            "spacing": true,
             "width": 4,
             "mobile-width": "2",
             "heading": "Grid with overlay",
@@ -1710,7 +1720,6 @@
         "1620626720192887ce": {
           "type": "newsletter",
           "settings": {
-            "background-color": "light",
             "heading": "Subscribe to our newsletter",
             "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
           }

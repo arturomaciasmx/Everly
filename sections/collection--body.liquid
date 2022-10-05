@@ -125,6 +125,7 @@
   .collections--menu {
     padding-left: 40px;
   }
+  #collections--menu-mobile {display:none}
   .menu--section {
     color: #6e6d97;
     padding-top: 40px;
@@ -144,7 +145,24 @@
   }
 </style>
 <div class="collection--container">
-  <div class="collections--menu">
+  <div id="collections--menu-desktop" class="collections--menu">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'sidebar-menu' %}
+          <div class="menu--section">
+            <h3>{{ block.settings.menu.title | upcase }}</h3>
+              <ul>
+                {% for link in block.settings.menu.links %}
+                  <li><a class="{% if link.active %}active{% endif %}" href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+              </ul>
+          </div>
+        {% else %}
+          
+      {% endcase %}
+    {% endfor %}
+  </div>
+  <div id="collections--menu-mobile" class="collections--menu">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'sidebar-menu' %}
@@ -350,6 +368,14 @@
 
 <script type="module">
   import "{{ 'collection.js' | asset_url }}";
+</script>
+
+<script>
+$( document ).ready(function() {
+  $('#collections--menu-mobile h3').click(function (e) {
+    $(this).next().toggle()
+  });
+});
 </script>
 
 {% schema %}

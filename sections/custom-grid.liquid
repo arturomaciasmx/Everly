@@ -42,7 +42,7 @@
           <p class="block-subtitle">{{ block.settings['sub-title'] }}</p>
           <h2 class="block-title">{{ block.settings.title }}</h2>
           <p class="block-text">{{ block.settings.text }}</p>
-          <a class="cta-button block-cta">{{ block.settings['cta-text'] }}</a>
+          <a class="cta-button block-cta" href="{{ block.settings.cta-url }}">{{ block.settings['cta-text'] }}</a>
         </div>
       {% else %}
         <div class="custom-grid-block">
@@ -114,7 +114,7 @@
           "label": "CTA Text"
         },
         {
-          "type": "text",
+          "type": "url",
           "id": "cta-url",
           "label": "CTA url"
         }

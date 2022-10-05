@@ -10,7 +10,7 @@
         "spacing-below": true,
         "overline": "",
         "heading": "FAQs",
-        "text": "<p>Find answers to our most frequently asked questions below. If you can't find what you're looking for please contact us and we'll get in touch with 24 hours.<\/p>"
+        "text": "<p>Find answers to our most frequently asked questions below. If you can't find what you're looking for please contact us [hello@tryeverly.com] and we'll get in touch with 24 hours.<\/p>"
       }
     },
     "main": {
@@ -30,40 +30,96 @@
         "16324397781a8be68b-0": {
           "type": "collapsible-tab",
           "settings": {
-            "heading": "Collapsible tab",
-            "description": "<p>Use tabs to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "heading": "How many candles can I make with my kit?",
+            "description": "<p>One refill kit includes everything you need (wax, 1 wick, 1 centering stick) to make one 10oz candle (~60hrs burn time). <br\/><br\/>If you'd like to use your kit to make more than one candle (or a candle with multiple wicks) you can <a href=\"\/collections\/accessories\" title=\"Accessories\"><strong>purchase additional wicks here and centering sticks here. <\/strong><\/a><\/p>",
             "page-content": ""
           }
         },
         "16324397781a8be68b-1": {
           "type": "collapsible-tab",
           "settings": {
-            "heading": "Collapsible tab",
-            "description": "<p>Use tabs to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "heading": "What comes in my kit?",
+            "description": "<p>In the kit, you receive everything you need to give your candles new life including: a pre-mixed scented wax, a lead-free cotton wick with adhesive, and a wick holder! <br\/><br\/>Kit makes one 10 oz candle. <\/p>",
             "page-content": ""
           }
         },
         "16324397781a8be68b-2": {
           "type": "collapsible-tab",
           "settings": {
-            "heading": "Collapsible tab",
-            "description": "<p>Use tabs to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "heading": "What vessel\/ jar can I use?",
+            "description": "<p>Please stick to tumblers, cups, and jars that can withstand heat, and won’t leak, crack, or catch fire that are approximately 4\" x 3\" wide.<br\/><br\/>For example:<br\/><br\/>• Ceramic (check out our <a href=\"\/products\/eternal-vessel\" title=\"Eternal Vessel\"><strong>Eternal vessel<\/strong><\/a>)<br\/>• Glass (mason jars are great!)<br\/>• Sealed metal tins<br\/>• Enamel<br\/><\/p><p>We want to encourage you to upcycle any empty candle jar or vessel that you have at home. <\/p><p>However, if you don't have a vessel at home that you'd like to upcycle, you can start with our <a href=\"\/products\/eternal-vessel\" title=\"Eternal Vessel\"><strong>Eternal Vessel<\/strong><\/a>, which si the perfect size (and companion) to get you started on your Everly journey.<\/p>",
             "page-content": ""
           }
         },
         "a6080b6f-76b2-411e-84ba-9bbd1dbedff2": {
           "type": "collapsible-tab",
           "settings": {
-            "heading": "Collapsible tab",
-            "description": "<p>Use tabs to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "heading": "How do I dispose of the pouch?",
+            "description": "<p>Our refill kits are packaged using renewable materials of wood pulp and cellulose. Sixty percent of the bag’s material by weight is compostable within 12 weeks. The remaining inner film is made with an additive that causes it to oxo-degrade over 5-10 years vs. the estimated 1,000 years for typical plastic materials.<\/p>",
             "page-content": ""
           }
         },
         "5212a784-4faa-4ff4-b627-6ca5174a15f9": {
           "type": "collapsible-tab",
           "settings": {
-            "heading": "Collapsible tab",
+            "heading": "What are the candle ingredients?",
+            "description": "<p>All of our candles are made with a blend of coconut and soy wax. We do not use any additives or petroleum based products ever. <br\/><br\/>Our scents are a combination of essential oils and CLEAN, non toxic fragrance oils free of parabeans and phalates. <\/p>",
+            "page-content": ""
+          }
+        },
+        "e4e69e04-1cd8-4b30-a08c-cc6cd535cfc5": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "How do I use my refill kit?",
+            "description": "<p>Our refill kits are as easy as 1, 2, 3!<\/p><p>1. Add the wick to the bottom of your (clean) vessel and secure with the wick holder .                                       2. Microwave the bag of wax for ~2 minutes and pour into your vessel.                                3. Allow the wax to set for 3-4 hours. Trim wick, light and enjoy! <\/p><p>*For best burn results, wait 24 hours before lighting your candle.<\/p><p>Still need help? No worries, <strong>check out our how-to video!<\/strong><\/p>",
+            "page-content": ""
+          }
+        },
+        "f8f65794-aae9-41b9-8ce7-74eda77d2b99": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "How long should I wait before burning my candle?",
+            "description": "<p>Although you can light your candle after 3-4 hours, we recommend you wait at least 24 hours for the best burning experience. Waiting 24 hours will ensure your candle doesn't tunnel and burns evenly. <\/p>",
+            "page-content": ""
+          }
+        },
+        "b388af35-02f7-4da4-bbff-2a0c7492a101": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "",
             "description": "<p>Use tabs to highlight unique features, <br\/>sizing information, <br\/>or other sales information.<\/p>",
+            "page-content": ""
+          }
+        },
+        "c676dfb9-c221-44f8-a7e0-296c3bd5b70c": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Candle Troubleshooting 101",
+            "description": "<p><strong>Candle Tunneling: <\/strong>Did you use a 4 x 3 in vessel? <br\/>Did you wait at least 24 hours before burning your candle? Both of the above could be the reason why your candle baby is tunneling. You can fix a tunneled candle by <strong>wrapping a piece of aluminum foil around the edges and simply letting it burn<\/strong>. Make sure the foil hangs over the built-up wax areas, but leave an opening in the center so the wick can still burn properly. After a couple of hours, the wax should melt and even out the surface.<br\/><strong>Candle producing soot? <\/strong>Make sure you're trimming you candle before each use! <\/p>",
+            "page-content": ""
+          }
+        },
+        "2c92f5ce-9f35-4b29-8421-1226089aedf2": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Where do you ship?",
+            "description": "<p>We ship to the US and Canada and include free shipping on orders $80 and above in your local currency. Although we ship international orders, free shipping is not an option at the moment for countries outside the US and Canada. <\/p>",
+            "page-content": ""
+          }
+        },
+        "2f97f48e-908d-46f0-aecb-56eda4f02121": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "Where do you make your products?",
+            "description": "<p>All of our products are handmade in Toronto, Canada. <\/p><p>Our candles are hand-poured in our Toronto studio and we work collaboratively with local ceramic artist to produce our vessels. <\/p>",
+            "page-content": ""
+          }
+        },
+        "bb2125eb-ec5d-4364-af85-23a6c053fa30": {
+          "type": "collapsible-tab",
+          "settings": {
+            "heading": "How are you sustainable?",
+            "description": "<p>Our refills help reduce waste in candle industry by diverting millions of vessels from landfills. By upcycling your candle vessels, you're choosing refills over landfills. Our refill packaing is 60% compostable and we're working towards 100% compostable by 2023. We source all of our candle ingredients to ensure they are sustainable. We manufacture our products locally in Canada in order to reduce our carbon footprint. We work with local ceramic artists to produce our vessels instead of purchasing from overseas. We're 1% For The Planet Members. To learn more about our sustainability initiatives, please visit our <a href=\"\/pages\/sustainability\" title=\"Sustainability\"><strong>sustainability page. <\/strong><\/a><\/p>",
             "page-content": ""
           }
         }
@@ -73,7 +129,14 @@
         "16324397781a8be68b-1",
         "16324397781a8be68b-2",
         "a6080b6f-76b2-411e-84ba-9bbd1dbedff2",
-        "5212a784-4faa-4ff4-b627-6ca5174a15f9"
+        "5212a784-4faa-4ff4-b627-6ca5174a15f9",
+        "e4e69e04-1cd8-4b30-a08c-cc6cd535cfc5",
+        "f8f65794-aae9-41b9-8ce7-74eda77d2b99",
+        "b388af35-02f7-4da4-bbff-2a0c7492a101",
+        "c676dfb9-c221-44f8-a7e0-296c3bd5b70c",
+        "2c92f5ce-9f35-4b29-8421-1226089aedf2",
+        "2f97f48e-908d-46f0-aecb-56eda4f02121",
+        "bb2125eb-ec5d-4364-af85-23a6c053fa30"
       ],
       "settings": {
         "background-color": "none",

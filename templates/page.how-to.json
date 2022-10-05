@@ -1,0 +1,121 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "disabled": true,
+      "settings": {
+        "show-title": false,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    },
+    "header-home": {
+      "type": "home-header",
+      "disabled": true,
+      "settings": {
+        "header-text": "The clean, waste-free way to get your candle fix (minus the guilt).",
+        "background": "linear-gradient(180deg, rgba(177, 181, 204, 1), rgba(187, 223, 191, 1) 80%)",
+        "image": "shopify:\/\/shop_images\/header_img.png",
+        "cta_text": "SHOP NOW",
+        "cta-url": "#",
+        "cta_bg_color": "#6e6d99",
+        "cta_text_color": "#ffffff"
+      }
+    },
+    "1659562437e51df8bf": {
+      "type": "custom-divider",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Recurso_23512.png",
+        "height": 80,
+        "background": "#f2f5f5",
+        "space-top": 0,
+        "space-bottom": 0,
+        "is-heading": true,
+        "repeat": true,
+        "class": ""
+      }
+    },
+    "1660248612d42c6963": {
+      "type": "custom-image-with-text",
+      "settings": {
+        "heading": "Easy as 1. 2. 3.",
+        "text": "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "image-size": 50,
+        "space-top": 50,
+        "space-bottom": 50,
+        "cta-text": "",
+        "cta-url": "",
+        "cta-background": "#6e6d97",
+        "background": "#f2f5f5",
+        "class": "headding-text"
+      }
+    },
+    "fe23d4a4-f0b1-4f1c-a7f6-6448517390c2": {
+      "type": "featured-video",
+      "settings": {
+        "video-url": "https:\/\/youtu.be\/nzS-SdXcgFI",
+        "image": "shopify:\/\/shop_images\/VESSEL_4.png",
+        "full-width": true,
+        "background-color": "none",
+        "section-height": "regular",
+        "light-text": true,
+        "darken-video": true,
+        "heading": "",
+        "sub-heading": "",
+        "button-text": "",
+        "button-url": ""
+      }
+    },
+    "16595717273374a996": {
+      "type": "featured-blog",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 3,
+        "spacing-above": true,
+        "spacing-below": true,
+        "blog-heading": "Journal",
+        "blog": "news",
+        "tag-select": "pinned",
+        "show-date": true,
+        "show-excerpt": false,
+        "view-more-text": ""
+      }
+    },
+    "1661879839a244e81a": {
+      "type": "newsletter",
+      "settings": {
+        "bg-color": "#f4f9f3",
+        "color": "#6e6d99",
+        "spacing-above": true,
+        "spacing-below": true,
+        "heading": "Let's make this official 💍",
+        "newsletter--subheading": "<p>Join our mailing list to get sustainability tips, special offers & know about new scent drops.<\/p>"
+      }
+    },
+    "16596359491ba7d9af": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom-liquid": "<div class=\"for-the-planet bottom-bar\">\n<p>\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'canada-love.png' | asset_url }}\"\/> MADE WITH LOVE IN CANADA\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ 'latinx.png' | asset_url }}\"\/> LATINX & WOMAN-OWNED\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% OF SALES DONATED TO ENVIRONMENTAL CAUSES \n<\/p>\n<\/div>",
+        "background-color": "light",
+        "light-text": true,
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "header-home",
+    "1659562437e51df8bf",
+    "1660248612d42c6963",
+    "fe23d4a4-f0b1-4f1c-a7f6-6448517390c2",
+    "16595717273374a996",
+    "1661879839a244e81a",
+    "16596359491ba7d9af"
+  ]
+}

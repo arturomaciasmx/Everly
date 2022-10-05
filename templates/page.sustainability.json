@@ -33,6 +33,7 @@
         "space-top": 100,
         "space-bottom": 100,
         "cta-text": "SHOP NOW",
+        "cta-url": "shopify:\/\/collections\/shop-all",
         "cta-background": "#6e6d97",
         "background": "linear-gradient(157deg, rgba(178, 180, 205, 1) 16%, rgba(187, 222, 190, 1) 87%)",
         "class": ""
@@ -41,7 +42,7 @@
     "165895990452ce5d7a": {
       "type": "custom-liquid",
       "settings": {
-        "custom-liquid": "<div class=\"for-the-planet\" >\n<p>\n<span class=\"mobile-hide\">Proud Earthlings, Proud members of 1% for the Planet<\/span> <img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>                     1% of sales donated to environmental causes. \n <\/p><\/div>",
+        "custom-liquid": "<div class=\"for-the-planet\" >\n<p>\n<img style=\"height: 40px; margin: 0 15px; position:relative; top: -4px\" src=\"{{ '1_for_planet.png' | asset_url }}\"\/>\n<span class=\"mobile-hide\"> Proud members of 1% for the Planet.<\/span>                     1% of all sales donated to environmental causes. \n <\/p><\/div>",
         "background-color": "light",
         "light-text": true,
         "container-width": 5,
@@ -53,12 +54,13 @@
       "type": "custom-image-with-text",
       "settings": {
         "heading": "Sustainability",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s.",
+        "text": "We're on a mission to clean up the candle industry by diverting millions of vessels from landfills. \nOur candle refills pouch packaging is 60% compostable, and we're working towards 100% compostable. We know that cleaning up the candle industry is just one small piece of the pie towards a clean planet, which is why we donate 1% of our total sales to environmental causes. Let's choose refills over landfills.",
         "image": "shopify:\/\/shop_images\/Recurso_9_1.png",
         "image-size": 50,
         "space-top": 50,
         "space-bottom": 50,
         "cta-text": "",
+        "cta-url": "",
         "cta-background": "#6e6d97",
         "background": "#f2f5f5",
         "class": "headding-text"
@@ -142,12 +144,13 @@
     "16618794690be2de63": {
       "type": "custom-image-with-text",
       "settings": {
-        "heading": "Recycle. reuse. revive",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        "heading": "Our Ingredients",
+        "text": "Conventional candles are made with paraffin wax, a by-product of petroleum, which is not only terrible for your health but for the environment. Our candle wax NEVER contains paraffin. It is crafted using a 100% natural + sustainably sourced blend of soy and coconut wax. Our scents are toxic-free (no parabens or phthalates) and made up of clean essential & fragrance oils. Our wicks are bleach and lead-free. Every Everly candle is hand poured in Toronto.",
         "image-size": 60,
         "space-top": 50,
         "space-bottom": 50,
-        "cta-text": "LEARN MORE",
+        "cta-text": "",
+        "cta-url": "",
         "cta-background": "#6e6d97",
         "background": "#F2F5F5",
         "class": ""
@@ -162,7 +165,8 @@
         "space-top": 0,
         "space-bottom": 0,
         "is-heading": false,
-        "repeat": true
+        "repeat": true,
+        "class": ""
       }
     },
     "1659562483f6113690": {
@@ -172,7 +176,7 @@
         "content-image": "shopify:\/\/shop_images\/Recurso_3.png",
         "image-width": "x150",
         "heading": "Proud Earthlings",
-        "text": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book remaining. essentially unchanged. \n<\/p>",
+        "text": "<p> Proud members of 1% for Planet; putting people and the planet over profit. 1% for the Planet represents a global network of businesses, individuals and environmental organizations tackling our planet's most pressing environmental issues. 1% of our total sales are donated to environmental causes.\n<\/p>",
         "text-align": "left",
         "cta-text": "",
         "cta-url": "#",
@@ -204,8 +208,8 @@
         "color": "#6e6d99",
         "spacing-above": true,
         "spacing-below": true,
-        "heading": "Join our mailing list",
-        "newsletter--subheading": "<p>Be the first to recive updates on new arrivals, special offers and tips.<\/p>"
+        "heading": "Let's make this official 💍",
+        "newsletter--subheading": "<p>Join our mailing list to get sustainability tips, special offers & know about new scent drops.<\/p>"
       }
     },
     "16596359491ba7d9af": {

@@ -9,7 +9,8 @@
         "space-top": 0,
         "space-bottom": 0,
         "is-heading": true,
-        "repeat": true
+        "repeat": true,
+        "class": ""
       }
     },
     "main": {
@@ -150,7 +151,8 @@
         "space-top": 50,
         "space-bottom": 0,
         "is-heading": false,
-        "repeat": true
+        "repeat": true,
+        "class": ""
       }
     },
     "1661802217e8281133": {
@@ -159,17 +161,17 @@
         "b3d2f180-a8d1-4c7b-834f-b68792fcbe8f": {
           "type": "text",
           "settings": {
-            "title": "Jane Doe",
-            "sub-title": "The artist behind Forreverly Vessel",
-            "text": "Don't have a vessel lying around at home? Our Eternal Vessel is the perfect companion to get started on your Everly journey.",
-            "cta-text": "LEARN MORE",
+            "title": "Kitty Holland",
+            "sub-title": "The artist behind the Eternal Vessel",
+            "text": "Katherine (Kitty Holland) is a Toronto based ceramic artist. You can find her behind a camera in a pool of light somewhere, covered in clay. Likely surrounded by cats and cake, and blasting the Mary Poppins soundtrack.",
+            "cta-text": "Learn More",
             "cta-url": ""
           }
         },
         "80b2c851-d5f9-43b6-a3d9-280d9a62020f": {
           "type": "block-image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Recurso_10.jpg"
+            "image": "shopify:\/\/shop_images\/File.jpg"
           }
         },
         "0ad8fc07-291f-4d00-949f-28c9a6a512ba": {
@@ -192,7 +194,7 @@
         "03656197-3978-49c4-8336-a9c037146269"
       ],
       "settings": {
-        "bottom-space": 50,
+        "bottom-space": 49,
         "top-space": 50,
         "background": "linear-gradient(180deg, rgba(241, 242, 245, 1), rgba(243, 249, 243, 1) 100%)",
         "text-color": "#6e6d99"
@@ -202,9 +204,9 @@
       "type": "featured-products",
       "settings": {
         "product-list": [
-          "magia",
-          "nebula",
-          "jardin"
+          "best-sellers-bundle",
+          "santo-starter-bundle",
+          "tierra-starter-bundle"
         ],
         "background-color": "none",
         "light-text": false,
@@ -213,7 +215,7 @@
         "display-type": "grid",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
-        "heading": "SAVE on Bundles",
+        "heading": "Bundle Up + Save",
         "link-url": "",
         "link-text": "",
         "custom-class": "",
@@ -231,6 +233,7 @@
         "space-top": 50,
         "space-bottom": 0,
         "cta-text": "",
+        "cta-url": "",
         "cta-background": "#6e6d97",
         "background": "#ffffff",
         "class": ""
@@ -242,9 +245,9 @@
         "68f9e8fd-61b6-453f-b4a9-86803c76c4ef": {
           "type": "image",
           "settings": {
-            "title": "<b>So so so easy!<\/b>",
-            "text": "“Candle making made so so so easy. A fun gift idea, DIY or just eco friendly way to noy waste vessels. So fun!”",
-            "subtitle": "",
+            "title": "So so so easy!",
+            "text": "“I bought these for my girlfriend because she would complain about having to throw out her candle jars after they were done. She loved the simple process.”",
+            "subtitle": "Dominick C.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -253,9 +256,9 @@
         "e32199dc-600c-4f5c-9fa8-26b51d9ec309": {
           "type": "image",
           "settings": {
-            "title": "<b>Love this idea!<\/b>",
-            "text": "“Love this idea! I’m a huge candle fan but waste of the heavy vessels is a LOT. So far I’m very impressed with Everly.”",
-            "subtitle": "",
+            "title": "Love this idea!",
+            "text": "“Love this idea! I’m a huge candle fan but hated throwing out all my empty candle jars. Now I get to upcycle them! So far I’m very impressed with Everly”",
+            "subtitle": "Lauryn H.",
             "content_color": "#6e6d97",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -264,9 +267,9 @@
         "6d70511f-69a4-4782-af9a-3b991f75b157": {
           "type": "image",
           "settings": {
-            "title": "<b>It smells AMAZING!<\/b>",
-            "text": "“I’m not a savvy whatsoever and I was nervous this would be a disaster but it was SO easy ance I dove in and it smells AMAZING!”",
-            "subtitle": "",
+            "title": "It smells AMAZING!",
+            "text": "“I've been looking for a clean burning candle ever since I became a mom. I love that Everly is not only NON-TOXIC (still smells great) but waste-free.”",
+            "subtitle": "Aaliyah G.",
             "content_color": "#6e6d99",
             "image": "shopify:\/\/shop_images\/Recurso_15512.png",
             "image_size": 15
@@ -283,7 +286,8 @@
         "title_color": "#6e6d97",
         "space-top": 0,
         "space-bottom": 50,
-        "background": "#ffffff"
+        "background": "#ffffff",
+        "class": ""
       }
     },
     "recommendations": {
@@ -304,8 +308,8 @@
         "color": "#6e6d99",
         "spacing-above": true,
         "spacing-below": true,
-        "heading": "Subscribe to our newsletter",
-        "newsletter--subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        "heading": "Let's make this official 💍",
+        "newsletter--subheading": "<p>Join our mailing list to get sustainability tips, special offers & know about new scent drops.<\/p>"
       }
     },
     "1661901438dd659084": {
